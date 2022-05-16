@@ -1,7 +1,8 @@
+from copy import copy
 from pprint import pprint
 
 from ontology import construct_ontology, finish
-from processor import process_policies
+from processor import process_policy
 from reader import read_policies
 
 
@@ -36,7 +37,7 @@ def main():
         WHERE { ?subject onto:hasEvidence ?object .
                 ?object onto:evidenceContent ?content }
     """
-    onto = construct_ontology()
+    onto = construct_ontology("summary")
 
     mappings = {
         "First Party Collection/Use": onto.DataCollection,
@@ -51,9 +52,28 @@ def main():
     }
 
     policies = read_policies()
-    process_policies(onto, policies, mappings)
-
+    for i, p in policies.items():
+        process_policy(onto, i, p, mappings)
     finish(onto)
+
+    for i, p in policies.items():
+
+        o = construct_ontology(i)
+
+        mappings = {
+            "First Party Collection/Use": o.DataCollection,
+            "Third Party Sharing/Collection": o.DataSharing,
+            "User Choice/Control": o.Consent,
+            "User Access, Edit, & Deletion": o.UserAccess,
+            "Data Retention": o.DataRetention,
+            "Data Security": o.SecurityMechanism,
+            "Policy Change": o.PolicyChange,
+            "Do Not Track": o.UserOpt,
+            "International & Specific Audiences": o.UserSpecialCategory,
+        }
+
+        process_policy(o, i, p, mappings)
+        finish(o)
 
 
 if __name__ == '__main__':

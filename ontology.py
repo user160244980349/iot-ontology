@@ -1,9 +1,9 @@
 from owlready2 import *
 
 
-def construct_ontology():
+def construct_ontology(name):
     ontology = get_ontology(
-        "file:///home/user/Source/repos/ontology/resources/iot-ontology-test.owl")
+        f"file:///home/user/Source/repos/ontology/resources/iot-ontology-{name}.owl")
 
     with ontology:
         # Core
