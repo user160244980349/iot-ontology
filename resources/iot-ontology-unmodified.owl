@@ -1,0 +1,2769 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2021/9/onto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2021/9/onto">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2021/9/onto"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Activity_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Investigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Investigation_Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Breach_Report_Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compensation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consent_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Activity_Form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Activity_Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Collection_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Collection_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Collection_Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Collection_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Control_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Control_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Protection_Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Retention_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Retention_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Retention_Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Sharing_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Sharing_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Sharing_Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Sharing_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Use_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diometric_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Encryption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#First_Party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Force_Majeur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Full_Service_Restriction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generic_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Give_Consent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#In_Privacy_Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intentional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legal_Basis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legal_Regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanism_Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanism_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merge_Acquisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#No_Service_Restrictions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-personal_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-privacy_Related"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-sensitive_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notification_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#On_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#On_Website_Pages"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organisational_Measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Partial_Service_Restriction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_Acceptance_Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_Change_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_Change_Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_Change_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_Change_Notification_Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy_Scope_Change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Privacy_Related"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pseudoanonymization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racial_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religion_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remove_Compromised_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Report_Breach_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security_Mechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensitive_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technical_Measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Third_Parties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time_Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tracking_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unintentional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Access_Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Account_Info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_App_Info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Choice_Consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Device_Info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Financial_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Other_Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Privacy_Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Special_Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Via_E-Mail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Via_Phone_Call"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Via_Postal_Mail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Via_SMS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Withdraw_Consent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#applies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appliesToData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#considers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#considersActivities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#considersAgents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#considersData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreachCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreachInvestigationTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBreachReportTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataRetentionTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMechanism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPolicyAcceptanceTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPolicyChangeCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPolicyChangeConsequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcedure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpecialCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initiates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#initiatesActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#notifiesAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownsData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shares"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharesWithAgent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEvidenceContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_0_3plususa.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_0_first_party"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_0_user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_1_breach_report_mechanism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_1_breach_report_time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0_1_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_0_aeotec.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_0_user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_1_breach_activity_mechanism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_1_breach_consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_1_data_downloads"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_1_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_0_first_party"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_0_user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_1_breach_consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_1_data_some_information"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_1_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2_1_report_breach_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_0_first_party"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_0_logistimatics.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_1_breach_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_1_breach_consequence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3_1_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_0_first_party"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_0_molekule.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_1_breach_cause"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4_1_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_0_abstract_third_parties"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_0_first_party"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_0_special_category"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_0_user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_collection_mechanism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_legal_basis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_1_purpose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_2_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_2_purpose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_6_non-personal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_collection_mechanism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_collection_mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_3_purpose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_4_breach_cause_crime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_4_breach_cause_failure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_4_breach_cause_negligence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5_4_evidence"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Breach_Activity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breach_Activity_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breach_Cause"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breach_Consequence"/>
+        <Class IRI="#Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breach_Investigation"/>
+        <Class IRI="#Breach_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breach_Investigation_Time"/>
+        <Class IRI="#Time_Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Breach_Report_Time"/>
+        <Class IRI="#Time_Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compensation"/>
+        <Class IRI="#Breach_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consent_Activity"/>
+        <Class IRI="#Control_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control_Activity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crime_Data"/>
+        <Class IRI="#Sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Activity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Activity_Form"/>
+        <Class IRI="#Data_Control_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Activity_Purpose"/>
+        <Class IRI="#Purpose"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Collection_Activity"/>
+        <Class IRI="#Data_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Collection_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Collection_Mode"/>
+        <Class IRI="#Mechanism_Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Collection_Procedure"/>
+        <Class IRI="#Mechanism_Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Control_Activity"/>
+        <Class IRI="#Control_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Control_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Protection_Officer"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Retention_Activity"/>
+        <Class IRI="#Data_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Retention_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Retention_Time"/>
+        <Class IRI="#Time_Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Sharing_Activity"/>
+        <Class IRI="#Data_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Sharing_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Sharing_Mode"/>
+        <Class IRI="#Mechanism_Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Sharing_Procedure"/>
+        <Class IRI="#Mechanism_Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Use_Activity"/>
+        <Class IRI="#Data_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diometric_Data"/>
+        <Class IRI="#Sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encryption"/>
+        <Class IRI="#Technical_Measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#First_Party"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Force_Majeur"/>
+        <Class IRI="#Breach_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Full_Service_Restriction"/>
+        <Class IRI="#User_Choice_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generic_Data"/>
+        <Class IRI="#Sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Give_Consent"/>
+        <Class IRI="#Consent_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_Data"/>
+        <Class IRI="#Sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#In_Privacy_Policy"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intentional"/>
+        <Class IRI="#Breach_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legal_Basis"/>
+        <Class IRI="#Basis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merge_Acquisition"/>
+        <Class IRI="#Policy_Change_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#No_Service_Restrictions"/>
+        <Class IRI="#User_Choice_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-personal_Data"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-privacy_Related"/>
+        <Class IRI="#Policy_Change_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-sensitive_Data"/>
+        <Class IRI="#Personal_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Notification_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#On_Service"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#On_Website_Pages"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organisational_Measures"/>
+        <Class IRI="#Security_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Other"/>
+        <Class IRI="#Policy_Change_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partial_Service_Restriction"/>
+        <Class IRI="#User_Choice_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Data"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy_Acceptance_Time"/>
+        <Class IRI="#Time_Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy_Change_Activity"/>
+        <Class IRI="#Control_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy_Change_Cause"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy_Change_Consequence"/>
+        <Class IRI="#Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy_Change_Notification_Procedure"/>
+        <Class IRI="#Mechanism_Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Privacy_Related"/>
+        <Class IRI="#Policy_Change_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pseudoanonymization"/>
+        <Class IRI="#Technical_Measures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racial_Data"/>
+        <Class IRI="#Sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religion_Data"/>
+        <Class IRI="#Sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remove_Compromised_Data"/>
+        <Class IRI="#Breach_Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Report_Breach_Activity"/>
+        <Class IRI="#Control_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security_Mechanism"/>
+        <Class IRI="#Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitive_Data"/>
+        <Class IRI="#Personal_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technical_Measures"/>
+        <Class IRI="#Security_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Third_Parties"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tracking_Data"/>
+        <Class IRI="#Non-sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unintentional"/>
+        <Class IRI="#Breach_Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Access_Control"/>
+        <Class IRI="#Data_Control_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Account_Info"/>
+        <Class IRI="#Non-sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_App_Info"/>
+        <Class IRI="#Non-sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Choice_Consequence"/>
+        <Class IRI="#Consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Device_Info"/>
+        <Class IRI="#Non-sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Financial_Data"/>
+        <Class IRI="#Non-sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Other_Data"/>
+        <Class IRI="#Non-sensitive_Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Privacy_Control"/>
+        <Class IRI="#Data_Control_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Via_E-Mail"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Via_Phone_Call"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Via_Postal_Mail"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Via_SMS"/>
+        <Class IRI="#Notification_Mechanism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Withdraw_Consent"/>
+        <Class IRI="#Consent_Activity"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Basis"/>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Consequence"/>
+        <Class IRI="#Data"/>
+        <Class IRI="#Legal_Regulation"/>
+        <Class IRI="#Mechanism"/>
+        <Class IRI="#Mechanism_Mode"/>
+        <Class IRI="#Mechanism_Procedure"/>
+        <Class IRI="#Policy_Scope_Change"/>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#Time_Period"/>
+        <Class IRI="#User_Special_Category"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Breach_Activity"/>
+        <Class IRI="#Control_Activity"/>
+        <Class IRI="#Data_Activity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Breach_Investigation"/>
+        <Class IRI="#Compensation"/>
+        <Class IRI="#Remove_Compromised_Data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Breach_Investigation_Time"/>
+        <Class IRI="#Breach_Report_Time"/>
+        <Class IRI="#Data_Retention_Time"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Control_Activity"/>
+        <Class IRI="#Data_Activity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crime_Data"/>
+        <Class IRI="#Diometric_Data"/>
+        <Class IRI="#Generic_Data"/>
+        <Class IRI="#Health_Data"/>
+        <Class IRI="#Racial_Data"/>
+        <Class IRI="#Religion_Data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Data_Collection_Activity"/>
+        <Class IRI="#Data_Retention_Activity"/>
+        <Class IRI="#Data_Sharing_Activity"/>
+        <Class IRI="#Data_Use_Activity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Data_Collection_Mechanism"/>
+        <Class IRI="#Data_Control_Mechanism"/>
+        <Class IRI="#Data_Retention_Mechanism"/>
+        <Class IRI="#Data_Sharing_Mechanism"/>
+        <Class IRI="#Notification_Mechanism"/>
+        <Class IRI="#Security_Mechanism"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Data_Collection_Mode"/>
+        <Class IRI="#Data_Sharing_Mode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Data_Collection_Procedure"/>
+        <Class IRI="#Data_Sharing_Procedure"/>
+        <Class IRI="#Policy_Change_Notification_Procedure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Encryption"/>
+        <Class IRI="#Pseudoanonymization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#First_Party"/>
+        <Class IRI="#Third_Parties"/>
+        <Class IRI="#User"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Give_Consent"/>
+        <Class IRI="#Withdraw_Consent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#In_Privacy_Policy"/>
+        <Class IRI="#On_Service"/>
+        <Class IRI="#On_Website_Pages"/>
+        <Class IRI="#Via_E-Mail"/>
+        <Class IRI="#Via_Phone_Call"/>
+        <Class IRI="#Via_Postal_Mail"/>
+        <Class IRI="#Via_SMS"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Non-personal_Data"/>
+        <Class IRI="#Personal_Data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Organisational_Measures"/>
+        <Class IRI="#Technical_Measures"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tracking_Data"/>
+        <Class IRI="#User_Account_Info"/>
+        <Class IRI="#User_App_Info"/>
+        <Class IRI="#User_Device_Info"/>
+        <Class IRI="#User_Financial_Data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#User_Access_Control"/>
+        <Class IRI="#User_Privacy_Control"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Legal_Regulation"/>
+        <NamedIndividual IRI="#0_0_3plususa.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_Party"/>
+        <NamedIndividual IRI="#0_0_first_party"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#0_0_user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Report_Breach_Activity"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Via_E-Mail"/>
+        <NamedIndividual IRI="#0_1_breach_report_mechanism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Report_Time"/>
+        <NamedIndividual IRI="#0_1_breach_report_time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#0_1_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Legal_Regulation"/>
+        <NamedIndividual IRI="#1_0_aeotec.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#1_0_user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Activity"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Remove_Compromised_Data"/>
+        <NamedIndividual IRI="#1_1_breach_consequence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#1_1_data_downloads"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#1_1_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Legal_Regulation"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_Party"/>
+        <NamedIndividual IRI="#2_0_first_party"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#2_0_user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Activity"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Investigation"/>
+        <NamedIndividual IRI="#2_1_breach_consequence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data"/>
+        <NamedIndividual IRI="#2_1_data_some_information"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#2_1_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Report_Breach_Activity"/>
+        <NamedIndividual IRI="#2_1_report_breach_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_Party"/>
+        <NamedIndividual IRI="#3_0_first_party"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Legal_Regulation"/>
+        <NamedIndividual IRI="#3_0_logistimatics.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Activity"/>
+        <NamedIndividual IRI="#3_1_breach_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Compensation"/>
+        <NamedIndividual IRI="#3_1_breach_consequence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#3_1_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_Party"/>
+        <NamedIndividual IRI="#4_0_first_party"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Legal_Regulation"/>
+        <NamedIndividual IRI="#4_0_molekule.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Activity"/>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unintentional"/>
+        <NamedIndividual IRI="#4_1_breach_cause"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#4_1_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Third_Parties"/>
+        <NamedIndividual IRI="#5_0_abstract_third_parties"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_Party"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Legal_Regulation"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Special_Category"/>
+        <NamedIndividual IRI="#5_0_special_category"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User"/>
+        <NamedIndividual IRI="#5_0_user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tracking_Data"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Financial_Data"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Account_Info"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Other_Data"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Collection_Activity"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Collection_Mechanism"/>
+        <NamedIndividual IRI="#5_1_data_collection_mechanism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Retention_Activity"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Legal_Basis"/>
+        <NamedIndividual IRI="#5_1_legal_basis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Activity_Purpose"/>
+        <NamedIndividual IRI="#5_1_purpose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Account_Info"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Collection_Activity"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Sharing_Activity"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#5_2_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Activity_Purpose"/>
+        <NamedIndividual IRI="#5_2_purpose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Device_Info"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Device_Info"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tracking_Data"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Non-personal_Data"/>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#User_Financial_Data"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Collection_Activity"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Collection_Mode"/>
+        <NamedIndividual IRI="#5_3_data_collection_mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Sharing_Activity"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Activity_Purpose"/>
+        <NamedIndividual IRI="#5_3_purpose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Breach_Activity"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Evidence"/>
+        <NamedIndividual IRI="#5_4_evidence"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#0_0_3plususa.com"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#0_0_3plususa.com"/>
+        <NamedIndividual IRI="#0_0_first_party"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#0_0_3plususa.com"/>
+        <NamedIndividual IRI="#0_0_user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#0_0_first_party"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachReportTime"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+        <NamedIndividual IRI="#0_1_breach_report_time"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+        <NamedIndividual IRI="#0_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+        <NamedIndividual IRI="#0_1_breach_report_mechanism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#notifiesAgent"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+        <NamedIndividual IRI="#0_0_user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#0_1_breach_report_mechanism"/>
+        <NamedIndividual IRI="#0_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#0_1_breach_report_time"/>
+        <NamedIndividual IRI="#0_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#1_0_aeotec.com"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#1_0_aeotec.com"/>
+        <NamedIndividual IRI="#1_0_user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#1_0_user"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+        <NamedIndividual IRI="#1_1_data_downloads"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+        <NamedIndividual IRI="#1_1_breach_consequence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+        <NamedIndividual IRI="#1_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+        <NamedIndividual IRI="#1_1_breach_activity_mechanism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#1_1_breach_activity_mechanism"/>
+        <NamedIndividual IRI="#1_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#1_1_breach_consequence"/>
+        <NamedIndividual IRI="#1_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#1_1_data_downloads"/>
+        <NamedIndividual IRI="#1_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+        <NamedIndividual IRI="#2_1_report_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+        <NamedIndividual IRI="#2_0_first_party"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+        <NamedIndividual IRI="#2_0_user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+        <NamedIndividual IRI="#2_1_data_some_information"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#2_0_first_party"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+        <NamedIndividual IRI="#2_1_data_some_information"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+        <NamedIndividual IRI="#2_1_breach_consequence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+        <NamedIndividual IRI="#2_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#2_1_breach_consequence"/>
+        <NamedIndividual IRI="#2_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#2_1_data_some_information"/>
+        <NamedIndividual IRI="#2_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#2_1_report_breach_activity"/>
+        <NamedIndividual IRI="#2_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#notifiesAgent"/>
+        <NamedIndividual IRI="#2_1_report_breach_activity"/>
+        <NamedIndividual IRI="#2_0_user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#3_0_first_party"/>
+        <NamedIndividual IRI="#3_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#3_0_logistimatics.com"/>
+        <NamedIndividual IRI="#3_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#3_0_logistimatics.com"/>
+        <NamedIndividual IRI="#3_0_first_party"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+        <NamedIndividual IRI="#3_1_breach_activity"/>
+        <NamedIndividual IRI="#3_1_breach_consequence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#3_1_breach_activity"/>
+        <NamedIndividual IRI="#3_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#3_1_breach_consequence"/>
+        <NamedIndividual IRI="#3_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#4_0_first_party"/>
+        <NamedIndividual IRI="#4_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#4_0_first_party"/>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#4_0_molekule.com"/>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#4_0_molekule.com"/>
+        <NamedIndividual IRI="#4_0_first_party"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+        <NamedIndividual IRI="#4_1_breach_cause"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+        <NamedIndividual IRI="#4_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#4_1_breach_cause"/>
+        <NamedIndividual IRI="#4_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersActivities"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_0_abstract_third_parties"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersAgents"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_0_user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#considersData"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <NamedIndividual IRI="#5_3_data_6_non-personal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSpecialCategory"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_0_special_category"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsData"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_legal_basis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_data_collection_mechanism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_collection_mechanism"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <NamedIndividual IRI="#5_1_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <NamedIndividual IRI="#5_1_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_legal_basis"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_1_purpose"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+        <NamedIndividual IRI="#5_2_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+        <NamedIndividual IRI="#5_2_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+        <NamedIndividual IRI="#5_2_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_2_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_2_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sharesWithAgent"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_0_abstract_third_parties"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_2_purpose"/>
+        <NamedIndividual IRI="#5_2_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_6_non-personal"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_6_non-personal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <NamedIndividual IRI="#5_3_data_collection_mechanism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_collection_mechanism"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMode"/>
+        <NamedIndividual IRI="#5_3_data_collection_mechanism"/>
+        <NamedIndividual IRI="#5_3_data_collection_mode"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_collection_mode"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_data_6_non-personal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sharesWithAgent"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <NamedIndividual IRI="#5_0_abstract_third_parties"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_3_purpose"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appliesToData"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_4_breach_cause_crime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_4_breach_cause_failure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_4_breach_cause_negligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_4_breach_activity"/>
+        <NamedIndividual IRI="#5_4_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_4_breach_cause_crime"/>
+        <NamedIndividual IRI="#5_4_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_4_breach_cause_failure"/>
+        <NamedIndividual IRI="#5_4_evidence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <NamedIndividual IRI="#5_4_breach_cause_negligence"/>
+        <NamedIndividual IRI="#5_4_evidence"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#0_0_first_party"/>
+        <Literal>3plususa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#0_0_user"/>
+        <Literal>You</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#0_1_breach_report_activity"/>
+        <Literal>Breach report activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#0_1_breach_report_mechanism"/>
+        <Literal>Via E-mail</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#0_1_breach_report_time"/>
+        <Literal>Within seven (7) business days</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#0_1_evidence"/>
+        <Literal>In order to be in line with Fair Information Practices, should a data breach occur, we will notify users via email within seven (7) business days. We also agree to the individual redress principle, which requires that individuals have a right to pursue legally enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or a government agency to investigate and/or prosecute non-compliance by data processors.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#1_0_aeotec.com"/>
+        <Literal>aeotec.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#1_0_user"/>
+        <Literal>You</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#1_1_breach_activity"/>
+        <Literal>Breach activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#1_1_breach_activity_mechanism"/>
+        <Literal>Anauthorized download</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#1_1_breach_consequence"/>
+        <Literal>Remove compromised data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#1_1_data_downloads"/>
+        <Literal>Any download</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#1_1_evidence"/>
+        <Literal>You agree to prevent any unauthorised copying of any downloads. Aeotec may terminate this license with respect to one or more downloads at any time if you are in breach of these Terms with respect to the applicable downloads. Upon termination, you will immediately destroy the downloads, and certify to Aeotec that you have done so.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#2_0_brainly.com"/>
+        <Literal>brainly.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_0_first_party"/>
+        <Literal>Brainly</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_0_user"/>
+        <Literal>Those individuals</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_1_breach_activity"/>
+        <Literal>Breach activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_1_breach_consequence"/>
+        <Literal>Breach investigation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_1_data_some_information"/>
+        <Literal>Some information</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_1_evidence"/>
+        <Literal>DATA STORAGE AND TRANSFER: Your information collected through our Service may be stored and processed in the United States or any other country in which Brainly or its affiliates or service providers maintain facilities. If you are located in the European Union or other regions with laws governing data collection and use that may differ from U. S. law, please note that we may transfer information, including personal information, to a country and jurisdiction that does not have the same data protection laws as your jurisdiction, and we will take all steps reasonably necessary to ensure that any personal data are treated securely and in accordance with this Privacy Policy. Such transfers are made pursuant to appropriate safeguards.. Brainly has entered into EU standard contractual clauses for intra-group transfers of personal data. If you wish to enquire further about the safeguards used or if you would like to request a copy of these Model Contracts please contact: {removed href} {removed hyperref}. KEEPING YOUR INFORMATION SAFE: We care about the security of your information and uses commercially reasonable physical, administrative, and technological safeguards to preserve the integrity and security of all information collected through our Service. However, no security system is impenetrable and we cannot guarantee the security of our systems 100. In the event that any information under our control is compromised as a result of a breach of security, we will take reasonable steps to investigate the situation and, where appropriate, notify those individuals whose information may have been compromised and take other steps, in accordance with any applicable laws and regulations. For individuals based in the EU or Switzerland, we store personal data for as long as necessary to fulfill the purposes for which we collect the data (see above under WHAT INFORMATION DO WE COLLECT AND FOR WHAT PURPOSE?), except if required otherwise by law.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#2_1_report_breach_activity"/>
+        <Literal>Report breach activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#3_0_first_party"/>
+        <Literal>Logistimatics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#3_0_logistimatics.com"/>
+        <Literal>logistimatics.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#3_1_breach_activity"/>
+        <Literal>Breach activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#3_1_breach_consequence"/>
+        <Literal>Compensation for breach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#3_1_evidence"/>
+        <Literal>USERS OUTSIDE OF THE UNITED STATES: If you use our Platforms outside of the United States, you understand that we may collect, process, and store your personal information in the United States and other countries. The laws in the U. S. regarding personal information may be different from the laws of your state or country. Any such transfers will comply with safeguards as required by relevant law. If applicable, you may have a right to claim compensation for damages caused by a breach of relevant data protection laws.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#4_0_first_party"/>
+        <Literal>Molekule</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#4_0_molekule.com"/>
+        <Literal>molekule.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#4_1_breach_activity"/>
+        <Literal>Breach activity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#4_1_breach_cause"/>
+        <Literal>Technical, physical causes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#4_1_evidence"/>
+        <Literal>We use physical, technical and administrative security measures and safeguards to protect the confidentiality and security of your personal information. However, since the Internet is not a 100 secure environment, we cannot guarantee, ensure, or warrant the security of any information you transmit to us. There is no guarantee that information may not be accessed, disclosed, altered, or destroyed by breach of any of our physical, technical, or managerial safeguards. It is your responsibility to protect the security of your login information. If you have reason to believe that your account or interaction with us is no longer secure, please immediately notify us in accordance with the Questions and how to contact us section below.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_0_abstract_third_parties"/>
+        <Literal>Abstract third parties</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_0_first_party"/>
+        <Literal>Oreck</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#5_0_oreck.com"/>
+        <Literal>oreck.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_0_special_category"/>
+        <Literal>Californian residents</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_0_user"/>
+        <Literal>You</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_1_address"/>
+        <Literal>Address</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_2_credit_card_numbers"/>
+        <Literal>Credit card numbers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_3_name"/>
+        <Literal>Name</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_4_personal_info"/>
+        <Literal>Other personal information</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_collection_activity"/>
+        <Literal>Data collection</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_collection_mechanism"/>
+        <Literal>Collection through website</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_retention_activity"/>
+        <Literal>Data retention</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_data_use_activity"/>
+        <Literal>Use data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#5_1_evidence"/>
+        <Literal>Oreck is the owner (or licensee, as applicable) of the information we collect on this site. We will not sell, share or rent this information to others in any way except as disclosed in this Privacy Policy and Terms of Use. At the time you make a purchase request on {removed hyperref}, we collect and store your name, address, credit card numbers and other personally-identifying information. We need this information to provide and to authorize our retail partners and service providers to provide goods and services that you request and to let you know of additional goods and services in which you might be interested. We also use this information to customize your experience using our Website.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_legal_basis"/>
+        <Literal>Legal basis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_1_purpose"/>
+        <Literal>Data activity purpose. Use information to customize experience.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_2_data_1_e-mail"/>
+        <Literal>E-mail</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_2_data_collection_activity"/>
+        <Literal>Data collection</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_2_data_sharing_activity"/>
+        <Literal>Data sharing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#5_2_evidence"/>
+        <Literal>We may ask you for personally identifying information at other times, such as if you enter into a promotion, communicate with us, or complete a survey. If you opt-in to receive information regarding a promotion, you give us your permission to share your name and e-mail address with the third parties involved in offering and administering the promotion.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_2_purpose"/>
+        <Literal>Data activity purpose. Taking part in promotion and etc.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_1_ip-address"/>
+        <Literal>IP-address</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_2_browser_info"/>
+        <Literal>Browser information</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_3_pages_viewed"/>
+        <Literal>Pages viewed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_4_numbers_of_visitors"/>
+        <Literal>Number of visitors</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_5_purchasements"/>
+        <Literal>Goods and services purchased</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_6_non-personal"/>
+        <Literal>Abstract non-personal data</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_collection_activity"/>
+        <Literal>Data collection</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_collection_mechanism"/>
+        <Literal>Collection through website</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_collection_mode"/>
+        <Literal>Automatically</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_data_sharing_activity"/>
+        <Literal>Data sharing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#5_3_evidence"/>
+        <Literal>In addition, we automatically gather general non-personal, statistical information about our Website and visitors, such as IP addresses, browsers, pages viewed, number of visitors, goods and services purchased, etc., but in doing so we do not reference you by individual name, e-mail address, home address, or telephone number. We use this data in the aggregate, for example, to determine how much our customers use parts of our site so we can improve our site. We may provide this statistical information to third parties, but when we do so we do not provide personally-identifying information without your permission. We may also match user information we collect with offline data available from other sources in order to carry out our services and conduct target advertising and promotions more effectively.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_3_purpose"/>
+        <Literal>Data activity purpose. Use to determine how much our customers use parts of our site so we can improve our site.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_4_breach_cause_crime"/>
+        <Literal>Breach cause. Computer virus, theft or destruction, or unauthorized access to, alteration of, or use of record, whether for breach of contract, tortious behavior.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_4_breach_cause_failure"/>
+        <Literal>Breach cause. Any failure of performance, error, omission, interruption, deletion, defect, delay in operations or transmission.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#5_4_breach_cause_negligence"/>
+        <Literal>Breach cause. Negligence or any other cause of action.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <NamedIndividual IRI="#5_4_evidence"/>
+        <Literal>This disclaimer of liability also applies to any damages or injury caused by any failure of performance, error, omission, interruption, deletion, defect, delay in operations or transmission, computer virus, communication line failure, theft or destruction, or unauthorized access to, alteration of, or use of record, whether for breach of contract, tortious behavior, negligence or any other cause of action.</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#appliesToData"/>
+        <ObjectProperty IRI="#applies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#considers"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#considersActivities"/>
+        <ObjectProperty IRI="#considers"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#considersAgents"/>
+        <ObjectProperty IRI="#considers"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#considersData"/>
+        <ObjectProperty IRI="#considers"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBreachInvestigationTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBreachReportTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDataRetentionTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMode"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPolicyAcceptanceTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPolicyChangeCause"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPolicyChangeConsequence"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProcedure"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSpecialCategory"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#initiates"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <ObjectProperty IRI="#initiates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#notifies"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#notifiesAgent"/>
+        <ObjectProperty IRI="#notifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ownsData"/>
+        <ObjectProperty IRI="#owns"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sharesWithAgent"/>
+        <ObjectProperty IRI="#shares"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appliesToData"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#considersActivities"/>
+        <Class IRI="#Legal_Regulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#considersAgents"/>
+        <Class IRI="#Legal_Regulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#considersData"/>
+        <Class IRI="#Legal_Regulation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <Class IRI="#Breach_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+        <Class IRI="#Breach_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreachInvestigationTime"/>
+        <Class IRI="#Breach_Investigation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBreachReportTime"/>
+        <Class IRI="#Report_Breach_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <Class IRI="#Data_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataRetentionTime"/>
+        <Class IRI="#Data_Retention_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+        <Class IRI="#Data_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMode"/>
+        <Class IRI="#Mechanism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPolicyAcceptanceTime"/>
+        <Class IRI="#Policy_Change_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPolicyChangeCause"/>
+        <Class IRI="#Policy_Change_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPolicyChangeConsequence"/>
+        <Class IRI="#Policy_Change_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProcedure"/>
+        <Class IRI="#Mechanism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpecialCategory"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#notifiesAgent"/>
+        <Class IRI="#Report_Breach_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownsData"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sharesWithAgent"/>
+        <Class IRI="#Data_Sharing_Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appliesToData"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#considersActivities"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#considersAgents"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#considersData"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreachCause"/>
+        <Class IRI="#Breach_Cause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreachConsequence"/>
+        <Class IRI="#Breach_Consequence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreachInvestigationTime"/>
+        <Class IRI="#Breach_Investigation_Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBreachReportTime"/>
+        <Class IRI="#Breach_Report_Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataActivityPurpose"/>
+        <Class IRI="#Data_Activity_Purpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataRetentionTime"/>
+        <Class IRI="#Data_Retention_Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEvidence"/>
+        <Class IRI="#Evidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLegalBasis"/>
+        <Class IRI="#Legal_Basis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMechanism"/>
+        <Class IRI="#Mechanism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMode"/>
+        <Class IRI="#Mechanism_Mode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPolicyAcceptanceTime"/>
+        <Class IRI="#Policy_Acceptance_Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPolicyChangeCause"/>
+        <Class IRI="#Policy_Change_Cause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPolicyChangeConsequence"/>
+        <Class IRI="#Policy_Change_Consequence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProcedure"/>
+        <Class IRI="#Mechanism_Procedure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpecialCategory"/>
+        <Class IRI="#User_Special_Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#initiatesActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#notifiesAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownsData"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sharesWithAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasService"/>
+        <Class IRI="#Legal_Regulation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEvidenceContent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasService"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
