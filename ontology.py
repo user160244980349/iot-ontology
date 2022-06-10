@@ -1,11 +1,21 @@
 from owlready2 import *
 
+from config import resources
 
-def construct_ontology(name):
-    ontology = get_ontology(
-        f"file:///home/user/Source/repos/ontology/resources/iot-ontology-{name}.owl")
+_ID = 0
 
-    with ontology:
+
+def construct_ontology(name=None):
+
+    if not name:
+        global _ID
+        name = _ID
+        _ID += 1
+
+    onto = get_ontology(
+         f"file://{os.path.abspath(resources)}/iot-ontology-{name}.owl")
+
+    with onto:
         # Core
         class PrivacyPolicy(Thing): pass
 
@@ -314,8 +324,6 @@ def construct_ontology(name):
         class hasLegalBasis(has):
             domain = [DataActivity]
             range = [LegalBasis]
-            domain = [LegalBasis]
-            range = [DataActivity]
             inverse_property = legalBasisIsRelatedTo
 
         class mechanismIsRelatedTo(isRelatedTo): pass
@@ -423,7 +431,11 @@ def construct_ontology(name):
             domain = [PrivacyPolicy]
             range = [str]
 
-    return ontology
+        class policyWebsite(DataProperty, FunctionalProperty):
+            domain = [PrivacyPolicy]
+            range = [str]
+
+    return onto
 
 
 def finish(o, reason=True):

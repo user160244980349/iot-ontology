@@ -1,7 +1,7 @@
 from mappings import mappings
 from ontology import construct_ontology, finish
-from opp_adapter import process_opp_policy
-from reader import read_policies
+from opp.opp_adapter import process_opp
+from opp.opp_reader import read_opp
 
 
 def main():
@@ -36,18 +36,18 @@ def main():
                 ?object onto:evidenceContent ?content }
     """
 
-    onto = construct_ontology("summary")
-
     # Ontology containing whole dataset
-    policies = read_policies()
-    for i, p in policies.items():
-        process_opp_policy(onto, i, p, mappings)
+    onto = construct_ontology("summary")
+    policies = read_opp()
+
+    for p in policies:
+        process_opp(onto, p, mappings)
     finish(onto)
 
     # Ontologies containing policies by 1
-    for i, p in policies.items():
-        o = construct_ontology(i)
-        process_opp_policy(o, i, p, mappings)
+    for p in policies:
+        o = construct_ontology()
+        process_opp(o, p, mappings)
         finish(o, reason=False)
 
 
