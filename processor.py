@@ -33,53 +33,53 @@ def process_policy(onto, i, p, mappings):
         "International & Specific Audiences": onto.UserSpecialCategory,
     }
     """
-    policy = onto.PrivacyPolicy()
-    agent1 = onto.User()
-    agent2 = onto.FirstParty()
-    agent3 = onto.ThirdParties()
+    policy = getattr(onto, "PrivacyPolicy")()
+    agent1 = getattr(onto, "User")()
+    agent2 = getattr(onto, "FirstParty")()
+    agent3 = getattr(onto, "ThirdParties")()
 
     policy.policyId = i
-    policy.considersAgents.extend([agent1, agent2, agent3])
+    policy.considersAgent.extend([agent1, agent2, agent3])
 
     try:
 
         for s in p:
-            entity = mappings[s["c"]]()
-            evidence = onto.Evidence()
+            entity = getattr(onto, mappings[s["c"]])()
+            evidence = getattr(onto, "Evidence")()
             evidence.evidenceContent = s["t"]
 
             if s["c"] == "First Party Collection/Use":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent2.initiatesActivity.append(entity)
 
             elif s["c"] == "Third Party Sharing/Collection":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent3.initiatesActivity.append(entity)
 
             elif s["c"] == "User Choice/Control":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent1.initiatesActivity.append(entity)
 
             elif s["c"] == "User Access, Edit, & Deletion":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent1.initiatesActivity.append(entity)
 
             elif s["c"] == "Data Retention":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent2.initiatesActivity.append(entity)
 
             elif s["c"] == "Data Security":
-                action = onto.DataActivity()
-                policy.considersActivities.append(action)
+                action = getattr(onto, "DataActivity")()
+                policy.considersActivity.append(action)
                 action.hasMechanism.append(entity)
                 agent2.initiatesActivity.append(action)
 
             elif s["c"] == "Policy Change":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent2.initiatesActivity.append(entity)
 
             elif s["c"] == "Do Not Track":
-                policy.considersActivities.append(entity)
+                policy.considersActivity.append(entity)
                 agent1.initiatesActivity.append(entity)
 
             elif s["c"] == "International & Specific Audiences":

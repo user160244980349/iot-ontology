@@ -1,3 +1,5 @@
+from datetime import date
+
 from owlready2 import *
 
 
@@ -12,37 +14,37 @@ def construct_ontology(name):
         # Activities
         class Activity(Thing): pass
 
-        class Breach(Activity): pass
+        class BreachActivity(Activity): pass
 
-        class Control(Activity): pass
+        class ControlActivity(Activity): pass
 
-        class PolicyChange(Control): pass
+        class PolicyChangeActivity(ControlActivity): pass
 
-        class ReportBreach(Control): pass
+        class ReportBreachActivity(ControlActivity): pass
 
-        class Consent(Control): pass
+        class ConsentActivity(ControlActivity): pass
 
-        class GiveConsent(Consent): pass
+        class GiveConsentActivity(ConsentActivity): pass
 
-        class WithdrawConsent(Consent): pass
+        class WithdrawConsentActivity(ConsentActivity): pass
 
-        class DataControl(Control): pass
+        class DataControlActivity(ControlActivity): pass
 
-        class UserAccess(DataControl): pass
+        class UserAccessActivity(DataControlActivity): pass
 
-        class UserPrivacy(DataControl): pass
+        class UserPrivacyActivity(DataControlActivity): pass
 
-        class UserOpt(DataControl): pass
+        class UserOptActivity(DataControlActivity): pass
 
         class DataActivity(Activity): pass
 
-        class DataUse(DataActivity): pass
+        class DataUseActivity(DataActivity): pass
 
-        class DataCollection(DataActivity): pass
+        class DataCollectionActivity(DataActivity): pass
 
-        class DataSharing(DataActivity): pass
+        class DataSharingActivity(DataActivity): pass
 
-        class DataRetention(DataActivity): pass
+        class DataRetentionActivity(DataActivity): pass
 
         # Agents
         class Agent(Thing): pass
@@ -93,17 +95,17 @@ def construct_ontology(name):
 
         class ForceMajeur(BreachCause): pass
 
-        class Intentional(BreachCause): pass
+        class IntentionalCause(BreachCause): pass
 
-        class Unintentional(BreachCause): pass
+        class UnintentionalCause(BreachCause): pass
 
         class PolicyChangeCause(Cause): pass
 
-        class PrivacyRelated(PolicyChangeCause): pass
+        class PrivacyRelatedCause(PolicyChangeCause): pass
 
-        class NonPrivacyRelated(PolicyChangeCause): pass
+        class NonPrivacyRelatedCause(PolicyChangeCause): pass
 
-        class MergeAcquisition(PolicyChangeCause): pass
+        class MergeAcquisitionCause(PolicyChangeCause): pass
 
         class OtherPolicyChangeCause(PolicyChangeCause): pass
 
@@ -216,119 +218,199 @@ def construct_ontology(name):
         # Object properties
         # Considers
         class considers(ObjectProperty): pass
+        class isConsideredBy(ObjectProperty):
+            inverse_property = considers
 
         # Considers agents
-        class considersAgents(considers):
+        class agentIsConsideredBy(isConsideredBy): pass
+        class considersAgent(considers):
             domain = [PrivacyPolicy]
             range = [Agent]
+            inverse_property = agentIsConsideredBy
 
         # Considers activities
-        class considersActivities(considers):
+        class activityIsConsideredBy(isConsideredBy): pass
+        class considersActivity(considers):
             domain = [PrivacyPolicy]
             range = [Activity]
+            inverse_property = activityIsConsideredBy
 
         # Considers data
+        class dataIsConsideredBy(isConsideredBy): pass
         class considersData(considers):
             domain = [PrivacyPolicy]
             range = [Data]
+            inverse_property = dataIsConsideredBy
 
         # Applies
-        class applies(ObjectProperty): pass
+        class isAppliedTo(ObjectProperty): pass
+        class isInfluencedBy(ObjectProperty):
+            inverse_property = isAppliedTo
 
-        class appliesToData(applies):
+        class isInfluencedByActivity(isInfluencedBy): pass
+        class isAppliedToData(isAppliedTo):
             domain = [Activity]
             range = [Data]
+            inverse_property = isInfluencedByActivity
 
         # Has
         class has(ObjectProperty): pass
+        class isRelatedTo(ObjectProperty):
+            inverse_property = has
 
+        class breachCauseIsRelatedTo(isRelatedTo): pass
         class hasBreachCause(has):
-            domain = [Breach]
+            domain = [BreachActivity]
             range = [BreachCause]
+            inverse_property = breachCauseIsRelatedTo
 
+        class consequenceIsRelatedTo(isRelatedTo): pass
         class hasBreachConsequence(has):
-            domain = [Breach]
+            domain = [BreachActivity]
             range = [BreachConsequence]
+            inverse_property = consequenceIsRelatedTo
 
+        class userChoiceConsequenceIsRelatedTo(isRelatedTo): pass
+        class hasUserChoiceConsequence(has):
+            domain = [ConsentActivity]
+            range = [UserChoiceConsequence]
+            inverse_property = userChoiceConsequenceIsRelatedTo
+
+        class breachInvestigationTimeIsRelatedTo(isRelatedTo): pass
         class hasBreachInvestigationTime(has):
             domain = [BreachInvestigation]
             range = [BreachInvestigationTime]
+            inverse_property = breachInvestigationTimeIsRelatedTo
 
-        class hasBreachReportTime(has):
-            domain = [ReportBreach]
+        class hasBreachReportTime(isRelatedTo): pass
+        class breachReportTimeIsRelatedTo(has):
+            domain = [ReportBreachActivity]
             range = [BreachReportTime]
+            inverse_property = hasBreachReportTime
 
+        class dataActivityPurposeIsRelatedTo(isRelatedTo): pass
         class hasDataActivityPurpose(has):
             domain = [DataActivity]
             range = [DataActivityPurpose]
+            inverse_property = dataActivityPurposeIsRelatedTo
 
+        class dataRetentionTimeIsRelatedTo(isRelatedTo): pass
         class hasDataRetentionTime(has):
-            domain = [DataRetention]
+            domain = [DataRetentionActivity]
             range = [DataRetentionTime]
+            inverse_property = dataRetentionTimeIsRelatedTo
 
+        class hasNewerVersion(has, FunctionalProperty): pass
+        class hasOlderVersion(has, FunctionalProperty):
+            domain = [PrivacyPolicy]
+            range = [PrivacyPolicy]
+            inverse_property = hasNewerVersion
+
+        class evidenceIsRelatedTo(isRelatedTo, FunctionalProperty): pass
         class hasEvidence(has, FunctionalProperty):
             domain = [Thing]
             range = [Evidence]
+            inverse_property = evidenceIsRelatedTo
 
+        class legalBasisIsRelatedTo(isRelatedTo): pass
         class hasLegalBasis(has):
             domain = [DataActivity]
             range = [LegalBasis]
+            domain = [LegalBasis]
+            range = [DataActivity]
+            inverse_property = legalBasisIsRelatedTo
 
+        class mechanismIsRelatedTo(isRelatedTo): pass
         class hasMechanism(has):
             domain = [Activity]
             range = [Mechanism]
+            inverse_property = mechanismIsRelatedTo
 
+        class modeIsRelatedTo(isRelatedTo): pass
         class hasMode(has):
             domain = [Mechanism]
             range = [MechanismMode]
+            inverse_property = modeIsRelatedTo
 
+        class policyAcceptanceTimeIsRelatedTo(isRelatedTo): pass
         class hasPolicyAcceptanceTime(has):
-            domain = [PolicyChange]
+            domain = [PolicyChangeActivity]
             range = [PolicyAcceptanceTime]
+            inverse_property = policyAcceptanceTimeIsRelatedTo
 
+        class policyChangeScopeIsRelatedTo(isRelatedTo): pass
+        class hasPolicyChangeScope(has):
+            domain = [PolicyChangeActivity]
+            range = [PolicyChangeScope]
+            inverse_property = policyChangeScopeIsRelatedTo
+
+        class policyChangeCauseIsRelatedTo(isRelatedTo): pass
         class hasPolicyChangeCause(has):
-            domain = [PolicyChange]
+            domain = [PolicyChangeActivity]
             range = [PolicyChangeCause]
+            inverse_property = policyChangeCauseIsRelatedTo
 
+        class policyChangeConsequenceIsRelatedTo(isRelatedTo): pass
         class hasPolicyChangeConsequence(has):
-            domain = [PolicyChange]
+            domain = [PolicyChangeActivity]
             range = [PolicyChangeConsequence]
+            inverse_property = policyChangeConsequenceIsRelatedTo
 
+        class procedureIsRelatedTo(isRelatedTo): pass
         class hasProcedure(has):
             domain = [Mechanism]
             range = [MechanismProcedure]
+            inverse_property = procedureIsRelatedTo
 
+        class specialCategoryIsRelatedTo(isRelatedTo): pass
         class hasSpecialCategory(has):
             domain = [User]
             range = [UserSpecialCategory]
+            inverse_property = specialCategoryIsRelatedTo
 
         # Initiates
         class initiates(ObjectProperty): pass
+        class isInitiatedBy(ObjectProperty):
+            inverse_property = initiates
 
+        class activityIsInitiatedBy(isInitiatedBy): pass
         class initiatesActivity(initiates):
             domain = [Agent]
             range = [Activity]
+            inverse_property = activityIsInitiatedBy
 
         # Notifies
         class notifies(ObjectProperty): pass
+        class isNotifiedBy(ObjectProperty):
+            inverse_property = notifies
 
+        class agentIsNotifiedBy(isNotifiedBy): pass
         class notifiesAgent(notifies):
-            domain = [ReportBreach]
+            domain = [ReportBreachActivity]
             range = [Agent]
+            inverse_property = agentIsNotifiedBy
 
         # Owns
         class owns(ObjectProperty): pass
+        class isOwnedBy(ObjectProperty):
+            inverse_property = owns
 
+        class dataIsOwnedBy(isOwnedBy): pass
         class ownsData(owns):
             domain = [Agent]
             range = [Data]
+            inverse_property = dataIsOwnedBy
 
         # Shares
         class shares(ObjectProperty): pass
+        class isSharedWith(ObjectProperty):
+            inverse_property = shares
 
-        class sharesWithAgent(shares):
-            domain = [DataSharing]
+        class isSharedWithData(isSharedWith): pass
+        class sharesDataWithAgent(shares):
+            domain = [DataSharingActivity]
             range = [Agent]
+            inverse_property = isSharedWithData
 
         # Data properties
         class evidenceContent(DataProperty, FunctionalProperty):
@@ -339,8 +421,16 @@ def construct_ontology(name):
             domain = [PrivacyPolicy]
             range = [int]
 
+        class policyUpdate(DataProperty, FunctionalProperty):
+            domain = [PrivacyPolicy]
+            range = [str]
+
     return ontology
 
 
-def finish(o):
+def finish(o, reason=True):
+
+    if reason:
+        sync_reasoner(infer_property_values=True)
+
     o.save(format="ntriples")

@@ -37,19 +37,20 @@ def main():
         WHERE { ?subject onto:hasEvidence ?object .
                 ?object onto:evidenceContent ?content }
     """
-    onto = construct_ontology("summary")
 
     mappings = {
-        "First Party Collection/Use": onto.DataCollection,
-        "Third Party Sharing/Collection": onto.DataSharing,
-        "User Choice/Control": onto.Consent,
-        "User Access, Edit, & Deletion": onto.UserAccess,
-        "Data Retention": onto.DataRetention,
-        "Data Security": onto.SecurityMechanism,
-        "Policy Change": onto.PolicyChange,
-        "Do Not Track": onto.UserOpt,
-        "International & Specific Audiences": onto.UserSpecialCategory,
+        "First Party Collection/Use": "DataCollectionActivity",
+        "Third Party Sharing/Collection": "DataSharingActivity",
+        "User Choice/Control": "ConsentActivity",
+        "User Access, Edit, & Deletion": "UserAccessActivity",
+        "Data Retention": "DataRetentionActivity",
+        "Data Security": "SecurityMechanism",
+        "Policy Change": "PolicyChangeActivity",
+        "Do Not Track": "UserOptActivity",
+        "International & Specific Audiences": "UserSpecialCategory",
     }
+
+    onto = construct_ontology("summary")
 
     policies = read_policies()
     for i, p in policies.items():
@@ -57,23 +58,9 @@ def main():
     finish(onto)
 
     for i, p in policies.items():
-
         o = construct_ontology(i)
-
-        mappings = {
-            "First Party Collection/Use": o.DataCollection,
-            "Third Party Sharing/Collection": o.DataSharing,
-            "User Choice/Control": o.Consent,
-            "User Access, Edit, & Deletion": o.UserAccess,
-            "Data Retention": o.DataRetention,
-            "Data Security": o.SecurityMechanism,
-            "Policy Change": o.PolicyChange,
-            "Do Not Track": o.UserOpt,
-            "International & Specific Audiences": o.UserSpecialCategory,
-        }
-
         process_policy(o, i, p, mappings)
-        finish(o)
+        finish(o, reason=False)
 
 
 if __name__ == '__main__':
