@@ -1,6 +1,6 @@
 
 
-def process_policy(onto, i, p, mappings):
+def process_opp_policy(onto, i, p, mappings):
     """
     Constructing ontology
         onto = construct_ontology()

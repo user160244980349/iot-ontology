@@ -1,8 +1,6 @@
-from copy import copy
-from pprint import pprint
-
+from mappings import mappings
 from ontology import construct_ontology, finish
-from processor import process_policy
+from opp_adapter import process_opp_policy
 from reader import read_policies
 
 
@@ -38,28 +36,18 @@ def main():
                 ?object onto:evidenceContent ?content }
     """
 
-    mappings = {
-        "First Party Collection/Use": "DataCollectionActivity",
-        "Third Party Sharing/Collection": "DataSharingActivity",
-        "User Choice/Control": "ConsentActivity",
-        "User Access, Edit, & Deletion": "UserAccessActivity",
-        "Data Retention": "DataRetentionActivity",
-        "Data Security": "SecurityMechanism",
-        "Policy Change": "PolicyChangeActivity",
-        "Do Not Track": "UserOptActivity",
-        "International & Specific Audiences": "UserSpecialCategory",
-    }
-
     onto = construct_ontology("summary")
 
+    # Ontology containing whole dataset
     policies = read_policies()
     for i, p in policies.items():
-        process_policy(onto, i, p, mappings)
+        process_opp_policy(onto, i, p, mappings)
     finish(onto)
 
+    # Ontologies containing policies by 1
     for i, p in policies.items():
         o = construct_ontology(i)
-        process_policy(o, i, p, mappings)
+        process_opp_policy(o, i, p, mappings)
         finish(o, reason=False)
 
 
