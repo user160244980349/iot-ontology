@@ -1,0 +1,384 @@
+{
+        "User Access, Edit and Deletion": {
+                "Access Scope": [
+                        "User account data",
+                        "Other data about user",
+                        "Profile data",
+                        "Other",
+                        "Transactional data",
+                        "Unspecified"
+                ],
+                "User Type": [
+                        "not-selected",
+                        "Other",
+                        "User with account",
+                        "User without account",
+                        "Unspecified"
+                ],
+                "Access Type": [
+                        "View",
+                        "Deactivate account",
+                        "Edit information",
+                        "Delete account (partial)",
+                        "Other",
+                        "None",
+                        "Delete account (full)",
+                        "Export",
+                        "Unspecified"
+                ]
+        },
+        "International and Specific Audiences": {
+                "Audience Type": [
+                        "Europeans",
+                        "Children",
+                        "Other",
+                        "Californians",
+                        "Citizens from other countries"
+                ]
+        },
+        "Policy Change": {
+                "Change Type": [
+                        "Unspecified",
+                        "Non-privacy relevant change",
+                        "Other",
+                        "Privacy relevant change",
+                        "In case of merger or acquisition"
+                ],
+                "User Choice": [
+                        "Opt-in",
+                        "Opt-out",
+                        "Other",
+                        "None",
+                        "User participation",
+                        "Unspecified"
+                ],
+                "Notification Type": [
+                        "Personal notice",
+                        "Other",
+                        "General notice on website",
+                        "No notification",
+                        "General notice in privacy policy",
+                        "Unspecified"
+                ]
+        },
+        "Data Security": {
+                "Security Measure": [
+                        "Generic",
+                        "Privacy/Security program",
+                        "Unspecified",
+                        "Privacy review/audit",
+                        "Secure user authentication",
+                        "Secure data storage",
+                        "Other",
+                        "Data access limitation",
+                        "Secure data transfer",
+                        "Privacy training"
+                ]
+        },
+        "First Party Collection/Use": {
+                "Collection Mode": [
+                        "Implicit",
+                        "not-selected",
+                        "Explicit",
+                        "Unspecified"
+                ],
+                "Choice Scope": [
+                        "Use",
+                        "not-selected",
+                        "First party collection",
+                        "Collection",
+                        "First party use",
+                        "Third party sharing/collection",
+                        "Third party use",
+                        "Both",
+                        "Unspecified"
+                ],
+                "Does/Does Not": [
+                        "Does",
+                        "Does Not"
+                ],
+                "Purpose": [
+                        "Analytics/Research",
+                        "Service Operation and Security",
+                        "Advertising",
+                        "Marketing",
+                        "Basic service/feature",
+                        "Legal requirement",
+                        "Other",
+                        "Merger/Acquisition",
+                        "Additional service/feature",
+                        "Personalization/Customization",
+                        "Service operation and security",
+                        "Unspecified"
+                ],
+                "User Type": [
+                        "not-selected",
+                        "Other",
+                        "User with account",
+                        "User without account",
+                        "Unspecified"
+                ],
+                "Action First-Party": [
+                        "Receive from other service/third-party (unnamed)",
+                        "Receive from other service/third-party (named)",
+                        "Collect on mobile website",
+                        "Receive from other parts of company/affiliates",
+                        "Collect from user on other websites",
+                        "Other",
+                        "Collect in mobile app",
+                        "Track user on other websites",
+                        "Collect on website",
+                        "Unspecified"
+                ],
+                "Choice Type": [
+                        "Opt-in",
+                        "Browser/device privacy controls",
+                        "not-selected",
+                        "Dont use service/feature",
+                        "First-party privacy controls",
+                        "Other",
+                        "Third-party privacy controls",
+                        "Opt-out via contacting company",
+                        "Opt-out link",
+                        "Unspecified"
+                ],
+                "Personal Information Type": [
+                        "User Profile",
+                        "Generic personal information",
+                        "Location",
+                        "Social media data",
+                        "User online activities",
+                        "Cookies and tracking elements",
+                        "Personal identifier",
+                        "Computer information",
+                        "User profile",
+                        "Other",
+                        "IP address and device IDs",
+                        "Survey data",
+                        "Contact",
+                        "Demographic",
+                        "Health",
+                        "Financial",
+                        "Unspecified"
+                ],
+                "Identifiability": [
+                        "Aggregated or anonymized",
+                        "not-selected",
+                        "Other",
+                        "Identifiable",
+                        "Unspecified"
+                ]
+        },
+        "Other": {
+                "Other Type": [
+                        "Practice not covered",
+                        "Other",
+                        "Privacy contact information",
+                        "Introductory/Generic"
+                ]
+        },
+        "Third Party Sharing/Collection": {
+                "Choice Scope": [
+                        "Use",
+                        "not-selected",
+                        "First party collection",
+                        "Collection",
+                        "First party use",
+                        "Third party sharing/collection",
+                        "Third party use",
+                        "Both",
+                        "Unspecified"
+                ],
+                "Does/Does Not": [
+                        "Does",
+                        "Does Not"
+                ],
+                "Action Third Party": [
+                        "Receive/Shared with",
+                        "Track on first party website/app",
+                        "Other",
+                        "See",
+                        "Collect on first party website/app",
+                        "Unspecified"
+                ],
+                "User Type": [
+                        "not-selected",
+                        "Other",
+                        "User with account",
+                        "User without account",
+                        "Unspecified"
+                ],
+                "Third Party Entity": [
+                        "Other users",
+                        "Unnamed third party",
+                        "Other part of company/affiliate",
+                        "Other",
+                        "Named third party",
+                        "Public",
+                        "Unspecified"
+                ],
+                "Choice Type": [
+                        "Opt-in",
+                        "Browser/device privacy controls",
+                        "not-selected",
+                        "Dont use service/feature",
+                        "First-party privacy controls",
+                        "Other",
+                        "Third-party privacy controls",
+                        "Opt-out via contacting company",
+                        "Opt-out link",
+                        "Unspecified"
+                ],
+                "Purpose": [
+                        "Analytics/Research",
+                        "Service Operation and Security",
+                        "Advertising",
+                        "Marketing",
+                        "Basic service/feature",
+                        "Legal requirement",
+                        "Other",
+                        "Merger/Acquisition",
+                        "Additional service/feature",
+                        "Personalization/Customization",
+                        "Service operation and security",
+                        "Unspecified"
+                ],
+                "Personal Information Type": [
+                        "User Profile",
+                        "Generic personal information",
+                        "Location",
+                        "Social media data",
+                        "User online activities",
+                        "Cookies and tracking elements",
+                        "Personal identifier",
+                        "Computer information",
+                        "User profile",
+                        "Other",
+                        "IP address and device IDs",
+                        "Survey data",
+                        "Contact",
+                        "Demographic",
+                        "Health",
+                        "Financial",
+                        "Unspecified"
+                ],
+                "Identifiability": [
+                        "Aggregated or anonymized",
+                        "not-selected",
+                        "Other",
+                        "Identifiable",
+                        "Unspecified"
+                ]
+        },
+        "User Choice/Control": {
+                "Choice Scope": [
+                        "Use",
+                        "not-selected",
+                        "First party collection",
+                        "Collection",
+                        "First party use",
+                        "Third party sharing/collection",
+                        "Third party use",
+                        "Both",
+                        "Unspecified"
+                ],
+                "User Type": [
+                        "not-selected",
+                        "Other",
+                        "User with account",
+                        "User without account",
+                        "Unspecified"
+                ],
+                "Choice Type": [
+                        "Opt-in",
+                        "Browser/device privacy controls",
+                        "not-selected",
+                        "Dont use service/feature",
+                        "First-party privacy controls",
+                        "Other",
+                        "Third-party privacy controls",
+                        "Opt-out via contacting company",
+                        "Opt-out link",
+                        "Unspecified"
+                ],
+                "Purpose": [
+                        "Analytics/Research",
+                        "Service Operation and Security",
+                        "Advertising",
+                        "Marketing",
+                        "Basic service/feature",
+                        "Legal requirement",
+                        "Other",
+                        "Merger/Acquisition",
+                        "Additional service/feature",
+                        "Personalization/Customization",
+                        "Service operation and security",
+                        "Unspecified"
+                ],
+                "Personal Information Type": [
+                        "User Profile",
+                        "Generic personal information",
+                        "Location",
+                        "Social media data",
+                        "User online activities",
+                        "Cookies and tracking elements",
+                        "Personal identifier",
+                        "Computer information",
+                        "User profile",
+                        "Other",
+                        "IP address and device IDs",
+                        "Survey data",
+                        "Contact",
+                        "Demographic",
+                        "Health",
+                        "Financial",
+                        "Unspecified"
+                ]
+        },
+        "Do Not Track": {
+                "Do Not Track policy": [
+                        "Other",
+                        "Not honored",
+                        "Honored",
+                        "Mentioned, but unclear if honored"
+                ]
+        },
+        "Data Retention": {
+                "Personal Information Type": [
+                        "User Profile",
+                        "Generic personal information",
+                        "Location",
+                        "Social media data",
+                        "User online activities",
+                        "Cookies and tracking elements",
+                        "Personal identifier",
+                        "Computer information",
+                        "User profile",
+                        "Other",
+                        "IP address and device IDs",
+                        "Survey data",
+                        "Contact",
+                        "Demographic",
+                        "Health",
+                        "Financial",
+                        "Unspecified"
+                ],
+                "Retention Period": [
+                        "Unspecified",
+                        "Stated Period",
+                        "Other",
+                        "Limited",
+                        "Indefinitely"
+                ],
+                "Retention Purpose": [
+                        "Analytics/Research",
+                        "Advertising",
+                        "Perform service",
+                        "Marketing",
+                        "Other",
+                        "Legal requirement",
+                        "Service operation and security",
+                        "Unspecified"
+                ]
+        }
+}

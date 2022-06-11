@@ -1,7 +1,8 @@
-from mappings import mappings
+from pprint import pprint
+
 from ontology import construct_ontology, finish
-from opp.opp_adapter import process_opp
-from opp.opp_reader import read_opp
+from opp.processor import process_opp
+from opp.reader import read_opp
 
 
 def main():
@@ -30,7 +31,7 @@ def main():
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-        PREFIX onto: <file:///home/user/Source/repos/ontology/resources/iot-ontology-test.owl#>
+        PREFIX onto: <file:///home/user/Source/repos/ontology/resources/iot-ontology-summary.owl#>
         SELECT ?subject ?object ?content
         WHERE { ?subject onto:hasEvidence ?object .
                 ?object onto:evidenceContent ?content }
@@ -41,13 +42,13 @@ def main():
     policies = read_opp()
 
     for p in policies:
-        process_opp(onto, p, mappings)
+        process_opp(onto, p)
     finish(onto)
 
     # Ontologies containing policies by 1
     for p in policies:
         o = construct_ontology()
-        process_opp(o, p, mappings)
+        process_opp(o, p)
         finish(o, reason=False)
 
 

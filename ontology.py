@@ -1,6 +1,6 @@
 from owlready2 import *
 
-from config import resources
+from config import ontologies
 
 _ID = 0
 
@@ -13,7 +13,7 @@ def construct_ontology(name=None):
         _ID += 1
 
     onto = get_ontology(
-         f"file://{os.path.abspath(resources)}/iot-ontology-{name}.owl")
+         f"file://{os.path.abspath(ontologies)}/iot-ontology-{name}.owl")
 
     with onto:
         # Core
@@ -81,6 +81,8 @@ def construct_ontology(name=None):
         class DeviceData(NonSensitiveData): pass
 
         class AppData(NonSensitiveData): pass
+
+        class AccountData(NonSensitiveData): pass
 
         class TrackingData(NonSensitiveData): pass
 
@@ -314,8 +316,8 @@ def construct_ontology(name=None):
             range = [PrivacyPolicy]
             inverse_property = hasNewerVersion
 
-        class evidenceIsRelatedTo(isRelatedTo, FunctionalProperty): pass
-        class hasEvidence(has, FunctionalProperty):
+        class evidenceIsRelatedTo(isRelatedTo): pass
+        class hasEvidence(has):
             domain = [Thing]
             range = [Evidence]
             inverse_property = evidenceIsRelatedTo
