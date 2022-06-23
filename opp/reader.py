@@ -34,7 +34,6 @@ def construct_annotations(reader, segments):
 
 
 def construct_data(sanitized, annotated):
-
     id1 = re.match(r"^.*/(\d+)_.*$", sanitized).group(1)
     id2 = re.match(r"^.*/(\d+)_.*$", annotated).group(1)
     if id1 != id2:

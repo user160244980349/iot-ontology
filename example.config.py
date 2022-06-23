@@ -2,3 +2,5 @@
 
 # Paths to resources
 resources = "./resources"
+datasets = f"{resources}/datasets"
+ontologies = f"{resources}/ontologies"

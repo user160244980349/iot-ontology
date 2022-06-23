@@ -12,8 +12,12 @@ def construct_ontology(name=None):
         name = _ID
         _ID += 1
 
+    onto_path.append(f"{os.path.abspath(ontologies)}")
     onto = get_ontology(
-         f"file://{os.path.abspath(ontologies)}/iot-ontology-{name}.owl")
+         f"http://test.org/iot-ontology-{name}.owl")
+
+    # onto = get_ontology(
+    #      f"file://{os.path.abspath(ontologies)}/iot-ontology-{name}.owl")
 
     with onto:
         # Core
@@ -40,9 +44,9 @@ def construct_ontology(name=None):
 
         class UserAccessActivity(DataControlActivity): pass
 
-        class UserPrivacyActivity(DataControlActivity): pass
+        class UserPrivacyControl(DataControlActivity): pass
 
-        class UserOptActivity(DataControlActivity): pass
+        class UserOptControl(DataControlActivity): pass
 
         class DataActivity(Activity): pass
 
@@ -171,13 +175,13 @@ def construct_ontology(name=None):
 
         class SecurityMechanism(Mechanism): pass
 
-        class TechnicalMeasures(SecurityMechanism): pass
+        class TechnicalMeasure(SecurityMechanism): pass
 
-        class PseudoAnonymization(TechnicalMeasures): pass
+        class PseudoAnonymization(TechnicalMeasure): pass
 
-        class Encription(TechnicalMeasures): pass
+        class Encryption(TechnicalMeasure): pass
 
-        class OrganizationalMeasures(SecurityMechanism): pass
+        class OrganizationalMeasure(SecurityMechanism): pass
 
         # Mechanism procedures
         class MechanismProcedure(Thing): pass
@@ -334,11 +338,29 @@ def construct_ontology(name=None):
             range = [Mechanism]
             inverse_property = mechanismIsRelatedTo
 
+        class privacyControlMechanismIsRelatedTo(mechanismIsRelatedTo): pass
+        class hasPrivacyControlMechanism(hasMechanism):
+            domain = [UserPrivacyControl]
+            range = [DataControlMechanism]
+            inverse_property = privacyControlMechanismIsRelatedTo
+
+        class dataCollectionMechanismIsRelatedTo(mechanismIsRelatedTo): pass
+        class hasDataCollectionMechanism(hasMechanism):
+            domain = [DataCollectionActivity]
+            range = [DataCollectionMechanism]
+            inverse_property = dataCollectionMechanismIsRelatedTo
+
         class modeIsRelatedTo(isRelatedTo): pass
         class hasMode(has):
             domain = [Mechanism]
             range = [MechanismMode]
             inverse_property = modeIsRelatedTo
+
+        class dataCollectionModeIsRelatedTo(modeIsRelatedTo): pass
+        class hasDataCollectionMode(hasMode):
+            domain = [DataCollectionMechanism]
+            range = [DataCollectionMode]
+            inverse_property = dataCollectionModeIsRelatedTo
 
         class policyAcceptanceTimeIsRelatedTo(isRelatedTo): pass
         class hasPolicyAcceptanceTime(has):
@@ -409,16 +431,27 @@ def construct_ontology(name=None):
             range = [Data]
             inverse_property = dataIsOwnedBy
 
+        # Collects
+        class collects(ObjectProperty): pass
+        class isCollected(ObjectProperty):
+            inverse_property = collects
+
+        class isCollectedByActivity(isCollected): pass
+        class collectsDataFromAgent(collects):
+            domain = [DataCollectionActivity]
+            range = [Agent]
+            inverse_property = isCollectedByActivity
+
         # Shares
         class shares(ObjectProperty): pass
-        class isSharedWith(ObjectProperty):
+        class isShared(ObjectProperty):
             inverse_property = shares
 
-        class isSharedWithData(isSharedWith): pass
+        class isSharedByActivity(isShared): pass
         class sharesDataWithAgent(shares):
             domain = [DataSharingActivity]
             range = [Agent]
-            inverse_property = isSharedWithData
+            inverse_property = isSharedByActivity
 
         # Data properties
         class evidenceContent(DataProperty, FunctionalProperty):
@@ -437,6 +470,8 @@ def construct_ontology(name=None):
             domain = [PrivacyPolicy]
             range = [str]
 
+        AllDisjoint([DataActivityPurpose, DataCollectionMechanism])
+
     return onto
 
 
@@ -445,4 +480,4 @@ def finish(o, reason=True):
     if reason:
         sync_reasoner(infer_property_values=True)
 
-    o.save(format="ntriples")
+    o.save()
