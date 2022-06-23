@@ -849,10 +849,46 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ownsData rdf:resource="#nonsensitivedata1"/>
+  <ownsData rdf:resource="#nonsensitivedata2"/>
+  <ownsData rdf:resource="#genericdata1"/>
+  <ownsData rdf:resource="#nonsensitivedata3"/>
+  <ownsData rdf:resource="#trackingdata1"/>
+  <ownsData rdf:resource="#nonsensitivedata4"/>
+  <ownsData rdf:resource="#accountdata1"/>
+  <ownsData rdf:resource="#genericdata2"/>
+  <ownsData rdf:resource="#nonsensitivedata5"/>
 </User>
 
 <FirstParty rdf:about="#firstparty1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <initiatesActivity rdf:resource="#datauseactivity1"/>
+  <initiatesActivity rdf:resource="#datauseactivity2"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity1"/>
+  <initiatesActivity rdf:resource="#datauseactivity3"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity2"/>
+  <initiatesActivity rdf:resource="#datasharingactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity3"/>
+  <initiatesActivity rdf:resource="#datauseactivity4"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity4"/>
+  <initiatesActivity rdf:resource="#datauseactivity5"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity5"/>
+  <initiatesActivity rdf:resource="#datasharingactivity2"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity6"/>
+  <initiatesActivity rdf:resource="#datasharingactivity3"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity7"/>
+  <initiatesActivity rdf:resource="#datasharingactivity4"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity8"/>
+  <initiatesActivity rdf:resource="#datasharingactivity5"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity9"/>
+  <initiatesActivity rdf:resource="#datasharingactivity6"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity10"/>
+  <initiatesActivity rdf:resource="#datasharingactivity7"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity11"/>
+  <initiatesActivity rdf:resource="#datasharingactivity8"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity12"/>
+  <initiatesActivity rdf:resource="#datasharingactivity9"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity13"/>
 </FirstParty>
 
 <ThirdParties rdf:about="#thirdparties1">
@@ -864,9 +900,797 @@
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
+  <considersData rdf:resource="#nonsensitivedata1"/>
+  <considersActivity rdf:resource="#datauseactivity1"/>
+  <considersActivity rdf:resource="#datauseactivity2"/>
+  <considersActivity rdf:resource="#datacollectionactivity1"/>
+  <considersActivity rdf:resource="#datauseactivity3"/>
+  <considersActivity rdf:resource="#datacollectionactivity2"/>
+  <considersData rdf:resource="#nonsensitivedata2"/>
+  <considersActivity rdf:resource="#datasharingactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity3"/>
+  <considersData rdf:resource="#genericdata1"/>
+  <considersActivity rdf:resource="#datauseactivity4"/>
+  <considersActivity rdf:resource="#datacollectionactivity4"/>
+  <considersData rdf:resource="#nonsensitivedata3"/>
+  <considersActivity rdf:resource="#datauseactivity5"/>
+  <considersActivity rdf:resource="#datacollectionactivity5"/>
+  <considersData rdf:resource="#trackingdata1"/>
+  <considersActivity rdf:resource="#datasharingactivity2"/>
+  <considersActivity rdf:resource="#datacollectionactivity6"/>
+  <considersActivity rdf:resource="#datasharingactivity3"/>
+  <considersActivity rdf:resource="#datacollectionactivity7"/>
+  <considersActivity rdf:resource="#datasharingactivity4"/>
+  <considersActivity rdf:resource="#datacollectionactivity8"/>
+  <considersActivity rdf:resource="#datasharingactivity5"/>
+  <considersActivity rdf:resource="#datacollectionactivity9"/>
+  <considersData rdf:resource="#nonsensitivedata4"/>
+  <considersActivity rdf:resource="#datasharingactivity6"/>
+  <considersActivity rdf:resource="#datacollectionactivity10"/>
+  <considersData rdf:resource="#accountdata1"/>
+  <considersActivity rdf:resource="#datasharingactivity7"/>
+  <considersActivity rdf:resource="#datacollectionactivity11"/>
+  <considersData rdf:resource="#genericdata2"/>
+  <considersActivity rdf:resource="#datasharingactivity8"/>
+  <considersActivity rdf:resource="#datacollectionactivity12"/>
+  <considersData rdf:resource="#nonsensitivedata5"/>
+  <considersActivity rdf:resource="#datasharingactivity9"/>
+  <considersActivity rdf:resource="#datacollectionactivity13"/>
   <policyId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">723</policyId>
   <policyWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dogbreedinfo.com</policyWebsite>
 </PrivacyPolicy>
+
+<DataUseActivity rdf:about="#datauseactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata1"/>
+  <hasEvidence rdf:resource="#evidence2"/>
+</DataUseActivity>
+
+<NonSensitiveData rdf:about="#nonsensitivedata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence1"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name, email address, home address and/or phone number</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose1"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose1"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence3"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect or use</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence4"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose2"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism2"/>
+  <hasEvidence rdf:resource="#evidence8"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose2"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism2"/>
+  <hasEvidence rdf:resource="#evidence8"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n limited circumstances.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence6"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect or use</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence7"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose3"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism3"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata2"/>
+  <hasEvidence rdf:resource="#evidence12"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose3"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism3"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata2"/>
+  <hasEvidence rdf:resource="#evidence12"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence9"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sell this i</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence10"/>
+</DataCollectionMechanism>
+
+<NonSensitiveData rdf:about="#nonsensitivedata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence11"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose4"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism4"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence17"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose4"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism4"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence17"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence13"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect or use</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence14"/>
+  <hasMode rdf:resource="#datacollectionmode1"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence15"/>
+</DataCollectionMode>
+
+<GenericData rdf:about="#genericdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence16"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose5"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism5"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata3"/>
+  <hasEvidence rdf:resource="#evidence22"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose5"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism5"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata3"/>
+  <hasEvidence rdf:resource="#evidence22"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When submitting photos, listing in our classifieds, or taking our survey, Dog Breed Info Center</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence18"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may collect</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence19"/>
+  <hasMode rdf:resource="#datacollectionmode2"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence20"/>
+</DataCollectionMode>
+
+<NonSensitiveData rdf:about="#nonsensitivedata3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence21"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">your name, email address, home address and/or phone number</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose6"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism6"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence27"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose6"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism6"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence27"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this information</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence23"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">will not sell</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence24"/>
+  <hasMode rdf:resource="#datacollectionmode3"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence25"/>
+</DataCollectionMode>
+
+<TrackingData rdf:about="#trackingdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence26"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center does not collect or use your personal information except in limited circumstances When submitting photos listing in our classifieds or taking our survey Dog Breed Info Center may collect your name email address home address and/or phone number However Dog Breed Info Center will not sell this information or your photos to a third party or place you on a mailing list without your express permission Dog Breed Info Center does not collect cookies from its users This is strictly an information site used for research and your enjoyment</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose7"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism7"/>
+  <hasEvidence rdf:resource="#evidence30"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose7"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism7"/>
+  <hasEvidence rdf:resource="#evidence30"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allows third-party vendors to serve ads on our website.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence28"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center uses Google AdSense,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence29"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center uses Google AdSense which allows third-party vendors to serve ads on our website You can find a list of allowed third-party ads by going to https //www google com/adsense/support/bin/answer py?answer=94149topic=14535</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose8"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism8"/>
+  <hasEvidence rdf:resource="#evidence34"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose8"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism8"/>
+  <hasEvidence rdf:resource="#evidence34"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serve ads on our website</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence31"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on our website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence32"/>
+  <hasMode rdf:resource="#datacollectionmode4"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence33"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog Breed Info Center uses Google AdSense which allows third-party vendors to serve ads on our website You can find a list of allowed third-party ads by going to https //www google com/adsense/support/bin/answer py?answer=94149topic=14535</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to serve ads on our website</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence35"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses Google AdSense, which allows</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence36"/>
+</DataCollectionMechanism>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose10"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism10"/>
+  <hasEvidence rdf:resource="#evidence39"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose10"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism10"/>
+  <hasEvidence rdf:resource="#evidence39"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that will help them serve ads that will interest you.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence37"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may use information</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence38"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The third-party advertising companies that Google uses to serve ads when you visit our website may use information that will help them serve ads that will interest you However Google AdSense will not collect your name address email address or telephone number It looks at visits to this and other websites in order to provide advertisements about goods and services of interest to you If you would like more information about this practice and to know your choices about not having this information used by Google AdSense click here</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose11"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism11"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata4"/>
+  <hasEvidence rdf:resource="#evidence43"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose11"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism11"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata4"/>
+  <hasEvidence rdf:resource="#evidence43"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The third-party advertising companies that Google uses to serve ads when you visit our website may use information that will help them serve ads that will interest</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence40"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence41"/>
+</DataCollectionMechanism>
+
+<NonSensitiveData rdf:about="#nonsensitivedata4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence42"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">your name, address, email address or telephone number.</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The third-party advertising companies that Google uses to serve ads when you visit our website may use information that will help them serve ads that will interest you However Google AdSense will not collect your name address email address or telephone number It looks at visits to this and other websites in order to provide advertisements about goods and services of interest to you If you would like more information about this practice and to know your choices about not having this information used by Google AdSense click here</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose12"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism12"/>
+  <isAppliedToData rdf:resource="#accountdata1"/>
+  <hasEvidence rdf:resource="#evidence47"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose12"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism12"/>
+  <isAppliedToData rdf:resource="#accountdata1"/>
+  <hasEvidence rdf:resource="#evidence47"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in order to provide advertisements about goods and services of interest to you</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence44"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It looks</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence45"/>
+</DataCollectionMechanism>
+
+<AccountData rdf:about="#accountdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence46"/>
+</AccountData>
+
+<Evidence rdf:about="#evidence46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">at visits to this and other websites</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The third-party advertising companies that Google uses to serve ads when you visit our website may use information that will help them serve ads that will interest you However Google AdSense will not collect your name address email address or telephone number It looks at visits to this and other websites in order to provide advertisements about goods and services of interest to you If you would like more information about this practice and to know your choices about not having this information used by Google AdSense click here</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose13"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism13"/>
+  <isAppliedToData rdf:resource="#genericdata2"/>
+  <hasEvidence rdf:resource="#evidence52"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose13"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism13"/>
+  <isAppliedToData rdf:resource="#genericdata2"/>
+  <hasEvidence rdf:resource="#evidence52"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serve ads</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence48"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">our website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence49"/>
+  <hasMode rdf:resource="#datacollectionmode5"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence50"/>
+</DataCollectionMode>
+
+<GenericData rdf:about="#genericdata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence51"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The third-party advertising companies that Google uses to serve ads when you visit our website may use information that will help them serve ads that will interest you However Google AdSense will not collect your name address email address or telephone number It looks at visits to this and other websites in order to provide advertisements about goods and services of interest to you If you would like more information about this practice and to know your choices about not having this information used by Google AdSense click here</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose14"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism14"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata5"/>
+  <hasEvidence rdf:resource="#evidence57"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose14"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism14"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata5"/>
+  <hasEvidence rdf:resource="#evidence57"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serve ads</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence53"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">our website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence54"/>
+  <hasMode rdf:resource="#datacollectionmode6"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence55"/>
+</DataCollectionMode>
+
+<NonSensitiveData rdf:about="#nonsensitivedata5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence56"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect your name, address, email address or telephone number</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The third-party advertising companies that Google uses to serve ads when you visit our website may use information that will help them serve ads that will interest you However Google AdSense will not collect your name address email address or telephone number It looks at visits to this and other websites in order to provide advertisements about goods and services of interest to you If you would like more information about this practice and to know your choices about not having this information used by Google AdSense click here</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to provide advertisements</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence58"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">help them serve ads</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence59"/>
+</DataActivityPurpose>
 
 
 </rdf:RDF>

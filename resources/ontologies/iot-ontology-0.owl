@@ -849,11 +849,61 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ownsData rdf:resource="#nonsensitivedata1"/>
+  <ownsData rdf:resource="#nonsensitivedata2"/>
+  <ownsData rdf:resource="#nonsensitivedata3"/>
+  <ownsData rdf:resource="#accountdata1"/>
+  <ownsData rdf:resource="#data1"/>
+  <ownsData rdf:resource="#data2"/>
+  <ownsData rdf:resource="#data3"/>
+  <hasSpecialCategory rdf:resource="#userspecialcategory1"/>
+  <hasSpecialCategory rdf:resource="#userspecialcategory2"/>
+  <ownsData rdf:resource="#trackingdata1"/>
+  <ownsData rdf:resource="#trackingdata2"/>
+  <ownsData rdf:resource="#trackingdata3"/>
+  <ownsData rdf:resource="#trackingdata4"/>
+  <ownsData rdf:resource="#trackingdata5"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol1"/>
+  <ownsData rdf:resource="#trackingdata6"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol2"/>
+  <ownsData rdf:resource="#trackingdata7"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol3"/>
+  <ownsData rdf:resource="#genericdata1"/>
+  <ownsData rdf:resource="#genericdata2"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol4"/>
+  <ownsData rdf:resource="#genericdata3"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol5"/>
+  <initiatesActivity rdf:resource="#useraccessactivity1"/>
+  <ownsData rdf:resource="#genericdata4"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol6"/>
 </User>
 
 <FirstParty rdf:about="#firstparty1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <initiatesActivity rdf:resource="#policychangeactivity1"/>
+  <initiatesActivity rdf:resource="#datauseactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity1"/>
+  <initiatesActivity rdf:resource="#datauseactivity2"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity2"/>
+  <initiatesActivity rdf:resource="#datauseactivity3"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity3"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity4"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity5"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity6"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity7"/>
+  <initiatesActivity rdf:resource="#dataretentionactivity1"/>
+  <initiatesActivity rdf:resource="#dataretentionactivity2"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity8"/>
+  <initiatesActivity rdf:resource="#datauseactivity4"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity9"/>
+  <initiatesActivity rdf:resource="#datauseactivity5"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity10"/>
+  <initiatesActivity rdf:resource="#datauseactivity6"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity11"/>
+  <initiatesActivity rdf:resource="#datasharingactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity12"/>
+  <initiatesActivity rdf:resource="#datasharingactivity2"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity13"/>
   <initiatesActivity rdf:resource="#policychangeactivity2"/>
 </FirstParty>
 
@@ -864,10 +914,59 @@
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
+  <considersActivity rdf:resource="#datauseactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity1"/>
+  <considersData rdf:resource="#nonsensitivedata1"/>
+  <considersActivity rdf:resource="#datauseactivity2"/>
+  <considersActivity rdf:resource="#datacollectionactivity2"/>
+  <considersData rdf:resource="#nonsensitivedata2"/>
+  <considersActivity rdf:resource="#datauseactivity3"/>
+  <considersActivity rdf:resource="#datacollectionactivity3"/>
+  <considersActivity rdf:resource="#datacollectionactivity4"/>
+  <considersActivity rdf:resource="#datacollectionactivity5"/>
+  <considersData rdf:resource="#nonsensitivedata3"/>
+  <considersActivity rdf:resource="#datacollectionactivity6"/>
+  <considersData rdf:resource="#accountdata1"/>
+  <considersActivity rdf:resource="#datacollectionactivity7"/>
+  <considersData rdf:resource="#data1"/>
+  <considersActivity rdf:resource="#dataretentionactivity1"/>
+  <considersData rdf:resource="#data2"/>
+  <considersActivity rdf:resource="#dataretentionactivity2"/>
+  <considersData rdf:resource="#data3"/>
+  <considersActivity rdf:resource="#datacollectionactivity8"/>
+  <considersData rdf:resource="#trackingdata1"/>
+  <considersActivity rdf:resource="#datauseactivity4"/>
+  <considersActivity rdf:resource="#datacollectionactivity9"/>
+  <considersData rdf:resource="#trackingdata2"/>
+  <considersActivity rdf:resource="#datauseactivity5"/>
+  <considersActivity rdf:resource="#datacollectionactivity10"/>
+  <considersData rdf:resource="#trackingdata3"/>
+  <considersActivity rdf:resource="#datauseactivity6"/>
+  <considersActivity rdf:resource="#datacollectionactivity11"/>
+  <considersData rdf:resource="#trackingdata4"/>
+  <considersActivity rdf:resource="#datasharingactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity12"/>
+  <considersData rdf:resource="#trackingdata5"/>
+  <considersActivity rdf:resource="#userprivacycontrol1"/>
+  <considersData rdf:resource="#trackingdata6"/>
+  <considersActivity rdf:resource="#userprivacycontrol2"/>
+  <considersData rdf:resource="#trackingdata7"/>
+  <considersActivity rdf:resource="#userprivacycontrol3"/>
+  <considersData rdf:resource="#genericdata1"/>
+  <considersActivity rdf:resource="#datasharingactivity2"/>
+  <considersActivity rdf:resource="#datacollectionactivity13"/>
   <considersActivity rdf:resource="#policychangeactivity2"/>
+  <considersData rdf:resource="#genericdata2"/>
+  <considersActivity rdf:resource="#userprivacycontrol4"/>
+  <considersData rdf:resource="#genericdata3"/>
+  <considersActivity rdf:resource="#userprivacycontrol5"/>
+  <considersActivity rdf:resource="#useraccessactivity1"/>
+  <considersData rdf:resource="#sensitivedata1"/>
+  <considersData rdf:resource="#genericdata4"/>
+  <considersActivity rdf:resource="#userprivacycontrol6"/>
   <policyId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1017</policyId>
   <policyWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-news.com</policyWebsite>
 </PrivacyPolicy>
@@ -888,21 +987,1433 @@
   <hasEvidence rdf:resource="#evidence1"/>
 </InPrivacyPolicy>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity2">
+<DataCollectionActivity rdf:about="#datacollectionactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose1"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose1"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other purposes, for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence2"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com may collect and process</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence3"/>
+  <hasMode rdf:resource="#datacollectionmode1"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nformation that you provide by filling in forms on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence4"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose2"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism2"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata1"/>
+  <hasEvidence rdf:resource="#evidence10"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose2"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism2"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata1"/>
+  <hasEvidence rdf:resource="#evidence10"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other purposes, for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence6"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com may collect and process</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence7"/>
+  <hasMode rdf:resource="#datacollectionmode2"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nformation that you provide by filling in forms on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence8"/>
+</DataCollectionMode>
+
+<NonSensitiveData rdf:about="#nonsensitivedata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence9"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">names, e-mail and website addresses</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose3"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism3"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata2"/>
+  <hasEvidence rdf:resource="#evidence15"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose3"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism3"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata2"/>
+  <hasEvidence rdf:resource="#evidence15"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence11"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may collect</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence12"/>
+  <hasMode rdf:resource="#datacollectionmode3"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">information that you provide by filling in forms</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence13"/>
+</DataCollectionMode>
+
+<NonSensitiveData rdf:about="#nonsensitivedata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence14"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">names, e-mail and website addresses; we may also ask you for information for other purposes, for example when you report a problem with our site;</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose4"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism4"/>
+  <hasEvidence rdf:resource="#evidence19"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<Evidence rdf:about="#evidence16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filling in forms</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence16"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence17"/>
+  <hasMode rdf:resource="#datacollectionmode4"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that you provide by filling in forms on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence18"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose5"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism5"/>
+  <hasEvidence rdf:resource="#evidence23"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<Evidence rdf:about="#evidence20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for other purposes,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence20"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence21"/>
+  <hasMode rdf:resource="#datacollectionmode5"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that you provide by filling in forms on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence22"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose6"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism6"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata3"/>
+  <hasEvidence rdf:resource="#evidence28"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<Evidence rdf:about="#evidence24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filling in forms</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence24"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence25"/>
+  <hasMode rdf:resource="#datacollectionmode6"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that you provide by filling in forms on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence26"/>
+</DataCollectionMode>
+
+<NonSensitiveData rdf:about="#nonsensitivedata3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence27"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">names, e-mail</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose7"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism7"/>
+  <isAppliedToData rdf:resource="#accountdata1"/>
+  <hasEvidence rdf:resource="#evidence33"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<Evidence rdf:about="#evidence29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">filling in forms</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence29"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence30"/>
+  <hasMode rdf:resource="#datacollectionmode7"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that you provide by filling in forms on our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence31"/>
+</DataCollectionMode>
+
+<AccountData rdf:about="#accountdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence32"/>
+</AccountData>
+
+<Evidence rdf:about="#evidence32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">website addresses</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information that Sci-News com May Collect Online Sci-News com may collect and process the following data about you information that you provide by filling in forms on our site including names e-mail and website addresses we may also ask you for information for other purposes for example when you report a problem with our site</evidenceContent>
+</Evidence>
+
+<DataRetentionActivity rdf:about="#dataretentionactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose8"/>
+  <hasDataRetentionTime rdf:resource="#dataretentiontime1"/>
+  <isAppliedToData rdf:resource="#data1"/>
+  <hasEvidence rdf:resource="#evidence37"/>
+</DataRetentionActivity>
+
+<Evidence rdf:about="#evidence34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we may keep a record</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence34"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataRetentionTime rdf:about="#dataretentiontime1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence35"/>
+</DataRetentionTime>
+
+<Data rdf:about="#data1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence36"/>
+</Data>
+
+<Evidence rdf:about="#evidence36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that correspondence</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">- if you contact us we may keep a record of that correspondence</evidenceContent>
+</Evidence>
+
+<DataRetentionActivity rdf:about="#dataretentionactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose9"/>
+  <hasDataRetentionTime rdf:resource="#dataretentiontime2"/>
+  <isAppliedToData rdf:resource="#data2"/>
+  <hasEvidence rdf:resource="#evidence41"/>
+</DataRetentionActivity>
+
+<Evidence rdf:about="#evidence38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence38"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataRetentionTime rdf:about="#dataretentiontime2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence39"/>
+</DataRetentionTime>
+
+<Data rdf:about="#data2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence40"/>
+</Data>
+
+<Evidence rdf:about="#evidence40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">record of that correspondence</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">- if you contact us we may keep a record of that correspondence</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose10"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism8"/>
+  <isAppliedToData rdf:resource="#data3"/>
+  <hasEvidence rdf:resource="#evidence46"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<Evidence rdf:about="#evidence42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence42"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence43"/>
+  <hasMode rdf:resource="#datacollectionmode8"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if you contact us</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence44"/>
+</DataCollectionMode>
+
+<Data rdf:about="#data3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence45"/>
+</Data>
+
+<Evidence rdf:about="#evidence45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correspondence</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">- if you contact us we may keep a record of that correspondence</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence47"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence48"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence49"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence50"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence51"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence52"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence53"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence54"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence55"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence56"/>
+  <hasMode rdf:resource="#datacollectionmode9"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">details of your visits to our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence57"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence58"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence59"/>
+  <hasMode rdf:resource="#datacollectionmode10"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence60">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">details of your visits to our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence60"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence61">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence61"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence62">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence62"/>
+  <hasMode rdf:resource="#datacollectionmode11"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence63">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">details of your visits to our site</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence63"/>
+</DataCollectionMode>
+
+<UserSpecialCategory rdf:about="#userspecialcategory1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence64"/>
+</UserSpecialCategory>
+
+<Evidence rdf:about="#evidence64">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News com does not knowingly collect or solicit personal information from anyone under the age of 13 We assume that minors 13 years of age or older have received permission from their parents or guardians before using this website Parents or guardians may contact us at privacy sci-news com with questions or concerns about our privacy policy</evidenceContent>
+</Evidence>
+
+<UserSpecialCategory rdf:about="#userspecialcategory2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence65"/>
+</UserSpecialCategory>
+
+<Evidence rdf:about="#evidence65">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News com does not knowingly collect or solicit personal information from anyone under the age of 13 We assume that minors 13 years of age or older have received permission from their parents or guardians before using this website Parents or guardians may contact us at privacy sci-news com with questions or concerns about our privacy policy</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose18"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism16"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence70"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose18"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism16"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence70"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence66">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence66"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence67">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com uses</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence67"/>
+  <hasMode rdf:resource="#datacollectionmode12"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence68">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence68"/>
+</DataCollectionMode>
+
+<TrackingData rdf:about="#trackingdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence69"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence69">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses cookie technology</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence70">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of Cookies Sci-News com uses cookie technology A cookie is a small amount of data which often includes a unique identifier that is sent to your computer or mobile phone browser from a websites computer and is stored on your devices hard drive A website can send its own cookie to your browser if your browsers preferences allow it but your browser only permits a website to access the cookies it has already sent to you not the cookies sent to you by other websites Many websites do this whenever a user visits their website in order to track online traffic flows</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose19"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism17"/>
+  <isAppliedToData rdf:resource="#trackingdata2"/>
+  <hasEvidence rdf:resource="#evidence75"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose19"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism17"/>
+  <isAppliedToData rdf:resource="#trackingdata2"/>
+  <hasEvidence rdf:resource="#evidence75"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence71">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in order to track online traffic flows</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence71"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence72">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence72"/>
+  <hasMode rdf:resource="#datacollectionmode13"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence73">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence73"/>
+</DataCollectionMode>
+
+<TrackingData rdf:about="#trackingdata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence74"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence74">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com uses cookie technology</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence75">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of Cookies Sci-News com uses cookie technology A cookie is a small amount of data which often includes a unique identifier that is sent to your computer or mobile phone browser from a websites computer and is stored on your devices hard drive A website can send its own cookie to your browser if your browsers preferences allow it but your browser only permits a website to access the cookies it has already sent to you not the cookies sent to you by other websites Many websites do this whenever a user visits their website in order to track online traffic flows</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose20"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism18"/>
+  <isAppliedToData rdf:resource="#trackingdata3"/>
+  <hasEvidence rdf:resource="#evidence80"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose20"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism18"/>
+  <isAppliedToData rdf:resource="#trackingdata3"/>
+  <hasEvidence rdf:resource="#evidence80"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence76">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publisher to find out whether the device has visited the website before.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence76"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence77">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the course of any visit to the Sci-News.com website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence77"/>
+  <hasMode rdf:resource="#datacollectionmode14"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence78">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence78"/>
+</DataCollectionMode>
+
+<TrackingData rdf:about="#trackingdata3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence79"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence79">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cookie</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence80">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the course of any visit to the Sci-News com website the pages you see along with a cookie are downloaded to your device A website does this because cookies enable a publisher to find out whether the device has visited the website before This is done on a repeat visit by checking to see and finding the cookie left there on the last visit</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence81">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A website does this because cookies enable a publisher to find out whether the device has visited the website before. This is done on a repeat visit by checking to see, and finding, the cookie left there on the last visit.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence81"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence82">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence82"/>
+  <hasMode rdf:resource="#datacollectionmode15"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence83">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the course of any visit to the Sci-News.com website, the pages you see, along with a cookie, are downloaded to your device.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence83"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence84">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A website does this because cookies enable a publisher to find out whether the device has visited the website before. This is done on a repeat visit by checking to see, and finding, the cookie left there on the last visit.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence84"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence85">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence85"/>
+  <hasMode rdf:resource="#datacollectionmode16"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence86">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the course of any visit to the Sci-News.com website, the pages you see, along with a cookie, are downloaded to your device.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence86"/>
+</DataCollectionMode>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose23"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism21"/>
+  <isAppliedToData rdf:resource="#trackingdata4"/>
+  <hasEvidence rdf:resource="#evidence91"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose23"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism21"/>
+  <isAppliedToData rdf:resource="#trackingdata4"/>
+  <hasEvidence rdf:resource="#evidence91"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence87">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence87"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence88">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">your visits to the Sci-News.com</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence88"/>
+  <hasMode rdf:resource="#datacollectionmode17"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence89">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">null</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence89"/>
+</DataCollectionMode>
+
+<TrackingData rdf:about="#trackingdata4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence90"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence90">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence91">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please note that during or after your visits to the Sci-News com website you may notice some cookies that are not related to it Sci-News com does not control the dissemination of these cookies You must check the third party websites for more information about these</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence92">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci-News.com does not control the dissemination of these cookies. You must check the third party websites for more information about these.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence92"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence93">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please note that during or after your visits to the Sci-News.com website you may notice some cookies that are not related to it.</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence93"/>
+</DataCollectionMechanism>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose1"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism1"/>
+  <isAppliedToData rdf:resource="#trackingdata5"/>
+  <hasEvidence rdf:resource="#evidence97"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence94">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">However, if you select this setting you may be unable to access certain parts of the site.</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence94"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence95">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">by activating the setting on your browser which allows you to refuse the setting of cookies.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence95"/>
+</DataControlMechanism>
+
+<TrackingData rdf:about="#trackingdata5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence96"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence96">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence97">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may refuse to accept cookies by activating the setting on your browser which allows you to refuse the setting of cookies However if you select this setting you may be unable to access certain parts of the site</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose2"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism2"/>
+  <isAppliedToData rdf:resource="#trackingdata6"/>
+  <hasEvidence rdf:resource="#evidence101"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence98">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence98"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence99">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">setting on your browser which allows you to refuse the setting of cookies</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence99"/>
+</DataControlMechanism>
+
+<TrackingData rdf:about="#trackingdata6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence100"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence100">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refuse to accept cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence101">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may refuse to accept cookies by activating the setting on your browser which allows you to refuse the setting of cookies However if you select this setting you may be unable to access certain parts of the site</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose3"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism3"/>
+  <isAppliedToData rdf:resource="#trackingdata7"/>
+  <hasEvidence rdf:resource="#evidence105"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence102">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">However, if you select this setting you may be unable to access certain parts of the site.</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence102"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence103">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">by activating the setting on your browser which allows you to refuse the setting of cookies.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence103"/>
+</DataControlMechanism>
+
+<TrackingData rdf:about="#trackingdata7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence104"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence104">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence105">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may refuse to accept cookies by activating the setting on your browser which allows you to refuse the setting of cookies However if you select this setting you may be unable to access certain parts of the site</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose25"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism23"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence110"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose25"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism23"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence110"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence106">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence106"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence107">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sell, trade or rent</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence107"/>
+  <hasMode rdf:resource="#datacollectionmode18"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence108">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If we choose to do so in the future,</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence108"/>
+</DataCollectionMode>
+
+<GenericData rdf:about="#genericdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence109"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence109">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence110">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disclosure of Your Information Sci-News com does not sell trade or rent your personal information to third parties If we choose to do so in the future you will be notified by email of our intentions and have the right to be removed prior to the disclosure</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence111">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence111"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence112">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sell, trade or rent</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence112"/>
+</DataCollectionMechanism>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence113"/>
   <hasMechanism rdf:resource="#notificationmechanism1"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence2">
+<Evidence rdf:about="#evidence113">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disclosure of Your Information Sci-News com does not sell trade or rent your personal information to third parties If we choose to do so in the future you will be notified by email of our intentions and have the right to be removed prior to the disclosure</evidenceContent>
 </Evidence>
 
 <NotificationMechanism rdf:about="#notificationmechanism1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence2"/>
+  <hasEvidence rdf:resource="#evidence113"/>
 </NotificationMechanism>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose4"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism4"/>
+  <isAppliedToData rdf:resource="#genericdata2"/>
+  <hasEvidence rdf:resource="#evidence117"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence114">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence114"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence115">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">By using Sci-News.com</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence115"/>
+</DataControlMechanism>
+
+<GenericData rdf:about="#genericdata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence116"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence116">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the information you provide to us</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence117">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your Consent and Rights By using Sci-News com you consent to the collection and use in accordance with this policy of the information you provide to us</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose5"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism5"/>
+  <isAppliedToData rdf:resource="#genericdata3"/>
+  <hasEvidence rdf:resource="#evidence121"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence118">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence118"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence119">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">By using Sci-News.com</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence119"/>
+</DataControlMechanism>
+
+<GenericData rdf:about="#genericdata3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence120"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence120">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the information you provide to us</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence121">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your Consent and Rights By using Sci-News com you consent to the collection and use in accordance with this policy of the information you provide to us</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence122">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will remove you and your personally identifiable information from our records on request if you contact us with your request at privacy sci-news com</evidenceContent>
+</Evidence>
+
+<UserAccessActivity rdf:about="#useraccessactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence122"/>
+  <isAppliedTo rdf:resource="#sensitivedata1"/>
+</UserAccessActivity>
+
+<Evidence rdf:about="#evidence123">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will remove you and your personally identifiable information from our records</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence123"/>
+</DataControlMechanism>
+
+<SensitiveData rdf:about="#sensitivedata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence122"/>
+</SensitiveData>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose6"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism7"/>
+  <isAppliedToData rdf:resource="#genericdata4"/>
+  <hasEvidence rdf:resource="#evidence127"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence124">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence124"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence125">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">on request if you contact us with your request at privacy@sci-news.com.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence125"/>
+</DataControlMechanism>
+
+<GenericData rdf:about="#genericdata4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence126"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence126">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personally identifiable information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence127">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will remove you and your personally identifiable information from our records on request if you contact us with your request at privacy sci-news com</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

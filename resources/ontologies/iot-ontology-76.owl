@@ -849,10 +849,28 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <initiatesActivity rdf:resource="#useraccessactivity1"/>
+  <ownsData rdf:resource="#genericdata1"/>
+  <ownsData rdf:resource="#accountdata2"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol1"/>
+  <ownsData rdf:resource="#accountdata3"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol2"/>
+  <ownsData rdf:resource="#trackingdata1"/>
+  <ownsData rdf:resource="#trackingdata2"/>
 </User>
 
 <FirstParty rdf:about="#firstparty1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <initiatesActivity rdf:resource="#activity1"/>
+  <initiatesActivity rdf:resource="#datasharingactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity1"/>
+  <initiatesActivity rdf:resource="#activity2"/>
+  <initiatesActivity rdf:resource="#activity3"/>
+  <initiatesActivity rdf:resource="#activity4"/>
+  <initiatesActivity rdf:resource="#activity5"/>
+  <initiatesActivity rdf:resource="#datauseactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity2"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity3"/>
 </FirstParty>
 
 <ThirdParties rdf:about="#thirdparties1">
@@ -862,11 +880,521 @@
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#user1"/>
+  <considersActivity rdf:resource="#activity1"/>
+  <considersActivity rdf:resource="#useraccessactivity1"/>
+  <considersData rdf:resource="#accountdata1"/>
+  <considersData rdf:resource="#genericdata1"/>
+  <considersActivity rdf:resource="#datasharingactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity1"/>
+  <considersActivity rdf:resource="#activity2"/>
+  <considersActivity rdf:resource="#activity3"/>
+  <considersActivity rdf:resource="#activity4"/>
+  <considersActivity rdf:resource="#activity5"/>
+  <considersData rdf:resource="#accountdata2"/>
+  <considersActivity rdf:resource="#userprivacycontrol1"/>
+  <considersData rdf:resource="#accountdata3"/>
+  <considersActivity rdf:resource="#userprivacycontrol2"/>
+  <considersData rdf:resource="#trackingdata1"/>
+  <considersActivity rdf:resource="#datauseactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity2"/>
+  <considersData rdf:resource="#trackingdata2"/>
+  <considersActivity rdf:resource="#datacollectionactivity3"/>
   <policyId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">584</policyId>
   <policyWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communitycoffee.com</policyWebsite>
 </PrivacyPolicy>
+
+<Evidence rdf:about="#evidence1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to give you a more personalized shopping experience</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence1"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In our site,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence2"/>
+  <hasMode rdf:resource="#datacollectionmode1"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we give you opportunities to provide your</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence3"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to make ordering and reordering easier for you.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence4"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In our site,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+  <hasMode rdf:resource="#datacollectionmode2"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we give you opportunities to provide your</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence6"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to give you a more personalized shopping experience</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence7"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In our site,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence8"/>
+  <hasMode rdf:resource="#datacollectionmode3"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we give you opportunities to provide your</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence9"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to make ordering and reordering easier for you.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence10"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In our site,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence11"/>
+  <hasMode rdf:resource="#datacollectionmode4"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we give you opportunities to provide your</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence12"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for use on their mailing lists</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence13"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sell or trade</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence14"/>
+</DataCollectionMechanism>
+
+<TechnicalMeasure rdf:about="#technicalmeasure1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence15"/>
+</TechnicalMeasure>
+
+<Evidence rdf:about="#evidence15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIVACY STATEMENT OUR COMMITMENT TO PROTECTING YOUR PRIVACY Community Coffee Company respects your right to privacy and is committed to protecting it In our site we give you opportunities to provide your name address email and other relevant information that we use to give you a more personalized shopping experience and to make ordering and reordering easier for you We do not sell or trade customer information with others for use on their mailing lists</evidenceContent>
+</Evidence>
+
+<Activity rdf:about="#activity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasMechanism rdf:resource="#technicalmeasure1"/>
+</Activity>
+
+<Evidence rdf:about="#evidence16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIVACY STATEMENT OUR COMMITMENT TO PROTECTING YOUR PRIVACY Community Coffee Company respects your right to privacy and is committed to protecting it In our site we give you opportunities to provide your name address email and other relevant information that we use to give you a more personalized shopping experience and to make ordering and reordering easier for you We do not sell or trade customer information with others for use on their mailing lists</evidenceContent>
+</Evidence>
+
+<UserAccessActivity rdf:about="#useraccessactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence16"/>
+  <isAppliedTo rdf:resource="#accountdata1"/>
+</UserAccessActivity>
+
+<Evidence rdf:about="#evidence17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In our site, we give you opportunities to provide your name, address, email and other relevant information that we use to give you a more personalized shopping experience and to make ordering and reordering easier for you.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence17"/>
+</DataControlMechanism>
+
+<AccountData rdf:about="#accountdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence16"/>
+</AccountData>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose6"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism6"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence21"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose6"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism6"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence21"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for use on their mailing lists.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence18"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sell or trade customer information</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence19"/>
+</DataCollectionMechanism>
+
+<GenericData rdf:about="#genericdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence20"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">customer information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIVACY STATEMENT OUR COMMITMENT TO PROTECTING YOUR PRIVACY Community Coffee Company respects your right to privacy and is committed to protecting it In our site we give you opportunities to provide your name address email and other relevant information that we use to give you a more personalized shopping experience and to make ordering and reordering easier for you We do not sell or trade customer information with others for use on their mailing lists</evidenceContent>
+</Evidence>
+
+<TechnicalMeasure rdf:about="#technicalmeasure2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence22"/>
+</TechnicalMeasure>
+
+<Evidence rdf:about="#evidence22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRIVACY STATEMENT OUR COMMITMENT TO PROTECTING YOUR PRIVACY Community Coffee Company respects your right to privacy and is committed to protecting it In our site we give you opportunities to provide your name address email and other relevant information that we use to give you a more personalized shopping experience and to make ordering and reordering easier for you We do not sell or trade customer information with others for use on their mailing lists</evidenceContent>
+</Evidence>
+
+<Activity rdf:about="#activity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasMechanism rdf:resource="#technicalmeasure2"/>
+</Activity>
+
+<TechnicalMeasure rdf:about="#technicalmeasure3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence23"/>
+</TechnicalMeasure>
+
+<Evidence rdf:about="#evidence23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE PROTECTION OF YOUR PERSONAL ACCOUNT INFORMATION When you place an order on our site it is placed through a secure server This server encrypts all information you input before it is sent Once your personal information is received we protect it against unauthorized use</evidenceContent>
+</Evidence>
+
+<Activity rdf:about="#activity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasMechanism rdf:resource="#technicalmeasure3"/>
+</Activity>
+
+<TechnicalMeasure rdf:about="#technicalmeasure4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence24"/>
+</TechnicalMeasure>
+
+<Evidence rdf:about="#evidence24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE PROTECTION OF YOUR PERSONAL ACCOUNT INFORMATION When you place an order on our site it is placed through a secure server This server encrypts all information you input before it is sent Once your personal information is received we protect it against unauthorized use</evidenceContent>
+</Evidence>
+
+<Activity rdf:about="#activity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasMechanism rdf:resource="#technicalmeasure4"/>
+</Activity>
+
+<Encryption rdf:about="#encryption1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence25"/>
+</Encryption>
+
+<Evidence rdf:about="#evidence25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE PROTECTION OF YOUR PERSONAL ACCOUNT INFORMATION When you place an order on our site it is placed through a secure server This server encrypts all information you input before it is sent Once your personal information is received we protect it against unauthorized use</evidenceContent>
+</Evidence>
+
+<Activity rdf:about="#activity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasMechanism rdf:resource="#encryption1"/>
+</Activity>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose1"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism2"/>
+  <isAppliedToData rdf:resource="#accountdata2"/>
+  <hasEvidence rdf:resource="#evidence29"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">storing of items in your Shopping Cart</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence26"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can learn how to de-activate cookies using the Help feature of your browser,</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence27"/>
+</DataControlMechanism>
+
+<AccountData rdf:about="#accountdata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence28"/>
+</AccountData>
+
+<Evidence rdf:about="#evidence28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anonymous browsing data</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE USE OF COOKIES Cookies are alphanumeric identifiers which collect anonymous browsing data that enables us to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences You can learn how to de-activate cookies using the Help feature of your browser but we recommend that you leave them turned on in order to enjoy all the value-added features of this website</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose2"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism3"/>
+  <isAppliedToData rdf:resource="#accountdata3"/>
+  <hasEvidence rdf:resource="#evidence33"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personalization of content based on your preferences</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence30"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can learn how to de-activate cookies using the Help feature of your browser,</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence31"/>
+</DataControlMechanism>
+
+<AccountData rdf:about="#accountdata3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence32"/>
+</AccountData>
+
+<Evidence rdf:about="#evidence32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anonymous browsing data</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE USE OF COOKIES Cookies are alphanumeric identifiers which collect anonymous browsing data that enables us to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences You can learn how to de-activate cookies using the Help feature of your browser but we recommend that you leave them turned on in order to enjoy all the value-added features of this website</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose7"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism7"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence37"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose7"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism7"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence37"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence34"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE USE OF COOKIES Cookies are alphanumeric identifiers which collect anonymous browsing data that enables us to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences.</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence35"/>
+</DataCollectionMechanism>
+
+<TrackingData rdf:about="#trackingdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence36"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE USE OF COOKIES Cookies are alphanumeric identifiers which collect anonymous browsing data that enables us to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences. You can learn how to de-activate cookies using the Help feature of your browser, but we recommend that you leave them turned on in order to enjoy all the value-added features of this website.</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE USE OF COOKIES Cookies are alphanumeric identifiers which collect anonymous browsing data that enables us to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences You can learn how to de-activate cookies using the Help feature of your browser but we recommend that you leave them turned on in order to enjoy all the value-added features of this website</evidenceContent>
+</Evidence>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose8"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism8"/>
+  <hasDataCollectionMechanism rdf:resource="#pseudoanonymization1"/>
+  <isAppliedToData rdf:resource="#trackingdata2"/>
+  <hasEvidence rdf:resource="#evidence42"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<Evidence rdf:about="#evidence38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence38"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this website.</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence39"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anonymous browsing data</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence40"/>
+</PseudoAnonymization>
+
+<TrackingData rdf:about="#trackingdata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence41"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THE USE OF COOKIES Cookies are alphanumeric identifiers which collect anonymous browsing data that enables us to recognize your browser and provide convenience features such as the storing of items in your Shopping Cart and the personalization of content based on your preferences You can learn how to de-activate cookies using the Help feature of your browser but we recommend that you leave them turned on in order to enjoy all the value-added features of this website</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

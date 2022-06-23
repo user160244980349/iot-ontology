@@ -849,10 +849,22 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ownsData rdf:resource="#genericdata1"/>
+  <ownsData rdf:resource="#nonsensitivedata1"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol1"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol2"/>
+  <ownsData rdf:resource="#nonsensitivedata2"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol3"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol4"/>
+  <ownsData rdf:resource="#nonsensitivedata3"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol5"/>
 </User>
 
 <FirstParty rdf:about="#firstparty1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <initiatesActivity rdf:resource="#activity1"/>
+  <initiatesActivity rdf:resource="#datasharingactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity1"/>
 </FirstParty>
 
 <ThirdParties rdf:about="#thirdparties1">
@@ -861,12 +873,351 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#user1"/>
+  <considersActivity rdf:resource="#activity1"/>
+  <considersData rdf:resource="#genericdata1"/>
+  <considersActivity rdf:resource="#datasharingactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity1"/>
+  <considersData rdf:resource="#nonsensitivedata1"/>
+  <considersActivity rdf:resource="#userprivacycontrol1"/>
+  <considersActivity rdf:resource="#userprivacycontrol2"/>
+  <considersData rdf:resource="#nonsensitivedata2"/>
+  <considersActivity rdf:resource="#userprivacycontrol3"/>
+  <considersActivity rdf:resource="#userprivacycontrol4"/>
+  <considersData rdf:resource="#nonsensitivedata3"/>
+  <considersActivity rdf:resource="#userprivacycontrol5"/>
   <policyId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">701</policyId>
   <policyWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tangeroutlet.com</policyWebsite>
 </PrivacyPolicy>
+
+<Evidence rdf:about="#evidence1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal identifiable information</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence1"/>
+</PseudoAnonymization>
+
+<TechnicalMeasure rdf:about="#technicalmeasure1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence2"/>
+</TechnicalMeasure>
+
+<Evidence rdf:about="#evidence2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TangerOutlets is committed to keeping your personal information confidential Any and all personal identifiable information collected from our customers is used by Tanger Outlets only and is not sold shared or distributed to any third party</evidenceContent>
+</Evidence>
+
+<Activity rdf:about="#activity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasMechanism rdf:resource="#technicalmeasure1"/>
+</Activity>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <hasDataCollectionMechanism rdf:resource="#pseudoanonymization2"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence6"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <hasDataCollectionMechanism rdf:resource="#pseudoanonymization2"/>
+  <isAppliedToData rdf:resource="#genericdata1"/>
+  <hasEvidence rdf:resource="#evidence6"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
+
+<Evidence rdf:about="#evidence3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ot sold, shared or distributed</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence3"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal identifiable</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence4"/>
+</PseudoAnonymization>
+
+<GenericData rdf:about="#genericdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+</GenericData>
+
+<Evidence rdf:about="#evidence5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal identifiable information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TangerOutlets is committed to keeping your personal information confidential Any and all personal identifiable information collected from our customers is used by Tanger Outlets only and is not sold shared or distributed to any third party</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shared or distributed</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence7"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal identifiable information</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence8"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sold,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence9"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal identifiable information</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence10"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence11"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sold</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence12"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifiable</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence13"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence14"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shared</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence15"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifiable</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence16"/>
+</PseudoAnonymization>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism1"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata1"/>
+  <hasEvidence rdf:resource="#evidence19"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at any time you want your email information removed from our database, simply utilize the unsubscribe link provided in your email.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence17"/>
+</DataControlMechanism>
+
+<NonSensitiveData rdf:about="#nonsensitivedata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence18"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">your email information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at any time you want your email information removed from our database simply utilize the unsubscribe link provided in your email Any other data updates or removal requests can be sent to TangerOutlets Attn Marketing Department PO Box 10889 Greensboro NC 27408</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism2"/>
+  <hasEvidence rdf:resource="#evidence21"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any other data updates or removal requests can be sent to TangerOutlets, Attn: Marketing Department, PO Box 10889, Greensboro, NC 27408.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence20"/>
+</DataControlMechanism>
+
+<Evidence rdf:about="#evidence21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at any time you want your email information removed from our database simply utilize the unsubscribe link provided in your email Any other data updates or removal requests can be sent to TangerOutlets Attn Marketing Department PO Box 10889 Greensboro NC 27408</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism3"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata2"/>
+  <hasEvidence rdf:resource="#evidence24"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unsubscribe link</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence22"/>
+</DataControlMechanism>
+
+<NonSensitiveData rdf:about="#nonsensitivedata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence23"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at any time you want your email information removed from our database simply utilize the unsubscribe link provided in your email Any other data updates or removal requests can be sent to TangerOutlets Attn Marketing Department PO Box 10889 Greensboro NC 27408</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism4"/>
+  <hasEvidence rdf:resource="#evidence26"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sent to TangerOutlets, Attn: Marketing Department, PO Box 10889, Greensboro, NC 27408.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence25"/>
+</DataControlMechanism>
+
+<Evidence rdf:about="#evidence26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at any time you want your email information removed from our database simply utilize the unsubscribe link provided in your email Any other data updates or removal requests can be sent to TangerOutlets Attn Marketing Department PO Box 10889 Greensboro NC 27408</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose1"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism5"/>
+  <isAppliedToData rdf:resource="#nonsensitivedata3"/>
+  <hasEvidence rdf:resource="#evidence30"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence27"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simply utilize the unsubscribe link provided in your email.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence28"/>
+</DataControlMechanism>
+
+<NonSensitiveData rdf:about="#nonsensitivedata3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence29"/>
+</NonSensitiveData>
+
+<Evidence rdf:about="#evidence29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at any time you want your email information removed from our database simply utilize the unsubscribe link provided in your email Any other data updates or removal requests can be sent to TangerOutlets Attn Marketing Department PO Box 10889 Greensboro NC 27408</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

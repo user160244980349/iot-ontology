@@ -849,10 +849,19 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <ownsData rdf:resource="#trackingdata1"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol1"/>
+  <ownsData rdf:resource="#trackingdata2"/>
+  <initiatesActivity rdf:resource="#userprivacycontrol2"/>
+  <ownsData rdf:resource="#devicedata1"/>
 </User>
 
 <FirstParty rdf:about="#firstparty1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <initiatesActivity rdf:resource="#datasharingactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity1"/>
+  <initiatesActivity rdf:resource="#datauseactivity1"/>
+  <initiatesActivity rdf:resource="#datacollectionactivity2"/>
   <initiatesActivity rdf:resource="#policychangeactivity1"/>
   <initiatesActivity rdf:resource="#policychangeactivity2"/>
   <initiatesActivity rdf:resource="#policychangeactivity3"/>
@@ -867,6 +876,15 @@
   <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
+  <considersData rdf:resource="#trackingdata1"/>
+  <considersActivity rdf:resource="#datasharingactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity1"/>
+  <considersActivity rdf:resource="#userprivacycontrol1"/>
+  <considersData rdf:resource="#trackingdata2"/>
+  <considersActivity rdf:resource="#userprivacycontrol2"/>
+  <considersData rdf:resource="#devicedata1"/>
+  <considersActivity rdf:resource="#datauseactivity1"/>
+  <considersActivity rdf:resource="#datacollectionactivity2"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#policychangeactivity2"/>
   <considersActivity rdf:resource="#policychangeactivity3"/>
@@ -874,32 +892,833 @@
   <policyWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restaurantnews.com</policyWebsite>
 </PrivacyPolicy>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity1">
+<DataCollectionActivity rdf:about="#datacollectionactivity1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence1"/>
-</PolicyChangeActivity>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose1"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence4"/>
+  <collectsDataFromAgent rdf:resource="#thirdparties1"/>
+</DataCollectionActivity>
+
+<DataSharingActivity rdf:about="#datasharingactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose1"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism1"/>
+  <isAppliedToData rdf:resource="#trackingdata1"/>
+  <hasEvidence rdf:resource="#evidence4"/>
+  <sharesDataWithAgent rdf:resource="#thirdparties1"/>
+</DataSharingActivity>
 
 <Evidence rdf:about="#evidence1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to serve ads on this site. The use of DART cookies by Google enables them to serve adverts to visitors that are based on their visits to this website as well as other sites on the internet.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence1"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google, as a third party advertisement vendor, uses cookies to serve ads on this site. The use of DART cookies by Google enables them to serve adverts to visitors that are based on their visits to this website as well as other sites on the internet.</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence2"/>
+</DataCollectionMechanism>
+
+<TrackingData rdf:about="#trackingdata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence3"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses cookies to serve ads on this site. The use of DART cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google Adsense and the DoubleClick DART Cookie Google as a third party advertisement vendor uses cookies to serve ads on this site The use of DART cookies by Google enables them to serve adverts to visitors that are based on their visits to this website as well as other sites on the internet</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ads</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence5"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses cookies to serve ads on this site</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence6"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to serve ads on this site. The use of DART cookies by Google enables them to serve adverts</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence7"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that are based on their visits to this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence8"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to serve ads on this site. The use of DART cookies by Google enables them to serve adverts</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence9"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other sites on the internet.</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence10"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to serve ads on this site. The use of DART cookies by Google enables them to serve adverts</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence11"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">that are based on their visits to this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence12"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to serve ads on this site. The use of DART cookies by Google enables them to serve adverts</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence13"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other sites on the internet.</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence14"/>
+</DataCollectionMechanism>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose1"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism1"/>
+  <hasEvidence rdf:resource="#evidence17"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ad</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence15"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To opt out of the DART cookies you may visit the Google ad and content network privacy policy at the following url http://www.google.com/privacy_ads.html</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence16"/>
+</DataControlMechanism>
+
+<Evidence rdf:about="#evidence17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To opt out of the DART cookies you may visit the Google ad and content network privacy policy at the following url http //www google com/privacy ads html Tracking of users through the DART cookie mechanisms are subject to Google s own privacy policies</evidenceContent>
+</Evidence>
+
+<UserPrivacyControl rdf:about="#userprivacycontrol2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has rdf:resource="#purpose2"/>
+  <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism2"/>
+  <isAppliedToData rdf:resource="#trackingdata2"/>
+  <hasEvidence rdf:resource="#evidence21"/>
+</UserPrivacyControl>
+
+<Evidence rdf:about="#evidence18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Google ad</evidenceContent>
+</Evidence>
+
+<Purpose rdf:about="#purpose2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence18"/>
+</Purpose>
+
+<Evidence rdf:about="#evidence19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To opt out of the DART cookies you may visit the Google ad and content network privacy policy at the following url http://www.google.com/privacy_ads.html Tracking of users through the DART cookie mechanisms are subject to Google's own privacy policies.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence19"/>
+</DataControlMechanism>
+
+<TrackingData rdf:about="#trackingdata2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence20"/>
+</TrackingData>
+
+<Evidence rdf:about="#evidence20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DART cookies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To opt out of the DART cookies you may visit the Google ad and content network privacy policy at the following url http //www google com/privacy ads html Tracking of users through the DART cookie mechanisms are subject to Google s own privacy policies</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other reasons that will be provided in their own privacy policies,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence22"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may also use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence23"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to measure advertisement effectiveness</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence24"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may also use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence25"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measure advertisement effectiveness</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence26"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence27"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other reasons</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence28"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence29"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other reasons that will be provided in their own privacy policies,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence30"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may also use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence31"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advertisement</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence32"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may also use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence33"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">advertisement</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence34"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may also use cookies to track users activities on this website</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence35"/>
+</DataCollectionMechanism>
+
+<DataCollectionActivity rdf:about="#datacollectionactivity2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose14"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism14"/>
+  <hasDataCollectionMechanism rdf:resource="#pseudoanonymization1"/>
+  <isAppliedToData rdf:resource="#devicedata1"/>
+  <hasEvidence rdf:resource="#evidence40"/>
+  <collectsDataFromAgent rdf:resource="#user1"/>
+</DataCollectionActivity>
+
+<DataUseActivity rdf:about="#datauseactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasDataActivityPurpose rdf:resource="#dataactivitypurpose14"/>
+  <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism14"/>
+  <hasDataCollectionMechanism rdf:resource="#pseudoanonymization1"/>
+  <isAppliedToData rdf:resource="#devicedata1"/>
+  <hasEvidence rdf:resource="#evidence40"/>
+</DataUseActivity>
+
+<Evidence rdf:about="#evidence36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">his information is purely used to analyze trends, administer the site, track users movement and gather broad demographic information for internal use.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence36"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence37"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most importantly, any recorded IP addresses are not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence38"/>
+</PseudoAnonymization>
+
+<DeviceData rdf:about="#devicedata1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence39"/>
+</DeviceData>
+
+<Evidence rdf:about="#evidence39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the IP address used to access the site will be logged along with the dates and times of access.</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of Personal Information When visiting RestaurantNews com the IP address used to access the site will be logged along with the dates and times of access This information is purely used to analyze trends administer the site track users movement and gather broad demographic information for internal use Most importantly any recorded IP addresses are not linked to personally identifiable information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analyze trends,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence41"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence42"/>
+  <hasMode rdf:resource="#datacollectionmode1"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence43"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence44"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administer the site</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence45"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence46"/>
+  <hasMode rdf:resource="#datacollectionmode2"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence47"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence48"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analyze trends,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence49"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence50"/>
+  <hasMode rdf:resource="#datacollectionmode3"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence51"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence52"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administer the site</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence53"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence54"/>
+  <hasMode rdf:resource="#datacollectionmode4"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence55"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence56"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This information is purely used to analyze trends,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence57"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence58"/>
+  <hasMode rdf:resource="#datacollectionmode5"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged along with the dates and times of access.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence59"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence60">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most importantly, any recorded IP addresses are not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence60"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence61">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This information is purely used to analyze trends,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence61"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence62">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence62"/>
+  <hasMode rdf:resource="#datacollectionmode6"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence63">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged along with the dates and times of access.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence63"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence64">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most importantly, any recorded IP addresses are not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence64"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence65">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administer the site,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence65"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence66">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence66"/>
+  <hasMode rdf:resource="#datacollectionmode7"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence67">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged along with the dates and times of access.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence67"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence68">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most importantly, any recorded IP addresses are not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence68"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence69">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">administer the site,</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence69"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence70">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence70"/>
+  <hasMode rdf:resource="#datacollectionmode8"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence71">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged along with the dates and times of access.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence71"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence72">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most importantly, any recorded IP addresses are not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence72"/>
+</PseudoAnonymization>
+
+<Evidence rdf:about="#evidence73">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for internal use.</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence73"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence74">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RestaurantNews.com,</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence74"/>
+  <hasMode rdf:resource="#datacollectionmode9"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence75">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When visiting RestaurantNews.com, the IP address used to access the site will be logged along with the dates and times of access.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence75"/>
+</DataCollectionMode>
+
+<Evidence rdf:about="#evidence76">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most importantly, any recorded IP addresses are not linked to personally identifiable information.</evidenceContent>
+</Evidence>
+
+<PseudoAnonymization rdf:about="#pseudoanonymization10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence76"/>
+</PseudoAnonymization>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence77"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence77">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this Privacy Statement The contents of this statement may be altered at any time at our discretion</evidenceContent>
 </Evidence>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence2"/>
+  <hasEvidence rdf:resource="#evidence78"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence2">
+<Evidence rdf:about="#evidence78">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this Privacy Statement The contents of this statement may be altered at any time at our discretion</evidenceContent>
 </Evidence>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence3"/>
+  <hasEvidence rdf:resource="#evidence79"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence3">
+<Evidence rdf:about="#evidence79">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this Privacy Statement The contents of this statement may be altered at any time at our discretion</evidenceContent>
 </Evidence>
