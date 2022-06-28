@@ -927,8 +927,8 @@
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
   <considersActivity rdf:resource="#userprivacycontrol1"/>
   <considersData rdf:resource="#genericdata1"/>
   <considersActivity rdf:resource="#datasharingactivity1"/>
@@ -2643,6 +2643,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence144"/>
   <hasMechanism rdf:resource="#onwebsitepage1"/>
+  <hasPolicyChangeCause rdf:resource="#otherpolicychangecause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence144">
@@ -2654,6 +2655,16 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence144"/>
 </OnWebsitePage>
+
+<OtherPolicyChangeCause rdf:about="#otherpolicychangecause1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence145"/>
+</OtherPolicyChangeCause>
+
+<Evidence rdf:about="#evidence145">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It shall be construed that you accept and agree with the revised or updated privacy policy when you access and use the website for the first time after the publication of such changes.</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

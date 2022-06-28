@@ -1014,8 +1014,8 @@
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
   <considersData rdf:resource="#genericdata1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
   <considersActivity rdf:resource="#datacollectionactivity1"/>
@@ -4934,6 +4934,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence312"/>
   <hasMechanism rdf:resource="#inprivacypolicy3"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence312">
@@ -4946,50 +4947,60 @@
   <hasEvidence rdf:resource="#evidence312"/>
 </InPrivacyPolicy>
 
-<UserSpecialCategory rdf:about="#userspecialcategory2">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence313"/>
-</UserSpecialCategory>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence313">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Governing Law This policy and the use of this website are governed by District of Columbia law Any claim related to the website or this policy shall be brought in a federal or state court in Washington D C within one year after the claim arises You agree that no such claim may be brought as a class action Users of Washingtonian com consent to the jurisdiction and venue of such court as the most convenient and appropriate for the resolution of disputes concerning this policy Washingtonian com is controlled operated and administered entirely within the United States If you are located outside the United States please note that the information you provide to us will be transferred to the United States You hereby consent to this transfer</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your continued use of our website following the posting of changes to our privacy policy will mean that you accept such changes</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory3">
+<UserSpecialCategory rdf:about="#userspecialcategory2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence314"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence314">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Notification for California Residents From time-to-time Washingtonian magazine and/or Washingtonian com may provide its business partners with your name and mailing address for marketing relevant services products and programs to you</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Governing Law This policy and the use of this website are governed by District of Columbia law Any claim related to the website or this policy shall be brought in a federal or state court in Washington D C within one year after the claim arises You agree that no such claim may be brought as a class action Users of Washingtonian com consent to the jurisdiction and venue of such court as the most convenient and appropriate for the resolution of disputes concerning this policy Washingtonian com is controlled operated and administered entirely within the United States If you are located outside the United States please note that the information you provide to us will be transferred to the United States You hereby consent to this transfer</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory4">
+<UserSpecialCategory rdf:about="#userspecialcategory3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence315"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence315">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Notification for California Residents From time-to-time Washingtonian magazine and/or Washingtonian com may provide its business partners with your name and mailing address for marketing relevant services products and programs to you</evidenceContent>
+</Evidence>
+
+<UserSpecialCategory rdf:about="#userspecialcategory4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence316"/>
+</UserSpecialCategory>
+
+<Evidence rdf:about="#evidence316">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you reside in California you may request information about our disclosures of your personal information to third parties for their direct marketing purposes Such requests must be submitted to us by e-mail at privacy washingtonian com or by mail to Washingtonian com 1828 L Street NW Suite 200 Washington D C 20035 ATTN CALIFORNIA PRIVACY DISCLOSURES Within thirty days of receiving such a request we will provide a list of the categories of personal information e g your mailing address disclosed to third-parties for third-party direct marketing purposes during the immediately preceding calendar year along with the names and addresses of these third parties This request may be made no more than once per calendar year We reserve the right not to respond to requests submitted other than as specified in this paragraph</evidenceContent>
 </Evidence>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence316"/>
+  <hasEvidence rdf:resource="#evidence317"/>
   <hasMechanism rdf:resource="#inprivacypolicy4"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence316">
+<Evidence rdf:about="#evidence317">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effective Date This Privacy Policy is effective as of February 6 2009</evidenceContent>
 </Evidence>
 
 <InPrivacyPolicy rdf:about="#inprivacypolicy4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence316"/>
+  <hasEvidence rdf:resource="#evidence317"/>
 </InPrivacyPolicy>
 
 

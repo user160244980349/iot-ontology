@@ -1001,9 +1001,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#user1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#firstparty1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersData rdf:resource="#data1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
   <considersActivity rdf:resource="#datacollectionactivity1"/>
@@ -5589,6 +5589,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence393"/>
   <hasMechanism rdf:resource="#inprivacypolicy2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence393">
@@ -5601,96 +5602,91 @@
   <hasEvidence rdf:resource="#evidence393"/>
 </InPrivacyPolicy>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity4">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence394"/>
-  <hasMechanism rdf:resource="#notificationmechanism2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence394">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any updated version of this privacy policy will be effective as soon as it is posted on our Sites.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence395"/>
+  <hasMechanism rdf:resource="#notificationmechanism2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence395">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How will changes to this policy be communicated? We may update this Policy from time to time If we make any material change to the way in which we treat your User Information we will inform you of such change by posting an updated privacy policy at this location or through email notification at our option Any updated version of this privacy policy will be effective as soon as it is posted on our Sites</evidenceContent>
 </Evidence>
 
 <NotificationMechanism rdf:about="#notificationmechanism2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence394"/>
+  <hasEvidence rdf:resource="#evidence395"/>
 </NotificationMechanism>
 
-<Evidence rdf:about="#evidence395">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
-</Evidence>
-
-<UserAccessActivity rdf:about="#useraccessactivity1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence395"/>
-  <isAppliedTo rdf:resource="#sensitivedata7"/>
-</UserAccessActivity>
+  <hasEvidence rdf:resource="#evidence396"/>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence396">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback@highgearmedia.com . If you terminate your account, your Personal Information will be removed from our system, subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity.</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any updated version of this privacy policy will be effective as soon as it is posted on our Sites.</evidenceContent>
 </Evidence>
-
-<DataControlMechanism rdf:about="#datacontrolmechanism14">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence396"/>
-</DataControlMechanism>
-
-<SensitiveData rdf:about="#sensitivedata7">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence395"/>
-</SensitiveData>
 
 <Evidence rdf:about="#evidence397">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity2">
+<UserAccessActivity rdf:about="#useraccessactivity1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence397"/>
-  <isAppliedTo rdf:resource="#accountdata3"/>
+  <isAppliedTo rdf:resource="#sensitivedata7"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence398">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you terminate your account, your Personal Information will be removed from our system, subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity.</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback@highgearmedia.com . If you terminate your account, your Personal Information will be removed from our system, subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity.</evidenceContent>
 </Evidence>
 
-<DataControlMechanism rdf:about="#datacontrolmechanism15">
+<DataControlMechanism rdf:about="#datacontrolmechanism14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence398"/>
 </DataControlMechanism>
 
-<AccountData rdf:about="#accountdata3">
+<SensitiveData rdf:about="#sensitivedata7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence397"/>
-</AccountData>
+</SensitiveData>
 
 <Evidence rdf:about="#evidence399">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity3">
+<UserAccessActivity rdf:about="#useraccessactivity2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence399"/>
-  <isAppliedTo rdf:resource="#accountdata4"/>
+  <isAppliedTo rdf:resource="#accountdata3"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence400">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">update</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you terminate your account, your Personal Information will be removed from our system, subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity.</evidenceContent>
 </Evidence>
 
-<DataControlMechanism rdf:about="#datacontrolmechanism16">
+<DataControlMechanism rdf:about="#datacontrolmechanism15">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence400"/>
 </DataControlMechanism>
 
-<AccountData rdf:about="#accountdata4">
+<AccountData rdf:about="#accountdata3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence399"/>
 </AccountData>
@@ -5700,45 +5696,71 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity4">
+<UserAccessActivity rdf:about="#useraccessactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence401"/>
+  <isAppliedTo rdf:resource="#accountdata4"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence402">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback@highgearmedia.com . If you terminate your account, your Personal Information will be removed from our system</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">update</evidenceContent>
 </Evidence>
 
-<DataControlMechanism rdf:about="#datacontrolmechanism17">
+<DataControlMechanism rdf:about="#datacontrolmechanism16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence402"/>
 </DataControlMechanism>
+
+<AccountData rdf:about="#accountdata4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence401"/>
+</AccountData>
 
 <Evidence rdf:about="#evidence403">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity5">
+<UserAccessActivity rdf:about="#useraccessactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence403"/>
-  <isAppliedTo rdf:resource="#sensitivedata8"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence404">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback@highgearmedia.com . If you terminate your account, your Personal Information will be removed from our system</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence404"/>
+</DataControlMechanism>
+
+<Evidence rdf:about="#evidence405">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
+</Evidence>
+
+<UserAccessActivity rdf:about="#useraccessactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence405"/>
+  <isAppliedTo rdf:resource="#sensitivedata8"/>
+</UserAccessActivity>
+
+<Evidence rdf:about="#evidence406">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">update any Personal Information</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism18">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence404"/>
+  <hasEvidence rdf:resource="#evidence406"/>
 </DataControlMechanism>
 
 <SensitiveData rdf:about="#sensitivedata8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence403"/>
+  <hasEvidence rdf:resource="#evidence405"/>
 </SensitiveData>
 
 <DataRetentionActivity rdf:about="#dataretentionactivity1">
@@ -5746,40 +5768,40 @@
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose95"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime1"/>
   <isAppliedToData rdf:resource="#data4"/>
-  <hasEvidence rdf:resource="#evidence408"/>
+  <hasEvidence rdf:resource="#evidence410"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence405">
+<Evidence rdf:about="#evidence407">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose95">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence405"/>
+  <hasEvidence rdf:resource="#evidence407"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence406">
+<Evidence rdf:about="#evidence408">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity.</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence406"/>
+  <hasEvidence rdf:resource="#evidence408"/>
 </DataRetentionTime>
 
 <Data rdf:about="#data4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence407"/>
+  <hasEvidence rdf:resource="#evidence409"/>
 </Data>
 
-<Evidence rdf:about="#evidence407">
+<Evidence rdf:about="#evidence409">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence408">
+<Evidence rdf:about="#evidence410">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How may users change or terminate their account? You have the right to terminate your account or update any Personal Information collected by our Sites by contacting us at feedback highgearmedia com If you terminate your account your Personal Information will be removed from our system subject to our right to retain any data necessary to investigate any violation of terms of use or alleged harmful or illegal activity</evidenceContent>
 </Evidence>
@@ -5789,68 +5811,68 @@
   <has rdf:resource="#purpose14"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism19"/>
   <isAppliedToData rdf:resource="#nonsensitivedata7"/>
-  <hasEvidence rdf:resource="#evidence412"/>
+  <hasEvidence rdf:resource="#evidence414"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence409">
+<Evidence rdf:about="#evidence411">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For some features, such as newsletter mailings,</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence409"/>
+  <hasEvidence rdf:resource="#evidence411"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence410">
+<Evidence rdf:about="#evidence412">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opt out of the service may be found in the emails you receive.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism19">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence410"/>
+  <hasEvidence rdf:resource="#evidence412"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence411"/>
+  <hasEvidence rdf:resource="#evidence413"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence411">
+<Evidence rdf:about="#evidence413">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emails</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence412">
+<Evidence rdf:about="#evidence414">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For some features such as newsletter mailings specified procedures to update your personal information or opt out of the service may be found in the emails you receive</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence413">
+<Evidence rdf:about="#evidence415">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For some features such as newsletter mailings specified procedures to update your personal information or opt out of the service may be found in the emails you receive</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence413"/>
+  <hasEvidence rdf:resource="#evidence415"/>
   <isAppliedTo rdf:resource="#accountdata5"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence414">
+<Evidence rdf:about="#evidence416">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specified procedures to update your personal information or opt out of the service may be found in the emails you receive.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence414"/>
+  <hasEvidence rdf:resource="#evidence416"/>
 </DataControlMechanism>
 
 <AccountData rdf:about="#accountdata5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence413"/>
+  <hasEvidence rdf:resource="#evidence415"/>
 </AccountData>
 
 <UserPrivacyControl rdf:about="#userprivacycontrol15">
@@ -5858,40 +5880,40 @@
   <has rdf:resource="#purpose15"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism21"/>
   <isAppliedToData rdf:resource="#nonsensitivedata8"/>
-  <hasEvidence rdf:resource="#evidence418"/>
+  <hasEvidence rdf:resource="#evidence420"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence415">
+<Evidence rdf:about="#evidence417">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">newsletter mailings</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose15">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence415"/>
+  <hasEvidence rdf:resource="#evidence417"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence416">
+<Evidence rdf:about="#evidence418">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opt out</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence416"/>
+  <hasEvidence rdf:resource="#evidence418"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence417"/>
+  <hasEvidence rdf:resource="#evidence419"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence417">
+<Evidence rdf:about="#evidence419">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emails</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence418">
+<Evidence rdf:about="#evidence420">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For some features such as newsletter mailings specified procedures to update your personal information or opt out of the service may be found in the emails you receive</evidenceContent>
 </Evidence>
@@ -5900,66 +5922,66 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has rdf:resource="#purpose16"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism22"/>
-  <hasEvidence rdf:resource="#evidence421"/>
+  <hasEvidence rdf:resource="#evidence423"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence419">
+<Evidence rdf:about="#evidence421">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">such as</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence419"/>
+  <hasEvidence rdf:resource="#evidence421"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence420">
+<Evidence rdf:about="#evidence422">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">opt out of the service may be found in the emails you receive.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence420"/>
+  <hasEvidence rdf:resource="#evidence422"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence421">
+<Evidence rdf:about="#evidence423">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For some features such as newsletter mailings specified procedures to update your personal information or opt out of the service may be found in the emails you receive</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence422">
+<Evidence rdf:about="#evidence424">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For some features such as newsletter mailings specified procedures to update your personal information or opt out of the service may be found in the emails you receive</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence422"/>
+  <hasEvidence rdf:resource="#evidence424"/>
   <isAppliedTo rdf:resource="#accountdata6"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence423">
+<Evidence rdf:about="#evidence425">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">update your personal information</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence423"/>
+  <hasEvidence rdf:resource="#evidence425"/>
 </DataControlMechanism>
 
 <AccountData rdf:about="#accountdata6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence422"/>
+  <hasEvidence rdf:resource="#evidence424"/>
 </AccountData>
 
 <UserSpecialCategory rdf:about="#userspecialcategory2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence424"/>
+  <hasEvidence rdf:resource="#evidence426"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence424">
+<Evidence rdf:about="#evidence426">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California Privacy Rights It is High Gear Medias policy to share personal information only with the users informed consent unless otherwise specified in this privacy policy With your consent from time-to-time High Gear Media may provide its business partners with contact details for direct marketing purposes of relevant services products and programs California Civil Code Section 1798 83 also known as the Shine The Light law permits our users who are California residents to request and obtain from us once a year free of charge information about the personal information if any we disclosed to third parties for direct marketing purposes in the preceding calendar year If applicable this information would include a list of the categories of personal information that was shared and the names and addresses of all third parties with which we shared information in the immediately preceding calendar year If you are a California resident and would like to make such a request please let us know using this contact us form You may also let us know at this number that you no longer wish your information to be shared</evidenceContent>
 </Evidence>
@@ -5969,92 +5991,92 @@
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose96"/>
   <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism95"/>
   <isAppliedToData rdf:resource="#nonsensitivedata9"/>
-  <hasEvidence rdf:resource="#evidence429"/>
+  <hasEvidence rdf:resource="#evidence431"/>
   <collectsDataFromAgent rdf:resource="#thirdparties1"/>
 </DataCollectionActivity>
 
-<Evidence rdf:about="#evidence425">
+<Evidence rdf:about="#evidence427">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for direct marketing purposes of relevant services, products, and programs.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose96">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence425"/>
+  <hasEvidence rdf:resource="#evidence427"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence426">
+<Evidence rdf:about="#evidence428">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">may provide</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism95">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence426"/>
+  <hasEvidence rdf:resource="#evidence428"/>
   <hasMode rdf:resource="#datacollectionmode65"/>
 </DataCollectionMechanism>
 
-<Evidence rdf:about="#evidence427">
+<Evidence rdf:about="#evidence429">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">share</evidenceContent>
 </Evidence>
 
 <DataCollectionMode rdf:about="#datacollectionmode65">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence427"/>
+  <hasEvidence rdf:resource="#evidence429"/>
 </DataCollectionMode>
 
 <NonSensitiveData rdf:about="#nonsensitivedata9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence428"/>
+  <hasEvidence rdf:resource="#evidence430"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence428">
+<Evidence rdf:about="#evidence430">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">with contact details</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence429">
+<Evidence rdf:about="#evidence431">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California Privacy Rights It is High Gear Medias policy to share personal information only with the users informed consent unless otherwise specified in this privacy policy With your consent from time-to-time High Gear Media may provide its business partners with contact details for direct marketing purposes of relevant services products and programs California Civil Code Section 1798 83 also known as the Shine The Light law permits our users who are California residents to request and obtain from us once a year free of charge information about the personal information if any we disclosed to third parties for direct marketing purposes in the preceding calendar year If applicable this information would include a list of the categories of personal information that was shared and the names and addresses of all third parties with which we shared information in the immediately preceding calendar year If you are a California resident and would like to make such a request please let us know using this contact us form You may also let us know at this number that you no longer wish your information to be shared</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence430">
+<Evidence rdf:about="#evidence432">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California Privacy Rights It is High Gear Medias policy to share personal information only with the users informed consent unless otherwise specified in this privacy policy With your consent from time-to-time High Gear Media may provide its business partners with contact details for direct marketing purposes of relevant services products and programs California Civil Code Section 1798 83 also known as the Shine The Light law permits our users who are California residents to request and obtain from us once a year free of charge information about the personal information if any we disclosed to third parties for direct marketing purposes in the preceding calendar year If applicable this information would include a list of the categories of personal information that was shared and the names and addresses of all third parties with which we shared information in the immediately preceding calendar year If you are a California resident and would like to make such a request please let us know using this contact us form You may also let us know at this number that you no longer wish your information to be shared</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence430"/>
+  <hasEvidence rdf:resource="#evidence432"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence431">
+<Evidence rdf:about="#evidence433">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California Civil Code Section 1798.83, also known as the Shine The Light law, permits our users who are California residents to request and obtain from us once a year, free of charge, information about the personal information (if any) we disclosed to third parties for direct marketing purposes in the preceding calendar year.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism24">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence431"/>
+  <hasEvidence rdf:resource="#evidence433"/>
 </DataControlMechanism>
 
 <UserOptControl rdf:about="#useroptcontrol1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence432"/>
+  <hasEvidence rdf:resource="#evidence434"/>
 </UserOptControl>
 
-<Evidence rdf:about="#evidence432">
+<Evidence rdf:about="#evidence434">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How we respond to Do Not Track Disclosures Some browsers have a do not track feature that lets you tell websites that you do not want to have your online activities tracked Because these features are not yet uniform we are not currently set up to respond to do not track signals Our information and disclosure practices will continue to apply as described in this privacy policy regardless of any Do Not Track signals that are sent by certain browsers</evidenceContent>
 </Evidence>
 
 <UserOptControl rdf:about="#useroptcontrol2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence433"/>
+  <hasEvidence rdf:resource="#evidence435"/>
 </UserOptControl>
 
-<Evidence rdf:about="#evidence433">
+<Evidence rdf:about="#evidence435">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How we respond to Do Not Track Disclosures Some browsers have a do not track feature that lets you tell websites that you do not want to have your online activities tracked Because these features are not yet uniform we are not currently set up to respond to do not track signals Our information and disclosure practices will continue to apply as described in this privacy policy regardless of any Do Not Track signals that are sent by certain browsers</evidenceContent>
 </Evidence>

@@ -907,8 +907,8 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#dataretentionactivity1"/>
@@ -4846,6 +4846,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence376"/>
   <hasMechanism rdf:resource="#notificationmechanism2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence376">
@@ -4858,26 +4859,21 @@
   <hasEvidence rdf:resource="#evidence376"/>
 </NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity6">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence377"/>
-  <hasMechanism rdf:resource="#onwebsitepage2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence377">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this policy Tribune Company reserves the right to change this policy at any time Please check this page periodically for changes Your continued use of the Services following the posting of changes to this policy will mean you accept those changes If we make any material changes to this Privacy Policy we will post the updated Privacy Policy here and notify you by email or by means of a notice on our website</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur continued use of the Services following the posting of changes to this policy will mean you accept those changes</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence377"/>
-</OnWebsitePage>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity7">
+<PolicyChangeActivity rdf:about="#policychangeactivity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence378"/>
-  <hasMechanism rdf:resource="#notificationmechanism3"/>
+  <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence378">
@@ -4885,25 +4881,51 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this policy Tribune Company reserves the right to change this policy at any time Please check this page periodically for changes Your continued use of the Services following the posting of changes to this policy will mean you accept those changes If we make any material changes to this Privacy Policy we will post the updated Privacy Policy here and notify you by email or by means of a notice on our website</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism3">
+<OnWebsitePage rdf:about="#onwebsitepage2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence378"/>
+</OnWebsitePage>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence379"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence379">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ur continued use of the Services following the posting of changes to this policy will mean you accept those changes</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence380"/>
+  <hasMechanism rdf:resource="#notificationmechanism3"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence380">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this policy Tribune Company reserves the right to change this policy at any time Please check this page periodically for changes Your continued use of the Services following the posting of changes to this policy will mean you accept those changes If we make any material changes to this Privacy Policy we will post the updated Privacy Policy here and notify you by email or by means of a notice on our website</evidenceContent>
+</Evidence>
+
+<NotificationMechanism rdf:about="#notificationmechanism3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence380"/>
 </NotificationMechanism>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence379"/>
+  <hasEvidence rdf:resource="#evidence381"/>
   <hasMechanism rdf:resource="#onwebsitepage3"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence379">
+<Evidence rdf:about="#evidence381">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to this policy Tribune Company reserves the right to change this policy at any time Please check this page periodically for changes Your continued use of the Services following the posting of changes to this policy will mean you accept those changes If we make any material changes to this Privacy Policy we will post the updated Privacy Policy here and notify you by email or by means of a notice on our website</evidenceContent>
 </Evidence>
 
 <OnWebsitePage rdf:about="#onwebsitepage3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence379"/>
+  <hasEvidence rdf:resource="#evidence381"/>
 </OnWebsitePage>
 
 

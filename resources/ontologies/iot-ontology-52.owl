@@ -1023,9 +1023,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
   <considersActivity rdf:resource="#datacollectionactivity1"/>
@@ -5611,6 +5611,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence388"/>
   <hasMechanism rdf:resource="#notificationmechanism5"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence388">
@@ -5623,21 +5624,42 @@
   <hasEvidence rdf:resource="#evidence388"/>
 </NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity7">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence389"/>
-  <hasMechanism rdf:resource="#inprivacypolicy2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence389">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">without the consent of affected customers.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence390"/>
+  <hasMechanism rdf:resource="#inprivacypolicy2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence390">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Our business changes constantly This Notice and the Terms and Conditions of Use will change also and use of information that we gather now is subject to the Privacy Notice in effect at the time of use We may e-mail periodic reminders of our notices and conditions unless you have instructed us not to but you should check our Web site frequently to see recent changes Unless stated otherwise our current Privacy Notice applies to all information that we have about you and your account We stand behind the promises we make however and will never materially change our policies and practices to make them less protective of customer information collected in the past without the consent of affected customers</evidenceContent>
 </Evidence>
 
 <InPrivacyPolicy rdf:about="#inprivacypolicy2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence389"/>
+  <hasEvidence rdf:resource="#evidence390"/>
 </InPrivacyPolicy>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence391"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence391">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">without the consent of affected customers.</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

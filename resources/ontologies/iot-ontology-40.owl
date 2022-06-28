@@ -1131,9 +1131,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
   <considersActivity rdf:resource="#userprivacycontrol1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#policychangeactivity2"/>
@@ -11897,6 +11897,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence944"/>
   <hasMechanism rdf:resource="#notificationmechanism1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence944">
@@ -11909,44 +11910,54 @@
   <hasEvidence rdf:resource="#evidence944"/>
 </NotificationMechanism>
 
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence945"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence945">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and give you the opportunity to decline that use.</evidenceContent>
+</Evidence>
+
 <UserPrivacyControl rdf:about="#userprivacycontrol20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has rdf:resource="#purpose20"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism20"/>
-  <hasEvidence rdf:resource="#evidence947"/>
+  <hasEvidence rdf:resource="#evidence948"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence945">
+<Evidence rdf:about="#evidence946">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence945"/>
+  <hasEvidence rdf:resource="#evidence946"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence946">
+<Evidence rdf:about="#evidence947">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If, at anytime in the future, Tulsaworld.com decides to use information provided by you in a way not described here, we will contact you beforehand to explain the use of the information and give you the opportunity to decline that use.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence946"/>
+  <hasEvidence rdf:resource="#evidence947"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence947">
+<Evidence rdf:about="#evidence948">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If at anytime in the future Tulsaworld com decides to use information provided by you in a way not described here we will contact you beforehand to explain the use of the information and give you the opportunity to decline that use</evidenceContent>
 </Evidence>
 
 <TechnicalMeasure rdf:about="#technicalmeasure6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence948"/>
+  <hasEvidence rdf:resource="#evidence949"/>
 </TechnicalMeasure>
 
-<Evidence rdf:about="#evidence948">
+<Evidence rdf:about="#evidence949">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security technologies Tulsaworld com uses industry-standard encryption technologies when transferring and receiving consumer data exchanged with our site When we transfer or receive certain types of sensitive data such as financial information we will redirect you to a secure server We have implemented appropriate security measures in our physical facilities to protect against the loss misuse or alteration of information that we have collected from you</evidenceContent>
 </Evidence>
@@ -11958,10 +11969,10 @@
 
 <Encryption rdf:about="#encryption1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence949"/>
+  <hasEvidence rdf:resource="#evidence950"/>
 </Encryption>
 
-<Evidence rdf:about="#evidence949">
+<Evidence rdf:about="#evidence950">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security technologies Tulsaworld com uses industry-standard encryption technologies when transferring and receiving consumer data exchanged with our site When we transfer or receive certain types of sensitive data such as financial information we will redirect you to a secure server We have implemented appropriate security measures in our physical facilities to protect against the loss misuse or alteration of information that we have collected from you</evidenceContent>
 </Evidence>
@@ -11973,10 +11984,10 @@
 
 <Encryption rdf:about="#encryption2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence950"/>
+  <hasEvidence rdf:resource="#evidence951"/>
 </Encryption>
 
-<Evidence rdf:about="#evidence950">
+<Evidence rdf:about="#evidence951">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security technologies Tulsaworld com uses industry-standard encryption technologies when transferring and receiving consumer data exchanged with our site When we transfer or receive certain types of sensitive data such as financial information we will redirect you to a secure server We have implemented appropriate security measures in our physical facilities to protect against the loss misuse or alteration of information that we have collected from you</evidenceContent>
 </Evidence>
@@ -11988,10 +11999,10 @@
 
 <TechnicalMeasure rdf:about="#technicalmeasure7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence951"/>
+  <hasEvidence rdf:resource="#evidence952"/>
 </TechnicalMeasure>
 
-<Evidence rdf:about="#evidence951">
+<Evidence rdf:about="#evidence952">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unfortunately no data transmission over the Internet or any wireless network can be guaranteed to be secure all of the time We employ commercially reasonable security measures to protect data and seek to do business with companies which do the same but we cannot guarantee the security of any information transmitted to or from our Website and are not responsible for the actions of any third parties that may receive any such information</evidenceContent>
 </Evidence>
@@ -12001,280 +12012,280 @@
   <hasMechanism rdf:resource="#technicalmeasure7"/>
 </Activity>
 
-<Evidence rdf:about="#evidence952">
+<Evidence rdf:about="#evidence953">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence952"/>
+  <hasEvidence rdf:resource="#evidence953"/>
   <isAppliedTo rdf:resource="#sensitivedata9"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence953">
+<Evidence rdf:about="#evidence954">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upon request, you may review all information that we maintain in your record,</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence953"/>
+  <hasEvidence rdf:resource="#evidence954"/>
 </DataControlMechanism>
 
 <SensitiveData rdf:about="#sensitivedata9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence952"/>
+  <hasEvidence rdf:resource="#evidence953"/>
 </SensitiveData>
 
-<Evidence rdf:about="#evidence954">
+<Evidence rdf:about="#evidence955">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence954"/>
+  <hasEvidence rdf:resource="#evidence955"/>
   <isAppliedTo rdf:resource="#sensitivedata10"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence955">
+<Evidence rdf:about="#evidence956">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may also request that inaccuracies be corrected in any information that we maintain in your record.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence955"/>
+  <hasEvidence rdf:resource="#evidence956"/>
 </DataControlMechanism>
 
 <SensitiveData rdf:about="#sensitivedata10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence954"/>
+  <hasEvidence rdf:resource="#evidence955"/>
 </SensitiveData>
 
-<Evidence rdf:about="#evidence956">
+<Evidence rdf:about="#evidence957">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence956"/>
+  <hasEvidence rdf:resource="#evidence957"/>
   <isAppliedTo rdf:resource="#accountdata12"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence957">
+<Evidence rdf:about="#evidence958">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence957"/>
+  <hasEvidence rdf:resource="#evidence958"/>
 </DataControlMechanism>
 
 <AccountData rdf:about="#accountdata12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence956"/>
+  <hasEvidence rdf:resource="#evidence957"/>
 </AccountData>
 
-<Evidence rdf:about="#evidence958">
+<Evidence rdf:about="#evidence959">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence958"/>
+  <hasEvidence rdf:resource="#evidence959"/>
   <isAppliedTo rdf:resource="#accountdata13"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence959">
+<Evidence rdf:about="#evidence960">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">you may review</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism24">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence959"/>
+  <hasEvidence rdf:resource="#evidence960"/>
 </DataControlMechanism>
 
 <AccountData rdf:about="#accountdata13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence958"/>
+  <hasEvidence rdf:resource="#evidence959"/>
 </AccountData>
 
-<Evidence rdf:about="#evidence960">
+<Evidence rdf:about="#evidence961">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence960"/>
+  <hasEvidence rdf:resource="#evidence961"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence961">
+<Evidence rdf:about="#evidence962">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism25">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence961"/>
+  <hasEvidence rdf:resource="#evidence962"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence962">
+<Evidence rdf:about="#evidence963">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence962"/>
+  <hasEvidence rdf:resource="#evidence963"/>
   <isAppliedTo rdf:resource="#nonsensitivedata36"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence963">
+<Evidence rdf:about="#evidence964">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism26">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence963"/>
+  <hasEvidence rdf:resource="#evidence964"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata36">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence962"/>
+  <hasEvidence rdf:resource="#evidence963"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence964">
+<Evidence rdf:about="#evidence965">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence964"/>
+  <hasEvidence rdf:resource="#evidence965"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence965">
+<Evidence rdf:about="#evidence966">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism27">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence965"/>
+  <hasEvidence rdf:resource="#evidence966"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence966">
+<Evidence rdf:about="#evidence967">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence966"/>
+  <hasEvidence rdf:resource="#evidence967"/>
   <isAppliedTo rdf:resource="#accountdata14"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence967">
+<Evidence rdf:about="#evidence968">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">review</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism28">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence967"/>
+  <hasEvidence rdf:resource="#evidence968"/>
 </DataControlMechanism>
 
 <AccountData rdf:about="#accountdata14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence966"/>
+  <hasEvidence rdf:resource="#evidence967"/>
 </AccountData>
 
-<Evidence rdf:about="#evidence968">
+<Evidence rdf:about="#evidence969">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Making corrections to your information Upon request you may review all information that we maintain in your record including unique identifier contact information name address phone number e-mail or any other information we may keep in your record You may also request that inaccuracies be corrected in any information that we maintain in your record Submit your request by e-mailing circulation tulsaworld com</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence968"/>
+  <hasEvidence rdf:resource="#evidence969"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence969">
+<Evidence rdf:about="#evidence970">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may also request that inaccuracies be corrected</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism29">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence969"/>
+  <hasEvidence rdf:resource="#evidence970"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence970">
+<Evidence rdf:about="#evidence971">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We participate in the News Registry, a service operated by the NewsRight, LLC (NewsRight).</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose222">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence970"/>
+  <hasEvidence rdf:resource="#evidence971"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence971">
+<Evidence rdf:about="#evidence972">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">and may use cookies in conjunction with this activity</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism222">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence971"/>
-</DataCollectionMechanism>
-
-<Evidence rdf:about="#evidence972">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
-</Evidence>
-
-<DataActivityPurpose rdf:about="#dataactivitypurpose223">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence972"/>
-</DataActivityPurpose>
+</DataCollectionMechanism>
 
 <Evidence rdf:about="#evidence973">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
-<DataCollectionMechanism rdf:about="#datacollectionmechanism223">
+<DataActivityPurpose rdf:about="#dataactivitypurpose223">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence973"/>
-</DataCollectionMechanism>
+</DataActivityPurpose>
 
 <Evidence rdf:about="#evidence974">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
-<DataActivityPurpose rdf:about="#dataactivitypurpose224">
+<DataCollectionMechanism rdf:about="#datacollectionmechanism223">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence974"/>
-</DataActivityPurpose>
+</DataCollectionMechanism>
 
 <Evidence rdf:about="#evidence975">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
-<DataCollectionMechanism rdf:about="#datacollectionmechanism224">
+<DataActivityPurpose rdf:about="#dataactivitypurpose224">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence975"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence976">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
+</Evidence>
+
+<DataCollectionMechanism rdf:about="#datacollectionmechanism224">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence976"/>
 </DataCollectionMechanism>
 
 

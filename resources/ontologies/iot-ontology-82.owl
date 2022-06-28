@@ -1062,9 +1062,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersActivity rdf:resource="#activity2"/>
   <considersActivity rdf:resource="#activity3"/>
@@ -7601,6 +7601,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence547"/>
   <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence547">
@@ -7613,26 +7614,21 @@
   <hasEvidence rdf:resource="#evidence547"/>
 </OnWebsitePage>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity4">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence548"/>
-  <hasMechanism rdf:resource="#onwebsitepage3"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence548">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to Our Privacy Policy We reserve the right to make changes to this privacy policy at any time If we make a material change to this privacy policy we will notify you by posting notice of the change on www us playstation com or on our other websites We will post the changes in the privacy policy and if necessary give you additional choices regarding changes Please check this privacy policy from time to time to ensure that you are aware of these changes Your continued use of our websites or other SCEA online portals subject to this privacy policy will signify your acceptance of privacy policy changes</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if necessary, give you additional choices regarding changes.</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence548"/>
-</OnWebsitePage>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity5">
+<PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence549"/>
-  <hasMechanism rdf:resource="#inprivacypolicy2"/>
+  <hasMechanism rdf:resource="#onwebsitepage3"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence549">
@@ -7640,10 +7636,47 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to Our Privacy Policy We reserve the right to make changes to this privacy policy at any time If we make a material change to this privacy policy we will notify you by posting notice of the change on www us playstation com or on our other websites We will post the changes in the privacy policy and if necessary give you additional choices regarding changes Please check this privacy policy from time to time to ensure that you are aware of these changes Your continued use of our websites or other SCEA online portals subject to this privacy policy will signify your acceptance of privacy policy changes</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy2">
+<OnWebsitePage rdf:about="#onwebsitepage3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence549"/>
+</OnWebsitePage>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence550"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence550">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your continued use of our websites or other SCEA online portals subject to this privacy policy will signify your acceptance of privacy policy changes.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence551"/>
+  <hasMechanism rdf:resource="#inprivacypolicy2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause3"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence551">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to Our Privacy Policy We reserve the right to make changes to this privacy policy at any time If we make a material change to this privacy policy we will notify you by posting notice of the change on www us playstation com or on our other websites We will post the changes in the privacy policy and if necessary give you additional choices regarding changes Please check this privacy policy from time to time to ensure that you are aware of these changes Your continued use of our websites or other SCEA online portals subject to this privacy policy will signify your acceptance of privacy policy changes</evidenceContent>
+</Evidence>
+
+<InPrivacyPolicy rdf:about="#inprivacypolicy2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence551"/>
 </InPrivacyPolicy>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence552"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence552">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your continued use of our websites or other SCEA online portals subject to this privacy policy will signify your acceptance of privacy policy changes.</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

@@ -684,28 +684,28 @@ def policy_change(onto, r, pi, fp):
         mechanism.hasEvidence.append(change_e)
         change.hasMechanism.append(mechanism)
 
+    if r["attributes"]["User Choice"]["value"] != "Unspecified" \
+            and "selectedText" in r["attributes"]["User Choice"].keys():
+
+        # Cause
+        if r["attributes"]["Change Type"]["value"] == "Privacy relevant change":
+            cause = onto.PrivacyRelatedCause()
+
+        if r["attributes"]["Change Type"]["value"] == "Non-privacy relevant change":
+            cause = onto.NonPrivacyRelatedCause()
+
+        if r["attributes"]["Change Type"][
+            "value"] == "In case of merger or acquisition":
+            cause = onto.MergeAcquisitionCause()
+
+        if r["attributes"]["Change Type"]["value"] == "Other":
+            cause = onto.OtherPolicyChangeCause()
+
     if cause:
-        if r["attributes"]["User Choice"]["value"] != "Unspecified" \
-                and "selectedText" in r["attributes"]["User Choice"].keys():
-
-            # Cause
-            if r["attributes"]["Change Type"]["value"] == "Privacy relevant change":
-                cause = onto.PrivacyRelatedCause()
-
-            if r["attributes"]["Change Type"]["value"] == "Non-privacy relevant change":
-                cause = onto.NonPrivacyRelatedCause()
-
-            if r["attributes"]["Change Type"][
-                "value"] == "In case of merger or acquisition":
-                cause = onto.MergeAcquisitionCause()
-
-            if r["attributes"]["Change Type"]["value"] == "Other":
-                cause = onto.OtherPolicyChangeCause()
-
-            cause_e = onto.Evidence()
-            cause_e.evidenceContent = r["attributes"]["User Choice"]["selectedText"]
-            cause.hasEvidence.append(cause_e)
-            change.hasPolicyChangeCause.append(cause)
+        cause_e = onto.Evidence()
+        cause_e.evidenceContent = r["attributes"]["User Choice"]["selectedText"]
+        cause.hasEvidence.append(cause_e)
+        change.hasPolicyChangeCause.append(cause)
 
 
 def process_opp(onto, policy):

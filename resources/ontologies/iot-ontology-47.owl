@@ -941,9 +941,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
-  <considersAgent rdf:resource="#user1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#useroptcontrol1"/>
@@ -4806,6 +4806,7 @@
 <PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence357"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence357">
@@ -4813,27 +4814,27 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 Changes to this Privacy Policy From time to time we may change this privacy policy to accommodate new technologies industry practices regulatory requirements or for other purposes We will provide noticeto you if these changes are material and where required by applicable law we will obtain your consent</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity5">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence358"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence358">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">where required by applicable law, we will obtain your consent.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence359"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence359">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9 Changes to this Privacy Policy From time to time we may change this privacy policy to accommodate new technologies industry practices regulatory requirements or for other purposes We will provide noticeto you if these changes are material and where required by applicable law we will obtain your consent</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory13">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence359"/>
-</UserSpecialCategory>
-
-<Evidence rdf:about="#evidence359">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice to California Residents If you are a California resident you may have certain additional rights California Civil Code Section 1798 83 permits you to request information regarding the disclosure of your personal information by certain membersof The Walt Disney Family of Companies to third parties for the third parties direct marketing purposes California Business and Professions Code Section 22581 permits registered users who are minors to request and obtain deletion of certain posted content Visit our Your California Privacy Rights page for more information</evidenceContent>
-</Evidence>
-
-<UserSpecialCategory rdf:about="#userspecialcategory14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence360"/>
 </UserSpecialCategory>
@@ -4843,7 +4844,7 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice to California Residents If you are a California resident you may have certain additional rights California Civil Code Section 1798 83 permits you to request information regarding the disclosure of your personal information by certain membersof The Walt Disney Family of Companies to third parties for the third parties direct marketing purposes California Business and Professions Code Section 22581 permits registered users who are minors to request and obtain deletion of certain posted content Visit our Your California Privacy Rights page for more information</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory15">
+<UserSpecialCategory rdf:about="#userspecialcategory14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence361"/>
 </UserSpecialCategory>
@@ -4853,127 +4854,121 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice to California Residents If you are a California resident you may have certain additional rights California Civil Code Section 1798 83 permits you to request information regarding the disclosure of your personal information by certain membersof The Walt Disney Family of Companies to third parties for the third parties direct marketing purposes California Business and Professions Code Section 22581 permits registered users who are minors to request and obtain deletion of certain posted content Visit our Your California Privacy Rights page for more information</evidenceContent>
 </Evidence>
 
+<UserSpecialCategory rdf:about="#userspecialcategory15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence362"/>
+</UserSpecialCategory>
+
 <Evidence rdf:about="#evidence362">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice to California Residents If you are a California resident you may have certain additional rights California Civil Code Section 1798 83 permits you to request information regarding the disclosure of your personal information by certain membersof The Walt Disney Family of Companies to third parties for the third parties direct marketing purposes California Business and Professions Code Section 22581 permits registered users who are minors to request and obtain deletion of certain posted content Visit our Your California Privacy Rights page for more information</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence363">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice to California Residents If you are a California resident you may have certain additional rights California Civil Code Section 1798 83 permits you to request information regarding the disclosure of your personal information by certain membersof The Walt Disney Family of Companies to third parties for the third parties direct marketing purposes California Business and Professions Code Section 22581 permits registered users who are minors to request and obtain deletion of certain posted content Visit our Your California Privacy Rights page for more information</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence362"/>
+  <hasEvidence rdf:resource="#evidence363"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence363">
+<Evidence rdf:about="#evidence364">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deletion of certain posted content.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence363"/>
+  <hasEvidence rdf:resource="#evidence364"/>
 </DataControlMechanism>
 
 <UserSpecialCategory rdf:about="#userspecialcategory16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence364"/>
+  <hasEvidence rdf:resource="#evidence365"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence364">
+<Evidence rdf:about="#evidence365">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Children Children means individuals who we have identified are not of legal age to consent to the collection and processing of their personal information In the United States and Latin America the term children refers to individuals under 13 years of age</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence365">
+<Evidence rdf:about="#evidence366">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We may use IP addresses to collect information regarding the frequency with which our guests visit various parts of our sites and applications, and we may combine IP addresses with personal information.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose62">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence365"/>
+  <hasEvidence rdf:resource="#evidence366"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence366">
+<Evidence rdf:about="#evidence367">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collect information regarding the frequency with which our guests visit various parts of our sites</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism121">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence366"/>
+  <hasEvidence rdf:resource="#evidence367"/>
 </DataCollectionMechanism>
 
-<Evidence rdf:about="#evidence367">
+<Evidence rdf:about="#evidence368">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We may use IP addresses to collect information regarding the frequency with which our guests visit various parts of our sites and applications, and we may combine IP addresses with personal information.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose63">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence367"/>
+  <hasEvidence rdf:resource="#evidence368"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence368">
+<Evidence rdf:about="#evidence369">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">applications,</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism122">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence368"/>
+  <hasEvidence rdf:resource="#evidence369"/>
 </DataCollectionMechanism>
 
-<Evidence rdf:about="#evidence369">
+<Evidence rdf:about="#evidence370">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to collect information regarding the frequency with which our guests visit various parts of our sites and applications,</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose64">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence369"/>
-</DataActivityPurpose>
-
-<Evidence rdf:about="#evidence370">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We may use IP addresses to collect information regarding the frequency with which our guests visit various parts of our sites and applications, and we may combine IP addresses with personal information.</evidenceContent>
-</Evidence>
-
-<DataCollectionMechanism rdf:about="#datacollectionmechanism123">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence370"/>
-  <hasMode rdf:resource="#datacollectionmode65"/>
-</DataCollectionMechanism>
+</DataActivityPurpose>
 
 <Evidence rdf:about="#evidence371">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We may use IP addresses to collect information regarding the frequency with which our guests visit various parts of our sites and applications, and we may combine IP addresses with personal information.</evidenceContent>
 </Evidence>
 
-<DataCollectionMode rdf:about="#datacollectionmode65">
+<DataCollectionMechanism rdf:about="#datacollectionmechanism123">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence371"/>
+  <hasMode rdf:resource="#datacollectionmode65"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence372">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We may use IP addresses to collect information regarding the frequency with which our guests visit various parts of our sites and applications, and we may combine IP addresses with personal information.</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode65">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence372"/>
 </DataCollectionMode>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence372"/>
-  <hasMechanism rdf:resource="#notificationmechanism3"/>
-</PolicyChangeActivity>
-
-<Evidence rdf:about="#evidence372">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice Notice may be by email to you at the last email address you provided us by posting notice of such changes on our sites and applications or by other means consistent with applicable law</evidenceContent>
-</Evidence>
-
-<NotificationMechanism rdf:about="#notificationmechanism3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence372"/>
-</NotificationMechanism>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity7">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence373"/>
-  <hasMechanism rdf:resource="#onwebsitepage1"/>
+  <hasMechanism rdf:resource="#notificationmechanism3"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence373">
@@ -4981,15 +4976,15 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice Notice may be by email to you at the last email address you provided us by posting notice of such changes on our sites and applications or by other means consistent with applicable law</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage1">
+<NotificationMechanism rdf:about="#notificationmechanism3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence373"/>
-</OnWebsitePage>
+</NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity8">
+<PolicyChangeActivity rdf:about="#policychangeactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence374"/>
-  <hasMechanism rdf:resource="#notificationmechanism4"/>
+  <hasMechanism rdf:resource="#onwebsitepage1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence374">
@@ -4997,133 +4992,149 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice Notice may be by email to you at the last email address you provided us by posting notice of such changes on our sites and applications or by other means consistent with applicable law</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism4">
+<OnWebsitePage rdf:about="#onwebsitepage1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence374"/>
+</OnWebsitePage>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence375"/>
+  <hasMechanism rdf:resource="#notificationmechanism4"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence375">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notice Notice may be by email to you at the last email address you provided us by posting notice of such changes on our sites and applications or by other means consistent with applicable law</evidenceContent>
+</Evidence>
+
+<NotificationMechanism rdf:about="#notificationmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence375"/>
 </NotificationMechanism>
 
 <UserSpecialCategory rdf:about="#userspecialcategory17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence375"/>
+  <hasEvidence rdf:resource="#evidence376"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence375">
+<Evidence rdf:about="#evidence376">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parents Parents means a parent or legal guardian</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence376">
+<Evidence rdf:about="#evidence377">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Forums Our sites and applications may offer message boards conversation pages blogs chat rooms social community environments profile pages and other forums that do not have a restricted audience If you provide personal information when you use any of these features that personal information may be publicly posted and otherwise disclosed without limitation as to its use by us or by a third party To request removal of your personal information from a public forum on one of our sites or applications please contact Guest Services</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity18">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence376"/>
+  <hasEvidence rdf:resource="#evidence377"/>
   <isAppliedTo rdf:resource="#sensitivedata5"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence377">
+<Evidence rdf:about="#evidence378">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">removal</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence377"/>
+  <hasEvidence rdf:resource="#evidence378"/>
 </DataControlMechanism>
 
 <SensitiveData rdf:about="#sensitivedata5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence376"/>
+  <hasEvidence rdf:resource="#evidence377"/>
 </SensitiveData>
 
-<Evidence rdf:about="#evidence378">
+<Evidence rdf:about="#evidence379">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Forums Our sites and applications may offer message boards conversation pages blogs chat rooms social community environments profile pages and other forums that do not have a restricted audience If you provide personal information when you use any of these features that personal information may be publicly posted and otherwise disclosed without limitation as to its use by us or by a third party To request removal of your personal information from a public forum on one of our sites or applications please contact Guest Services</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity19">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence378"/>
+  <hasEvidence rdf:resource="#evidence379"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence379">
+<Evidence rdf:about="#evidence380">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To request removal of your personal information from a public forum on one of our sites or applications, please contact Guest Services.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism24">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence379"/>
-</DataControlMechanism>
-
-<Evidence rdf:about="#evidence380">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">message boards, conversation pages, blogs, chat rooms, social community environments, profile pages, and other forums</evidenceContent>
-</Evidence>
-
-<DataActivityPurpose rdf:about="#dataactivitypurpose65">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence380"/>
-</DataActivityPurpose>
+</DataControlMechanism>
 
 <Evidence rdf:about="#evidence381">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">message boards, conversation pages, blogs, chat rooms, social community environments, profile pages, and other forums</evidenceContent>
 </Evidence>
 
-<DataActivityPurpose rdf:about="#dataactivitypurpose66">
+<DataActivityPurpose rdf:about="#dataactivitypurpose65">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence381"/>
 </DataActivityPurpose>
 
 <Evidence rdf:about="#evidence382">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">message boards, conversation pages, blogs, chat rooms, social community environments, profile pages, and other forums</evidenceContent>
+</Evidence>
+
+<DataActivityPurpose rdf:about="#dataactivitypurpose66">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence382"/>
+</DataActivityPurpose>
+
+<Evidence rdf:about="#evidence383">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you provide personal information when you use any of these features, that personal information may be publicly posted and otherwise disclosed without limitation as to its use by us or by a third party.</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism124">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence382"/>
+  <hasEvidence rdf:resource="#evidence383"/>
 </DataCollectionMechanism>
 
-<Evidence rdf:about="#evidence383">
+<Evidence rdf:about="#evidence384">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">message boards, conversation pages, blogs, chat rooms, social community environments, profile pages, and other forums</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose67">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence383"/>
+  <hasEvidence rdf:resource="#evidence384"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence384">
+<Evidence rdf:about="#evidence385">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you provide personal information when you use any of these features, that personal information may be publicly posted and otherwise disclosed without limitation as to its use by us or by a third party.</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism125">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence384"/>
+  <hasEvidence rdf:resource="#evidence385"/>
 </DataCollectionMechanism>
 
 <UserSpecialCategory rdf:about="#userspecialcategory18">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence385"/>
+  <hasEvidence rdf:resource="#evidence386"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence385">
+<Evidence rdf:about="#evidence386">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For questions related to childrens privacy you may also telephone Guest Services at 877 466-6669</evidenceContent>
 </Evidence>
 
 <TechnicalMeasure rdf:about="#technicalmeasure6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence386"/>
+  <hasEvidence rdf:resource="#evidence387"/>
 </TechnicalMeasure>
 
-<Evidence rdf:about="#evidence386">
+<Evidence rdf:about="#evidence387">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disney Interactive has received the TRUSTe Privacy Seal in the United States signifying that this privacy policy and our privacy practices have been reviewed for compliance with the TRUSTe program listed on the validation page available when you click on the TRUSTe Privacy Seal The TRUSTe program covers only those properties identified on the validation page If you believe that Disney Interactive has not responded to your inquiry or your inquiry has not been satisfactorily addressed you may contact TRUSTe or the United States Federal Trade Commission through its online consumer complaint form</evidenceContent>
 </Evidence>

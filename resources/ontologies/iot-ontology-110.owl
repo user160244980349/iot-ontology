@@ -1241,8 +1241,8 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersData rdf:resource="#genericdata1"/>
@@ -11682,6 +11682,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence883"/>
   <hasMechanism rdf:resource="#notificationmechanism3"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence883">
@@ -11694,17 +11695,17 @@
   <hasEvidence rdf:resource="#evidence883"/>
 </NotificationMechanism>
 
-<UserSpecialCategory rdf:about="#userspecialcategory4">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence884"/>
-</UserSpecialCategory>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence884">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unless our sites and services contain the Privacy Rights for California Minors in the Digital World supplemental terms our sites and services do not collect age from users under 18 If you reside in California and are a minor you are under 18 years of age and you are using a site or service that collects your age as a registration requirement and you submit content please follow the instructions on the supplemental terms to request removal of public content Please note that this removal does not ensure complete or comprehensive removal of the content or information posted on our sites and services if the content you posted has been shared or reposted We are only obligated to remove content that you post where you posted it There are certain circumstances in which we do not have to remove your content including if any other state or federal law requires us to maintain the information we anonymize the content by removing identifying characteristics or we paid you for the content you posted Without limiting the generality of the foregoing our services may allow users above the age of 18 such as healthcare providers parents and guardians to submit personal information about others including minors Such users assume full responsibility over their submission use and transmission of such information</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain consent from a parent or guardian before we collect, use and disclose the personal information</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory5">
+<UserSpecialCategory rdf:about="#userspecialcategory4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence885"/>
 </UserSpecialCategory>
@@ -11714,7 +11715,7 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unless our sites and services contain the Privacy Rights for California Minors in the Digital World supplemental terms our sites and services do not collect age from users under 18 If you reside in California and are a minor you are under 18 years of age and you are using a site or service that collects your age as a registration requirement and you submit content please follow the instructions on the supplemental terms to request removal of public content Please note that this removal does not ensure complete or comprehensive removal of the content or information posted on our sites and services if the content you posted has been shared or reposted We are only obligated to remove content that you post where you posted it There are certain circumstances in which we do not have to remove your content including if any other state or federal law requires us to maintain the information we anonymize the content by removing identifying characteristics or we paid you for the content you posted Without limiting the generality of the foregoing our services may allow users above the age of 18 such as healthcare providers parents and guardians to submit personal information about others including minors Such users assume full responsibility over their submission use and transmission of such information</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory6">
+<UserSpecialCategory rdf:about="#userspecialcategory5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence886"/>
 </UserSpecialCategory>
@@ -11724,7 +11725,7 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unless our sites and services contain the Privacy Rights for California Minors in the Digital World supplemental terms our sites and services do not collect age from users under 18 If you reside in California and are a minor you are under 18 years of age and you are using a site or service that collects your age as a registration requirement and you submit content please follow the instructions on the supplemental terms to request removal of public content Please note that this removal does not ensure complete or comprehensive removal of the content or information posted on our sites and services if the content you posted has been shared or reposted We are only obligated to remove content that you post where you posted it There are certain circumstances in which we do not have to remove your content including if any other state or federal law requires us to maintain the information we anonymize the content by removing identifying characteristics or we paid you for the content you posted Without limiting the generality of the foregoing our services may allow users above the age of 18 such as healthcare providers parents and guardians to submit personal information about others including minors Such users assume full responsibility over their submission use and transmission of such information</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory7">
+<UserSpecialCategory rdf:about="#userspecialcategory6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence887"/>
 </UserSpecialCategory>
@@ -11734,27 +11735,27 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unless our sites and services contain the Privacy Rights for California Minors in the Digital World supplemental terms our sites and services do not collect age from users under 18 If you reside in California and are a minor you are under 18 years of age and you are using a site or service that collects your age as a registration requirement and you submit content please follow the instructions on the supplemental terms to request removal of public content Please note that this removal does not ensure complete or comprehensive removal of the content or information posted on our sites and services if the content you posted has been shared or reposted We are only obligated to remove content that you post where you posted it There are certain circumstances in which we do not have to remove your content including if any other state or federal law requires us to maintain the information we anonymize the content by removing identifying characteristics or we paid you for the content you posted Without limiting the generality of the foregoing our services may allow users above the age of 18 such as healthcare providers parents and guardians to submit personal information about others including minors Such users assume full responsibility over their submission use and transmission of such information</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory8">
+<UserSpecialCategory rdf:about="#userspecialcategory7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence888"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence888">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Users We are headquartered in the United States Our sites and services are hosted and administrated in the United States or hosted with cloud service providers who are headquartered in the United States and are intended for users in the United States If you are located outside the United States be aware that information you provide to us or that we obtain as a result of your use of our sites and services may be processed in transferred to and stored in the UnitedStates and will be subject to U S law U S privacy and data protection laws may not be equivalent to the laws of your country of residence By using our sites and services or providing us with your information you consent to the collection transfer storage and processing of information to and in the United States</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unless our sites and services contain the Privacy Rights for California Minors in the Digital World supplemental terms our sites and services do not collect age from users under 18 If you reside in California and are a minor you are under 18 years of age and you are using a site or service that collects your age as a registration requirement and you submit content please follow the instructions on the supplemental terms to request removal of public content Please note that this removal does not ensure complete or comprehensive removal of the content or information posted on our sites and services if the content you posted has been shared or reposted We are only obligated to remove content that you post where you posted it There are certain circumstances in which we do not have to remove your content including if any other state or federal law requires us to maintain the information we anonymize the content by removing identifying characteristics or we paid you for the content you posted Without limiting the generality of the foregoing our services may allow users above the age of 18 such as healthcare providers parents and guardians to submit personal information about others including minors Such users assume full responsibility over their submission use and transmission of such information</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory9">
+<UserSpecialCategory rdf:about="#userspecialcategory8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence889"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence889">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California Privacy Rights We do not share personal information with third parties for their direct marketing purposes unless you affirmatively agree to such disclosure typically by opting in to receive information from a third party that is participating in a sweepstakes or other promotion on one of our sites for example If you ask us to share your personal information with a third party for its marketing purposes we will only share information in connection with that specific promotion since we do not share information with any third party other than our service providers on an ongoing basis To prevent disclosure of your personal information for use in direct marketing by a third party do not opt in to such use when you provide personal information on one of our sites</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Users We are headquartered in the United States Our sites and services are hosted and administrated in the United States or hosted with cloud service providers who are headquartered in the United States and are intended for users in the United States If you are located outside the United States be aware that information you provide to us or that we obtain as a result of your use of our sites and services may be processed in transferred to and stored in the UnitedStates and will be subject to U S law U S privacy and data protection laws may not be equivalent to the laws of your country of residence By using our sites and services or providing us with your information you consent to the collection transfer storage and processing of information to and in the United States</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory10">
+<UserSpecialCategory rdf:about="#userspecialcategory9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence890"/>
 </UserSpecialCategory>
@@ -11764,112 +11765,112 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California Privacy Rights We do not share personal information with third parties for their direct marketing purposes unless you affirmatively agree to such disclosure typically by opting in to receive information from a third party that is participating in a sweepstakes or other promotion on one of our sites for example If you ask us to share your personal information with a third party for its marketing purposes we will only share information in connection with that specific promotion since we do not share information with any third party other than our service providers on an ongoing basis To prevent disclosure of your personal information for use in direct marketing by a third party do not opt in to such use when you provide personal information on one of our sites</evidenceContent>
 </Evidence>
 
+<UserSpecialCategory rdf:about="#userspecialcategory10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence891"/>
+</UserSpecialCategory>
+
+<Evidence rdf:about="#evidence891">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California Privacy Rights We do not share personal information with third parties for their direct marketing purposes unless you affirmatively agree to such disclosure typically by opting in to receive information from a third party that is participating in a sweepstakes or other promotion on one of our sites for example If you ask us to share your personal information with a third party for its marketing purposes we will only share information in connection with that specific promotion since we do not share information with any third party other than our service providers on an ongoing basis To prevent disclosure of your personal information for use in direct marketing by a third party do not opt in to such use when you provide personal information on one of our sites</evidenceContent>
+</Evidence>
+
 <DataCollectionActivity rdf:about="#datacollectionactivity83">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose210"/>
   <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism188"/>
   <isAppliedToData rdf:resource="#genericdata29"/>
-  <hasEvidence rdf:resource="#evidence895"/>
+  <hasEvidence rdf:resource="#evidence896"/>
   <collectsDataFromAgent rdf:resource="#thirdparties1"/>
 </DataCollectionActivity>
 
-<Evidence rdf:about="#evidence891">
+<Evidence rdf:about="#evidence892">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for their direct marketing purposes</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose210">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence891"/>
+  <hasEvidence rdf:resource="#evidence892"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence892">
+<Evidence rdf:about="#evidence893">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">share</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism188">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence892"/>
+  <hasEvidence rdf:resource="#evidence893"/>
   <hasMode rdf:resource="#datacollectionmode57"/>
 </DataCollectionMechanism>
 
-<Evidence rdf:about="#evidence893">
+<Evidence rdf:about="#evidence894">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disclosure of your personal information for use in direct marketing by a third party</evidenceContent>
 </Evidence>
 
 <DataCollectionMode rdf:about="#datacollectionmode57">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence893"/>
+  <hasEvidence rdf:resource="#evidence894"/>
 </DataCollectionMode>
 
 <GenericData rdf:about="#genericdata29">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence894"/>
+  <hasEvidence rdf:resource="#evidence895"/>
 </GenericData>
 
-<Evidence rdf:about="#evidence894">
+<Evidence rdf:about="#evidence895">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal information</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence895">
+<Evidence rdf:about="#evidence896">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California Privacy Rights We do not share personal information with third parties for their direct marketing purposes unless you affirmatively agree to such disclosure typically by opting in to receive information from a third party that is participating in a sweepstakes or other promotion on one of our sites for example If you ask us to share your personal information with a third party for its marketing purposes we will only share information in connection with that specific promotion since we do not share information with any third party other than our service providers on an ongoing basis To prevent disclosure of your personal information for use in direct marketing by a third party do not opt in to such use when you provide personal information on one of our sites</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence896">
+<Evidence rdf:about="#evidence897">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose211">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence896"/>
+  <hasEvidence rdf:resource="#evidence897"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence897">
+<Evidence rdf:about="#evidence898">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">share</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism189">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence897"/>
+  <hasEvidence rdf:resource="#evidence898"/>
 </DataCollectionMechanism>
 
-<Evidence rdf:about="#evidence898">
+<Evidence rdf:about="#evidence899">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose212">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence898"/>
+  <hasEvidence rdf:resource="#evidence899"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence899">
+<Evidence rdf:about="#evidence900">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">share</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism190">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence899"/>
+  <hasEvidence rdf:resource="#evidence900"/>
 </DataCollectionMechanism>
 
 <UserSpecialCategory rdf:about="#userspecialcategory11">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence900"/>
-</UserSpecialCategory>
-
-<Evidence rdf:about="#evidence900">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Users residing in certain jurisdictions like California have a right to access personal information held by us about them and their right of access can be exercised in accordance with applicable law California law requires certain businesses to respond to requests from California residents asking about the business s practices related to disclosing personal information to third parties for the third parties direct marketing purposes Alternately such businesses may have in place a policy not to disclose personal information of customers to third parties for the third parties direct marketing purposes if the resident has exercised an option to opt-out of such information-sharing We have such a policy in place</evidenceContent>
-</Evidence>
-
-<UserSpecialCategory rdf:about="#userspecialcategory12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence901"/>
 </UserSpecialCategory>
@@ -11879,17 +11880,17 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Users residing in certain jurisdictions like California have a right to access personal information held by us about them and their right of access can be exercised in accordance with applicable law California law requires certain businesses to respond to requests from California residents asking about the business s practices related to disclosing personal information to third parties for the third parties direct marketing purposes Alternately such businesses may have in place a policy not to disclose personal information of customers to third parties for the third parties direct marketing purposes if the resident has exercised an option to opt-out of such information-sharing We have such a policy in place</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory13">
+<UserSpecialCategory rdf:about="#userspecialcategory12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence902"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence902">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California residents may request further information about our approach to this law by writing to us When writing to us you must put the statement Your California Privacy Rights in the body or subject line of your request and include i the name of the site about which you are contacting us ii any unique site identifier associated with you like member number or forum handle iii your name and iv your contact information Please submit requests using our Privacy Contact form and allow 30 days for a response We will not accept requests via the telephone mail or by facsimile and we are not responsible for notices that are not labeled or sent properly or that do not have complete information</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Users residing in certain jurisdictions like California have a right to access personal information held by us about them and their right of access can be exercised in accordance with applicable law California law requires certain businesses to respond to requests from California residents asking about the business s practices related to disclosing personal information to third parties for the third parties direct marketing purposes Alternately such businesses may have in place a policy not to disclose personal information of customers to third parties for the third parties direct marketing purposes if the resident has exercised an option to opt-out of such information-sharing We have such a policy in place</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory14">
+<UserSpecialCategory rdf:about="#userspecialcategory13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence903"/>
 </UserSpecialCategory>
@@ -11899,20 +11900,20 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California residents may request further information about our approach to this law by writing to us When writing to us you must put the statement Your California Privacy Rights in the body or subject line of your request and include i the name of the site about which you are contacting us ii any unique site identifier associated with you like member number or forum handle iii your name and iv your contact information Please submit requests using our Privacy Contact form and allow 30 days for a response We will not accept requests via the telephone mail or by facsimile and we are not responsible for notices that are not labeled or sent properly or that do not have complete information</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity4">
+<UserSpecialCategory rdf:about="#userspecialcategory14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence904"/>
-</PolicyChangeActivity>
+</UserSpecialCategory>
 
 <Evidence rdf:about="#evidence904">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California residents may request further information about our approach to this law by writing to us When writing to us you must put the statement Your California Privacy Rights in the body or subject line of your request and include i the name of the site about which you are contacting us ii any unique site identifier associated with you like member number or forum handle iii your name and iv your contact information Please submit requests using our Privacy Contact form and allow 30 days for a response We will not accept requests via the telephone mail or by facsimile and we are not responsible for notices that are not labeled or sent properly or that do not have complete information</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity5">
+<PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence905"/>
-  <hasMechanism rdf:resource="#inprivacypolicy1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence905">
@@ -11920,30 +11921,20 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence905"/>
-</InPrivacyPolicy>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity6">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence906"/>
-  <hasMechanism rdf:resource="#inprivacypolicy2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence906">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy, you will need to deactivate your account or terminate your services.</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence906"/>
-</InPrivacyPolicy>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity7">
+<PolicyChangeActivity rdf:about="#policychangeactivity5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence907"/>
+  <hasMechanism rdf:resource="#inprivacypolicy1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence907">
@@ -11951,10 +11942,15 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity8">
+<InPrivacyPolicy rdf:about="#inprivacypolicy1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence907"/>
+</InPrivacyPolicy>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence908"/>
-  <hasMechanism rdf:resource="#inprivacypolicy3"/>
+  <hasMechanism rdf:resource="#inprivacypolicy2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence908">
@@ -11962,15 +11958,14 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy3">
+<InPrivacyPolicy rdf:about="#inprivacypolicy2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence908"/>
 </InPrivacyPolicy>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity9">
+<PolicyChangeActivity rdf:about="#policychangeactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence909"/>
-  <hasMechanism rdf:resource="#inprivacypolicy4"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence909">
@@ -11978,25 +11973,52 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
 </Evidence>
 
+<PolicyChangeActivity rdf:about="#policychangeactivity8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence910"/>
+  <hasMechanism rdf:resource="#inprivacypolicy3"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence910">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
+</Evidence>
+
+<InPrivacyPolicy rdf:about="#inprivacypolicy3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence910"/>
+</InPrivacyPolicy>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence911"/>
+  <hasMechanism rdf:resource="#inprivacypolicy4"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence911">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy We may revise this privacy policy from time to time and if we do we will update it on this page and modify the LastUpdated date If our information practices change in a significant way we will provide a more prominent notice Because our privacy policy can change at any time we encourage you to reread it periodically to see if there have been any changes that affect you If you disagree with any changes to this privacy policy and do not wish your information to be subject to the revised privacy policy you will need to deactivate your account or terminate your services Your use of our sites and services following any such change constitutes your agreement that all information collected from or about you through our sites and services after the revised privacy policy is posted will be subject to the terms of the revised privacy policy</evidenceContent>
+</Evidence>
+
 <InPrivacyPolicy rdf:about="#inprivacypolicy4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence909"/>
+  <hasEvidence rdf:resource="#evidence911"/>
 </InPrivacyPolicy>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence910"/>
+  <hasEvidence rdf:resource="#evidence912"/>
   <hasMechanism rdf:resource="#inprivacypolicy5"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence910">
+<Evidence rdf:about="#evidence912">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Last Updated October 3 2014 s &lt;/body&gt; &lt;/html&gt;</evidenceContent>
 </Evidence>
 
 <InPrivacyPolicy rdf:about="#inprivacypolicy5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence910"/>
+  <hasEvidence rdf:resource="#evidence912"/>
 </InPrivacyPolicy>
 
 

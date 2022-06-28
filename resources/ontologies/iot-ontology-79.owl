@@ -10495,6 +10495,7 @@
 <PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence749"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence749">
@@ -10502,25 +10503,20 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity5">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence750"/>
-  <hasMechanism rdf:resource="#inprivacypolicy2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence750">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">without your explicit consent</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence750"/>
-</InPrivacyPolicy>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity6">
+<PolicyChangeActivity rdf:about="#policychangeactivity5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence751"/>
+  <hasMechanism rdf:resource="#inprivacypolicy2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence751">
@@ -10528,10 +10524,14 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity7">
+<InPrivacyPolicy rdf:about="#inprivacypolicy2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence751"/>
+</InPrivacyPolicy>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence752"/>
-  <hasMechanism rdf:resource="#notificationmechanism2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence752">
@@ -10539,15 +10539,10 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence752"/>
-</NotificationMechanism>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity8">
+<PolicyChangeActivity rdf:about="#policychangeactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence753"/>
-  <hasMechanism rdf:resource="#notificationmechanism3"/>
+  <hasMechanism rdf:resource="#notificationmechanism2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence753">
@@ -10555,15 +10550,16 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism3">
+<NotificationMechanism rdf:about="#notificationmechanism2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence753"/>
 </NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity9">
+<PolicyChangeActivity rdf:about="#policychangeactivity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence754"/>
-  <hasMechanism rdf:resource="#inprivacypolicy3"/>
+  <hasMechanism rdf:resource="#notificationmechanism3"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence754">
@@ -10571,25 +10567,26 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy3">
+<NotificationMechanism rdf:about="#notificationmechanism3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence754"/>
-</InPrivacyPolicy>
+</NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity10">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence755"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence755">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">your explicit consent</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity11">
+<PolicyChangeActivity rdf:about="#policychangeactivity9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence756"/>
-  <hasMechanism rdf:resource="#notificationmechanism4"/>
+  <hasMechanism rdf:resource="#inprivacypolicy3"/>
+  <hasPolicyChangeCause rdf:resource="#nonprivacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence756">
@@ -10597,10 +10594,68 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism4">
+<InPrivacyPolicy rdf:about="#inprivacypolicy3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence756"/>
+</InPrivacyPolicy>
+
+<NonPrivacyRelatedCause rdf:about="#nonprivacyrelatedcause1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence757"/>
+</NonPrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence757">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will not reduce your rights under this Privacy Policy without your explicit consent.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence758"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause3"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence758">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
+</Evidence>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence759"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence759">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will not reduce your rights under this Privacy Policy without your explicit consent.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence760"/>
+  <hasMechanism rdf:resource="#notificationmechanism4"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause4"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence760">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes Our Privacy Policy may change from time to time We will not reduce your rights under this Privacy Policy without your explicit consent We will post any privacy policy changes on this page and if the changes are significant we will provide a more prominent notice including for certain services email notification of privacy policy changes We will also keep prior versions of this Privacy Policy in an archive for your review</evidenceContent>
+</Evidence>
+
+<NotificationMechanism rdf:about="#notificationmechanism4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence760"/>
 </NotificationMechanism>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence761"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence761">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will not reduce your rights under this Privacy Policy without your explicit consent.</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

@@ -12323,6 +12323,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence970"/>
   <hasMechanism rdf:resource="#onwebsitepage1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence970">
@@ -12335,26 +12336,21 @@
   <hasEvidence rdf:resource="#evidence970"/>
 </OnWebsitePage>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity3">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence971"/>
-  <hasMechanism rdf:resource="#onwebsitepage2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence971">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 Changes to This privacy policy This privacy policy is subject to occasional revision and if we make any material changes in the way we use your PersonallyIdentifiable Information we will prominently post notice of the changes on ourCovered Sites Any changes to this privacy policy will be effective upon thirty 30 calendar days following our posting of notice of the changes on our Covered Sites These changes will be effective immediately for new users of our Covered Sites Continued use of our Covered Sites following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These changes will be effective immediately for new users of our Covered Sites. Continued use of our Covered Sites, following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes.</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence971"/>
-</OnWebsitePage>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity4">
+<PolicyChangeActivity rdf:about="#policychangeactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence972"/>
-  <hasMechanism rdf:resource="#onwebsitepage3"/>
+  <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence972">
@@ -12362,17 +12358,43 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 Changes to This privacy policy This privacy policy is subject to occasional revision and if we make any material changes in the way we use your PersonallyIdentifiable Information we will prominently post notice of the changes on ourCovered Sites Any changes to this privacy policy will be effective upon thirty 30 calendar days following our posting of notice of the changes on our Covered Sites These changes will be effective immediately for new users of our Covered Sites Continued use of our Covered Sites following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage3">
+<OnWebsitePage rdf:about="#onwebsitepage2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence972"/>
 </OnWebsitePage>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity5">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence973"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence973">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any changes to this privacy policy will be effective upon thirty (30) calendar days following our posting of notice of the changes on our Covered Sites. These changes will be effective immediately for new users of our Covered Sites. Continued use of our Covered Sites, following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence974"/>
+  <hasMechanism rdf:resource="#onwebsitepage3"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence974">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 Changes to This privacy policy This privacy policy is subject to occasional revision and if we make any material changes in the way we use your PersonallyIdentifiable Information we will prominently post notice of the changes on ourCovered Sites Any changes to this privacy policy will be effective upon thirty 30 calendar days following our posting of notice of the changes on our Covered Sites These changes will be effective immediately for new users of our Covered Sites Continued use of our Covered Sites following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes</evidenceContent>
+</Evidence>
+
+<OnWebsitePage rdf:about="#onwebsitepage3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence974"/>
+</OnWebsitePage>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence975"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence975">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 Changes to This privacy policy This privacy policy is subject to occasional revision and if we make any material changes in the way we use your PersonallyIdentifiable Information we will prominently post notice of the changes on ourCovered Sites Any changes to this privacy policy will be effective upon thirty 30 calendar days following our posting of notice of the changes on our Covered Sites These changes will be effective immediately for new users of our Covered Sites Continued use of our Covered Sites following notice of such changes shall indicate your acknowledgement of such changes and agreement to be bound by the terms and conditions of such changes</evidenceContent>
 </Evidence>

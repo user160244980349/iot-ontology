@@ -895,9 +895,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersData rdf:resource="#nonsensitivedata1"/>
   <considersActivity rdf:resource="#dataretentionactivity1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
@@ -5313,6 +5313,7 @@
 <PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence429"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence429">
@@ -5320,12 +5321,22 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material that is really important changes to the way we use or disclose personally identifiable information will apply on a going-forward basis unless we have your express consent to change the way we use or disclose the personally identifiable information we collected when the earlier version of this Privacy Policy was in effect</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory5">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence430"/>
-</UserSpecialCategory>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence430">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">changes to the way we use or disclose personally identifiable information will apply on a going-forward basis, unless we have your express consent to change the way we use or disclose the personally identifiable information we collected when the earlier version of this Privacy Policy was in effect.</evidenceContent>
+</Evidence>
+
+<UserSpecialCategory rdf:about="#userspecialcategory5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence431"/>
+</UserSpecialCategory>
+
+<Evidence rdf:about="#evidence431">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X SPECIAL NOTICE TO CALIFORNIA CONSUMERS California residents may request a list of all third parties to which The MRC has disclosed certain personally identifiable information about you for marketing purposes You may make one request per calendar year In your request please attest to the fact that you are a California resident and provide a current California address for your response You may request this information in writing by contacting us at administrator mrc org or Privacy Request The Media Research Center 325 South Patrick Street Alexandria Virginia 22314</evidenceContent>
 </Evidence>

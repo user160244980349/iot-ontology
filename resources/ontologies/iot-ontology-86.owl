@@ -1224,9 +1224,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#userprivacycontrol1"/>
   <considersData rdf:resource="#nonsensitivedata1"/>
@@ -11927,6 +11927,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence915"/>
   <hasMechanism rdf:resource="#onwebsitepage1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence915">
@@ -11939,20 +11940,30 @@
   <hasEvidence rdf:resource="#evidence915"/>
 </OnWebsitePage>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity3">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence916"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence916">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will not, however, materially change our policies and practices to make them less protective of personal information we have previously collected from you without your express consent.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence917"/>
   <hasMechanism rdf:resource="#inprivacypolicy1"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence916">
+<Evidence rdf:about="#evidence917">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes to This Privacy Policy As our Sites continue to develop we may add new services and features to them In the event that these additions affect our Privacy Policy or if other changes in our privacy practices or applicable laws necessitate changes to the Privacy Policy this document will be updated accordingly If we make a material change in the way we use your personal information we will provide prominent notice of the change on the Sites We will not however materially change our policies and practices to make them less protective of personal information we have previously collected from you without your express consent</evidenceContent>
 </Evidence>
 
 <InPrivacyPolicy rdf:about="#inprivacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence916"/>
+  <hasEvidence rdf:resource="#evidence917"/>
 </InPrivacyPolicy>
 
 <UserPrivacyControl rdf:about="#userprivacycontrol14">
@@ -11960,40 +11971,40 @@
   <has rdf:resource="#purpose12"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism16"/>
   <isAppliedToData rdf:resource="#nonsensitivedata21"/>
-  <hasEvidence rdf:resource="#evidence920"/>
+  <hasEvidence rdf:resource="#evidence921"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence917">
+<Evidence rdf:about="#evidence918">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commercial emails and newsletters</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence917"/>
+  <hasEvidence rdf:resource="#evidence918"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence918">
+<Evidence rdf:about="#evidence919">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may always opt-out of receiving future commercial emails and newsletters from PRH. We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the "unsubscribe" link within the email you receive.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence918"/>
+  <hasEvidence rdf:resource="#evidence919"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence919"/>
+  <hasEvidence rdf:resource="#evidence920"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence919">
+<Evidence rdf:about="#evidence920">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emails</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence920">
+<Evidence rdf:about="#evidence921">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How To Opt-Out or Correct Your Information You may always opt-out of receiving future commercial emails and newsletters from PRH We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the unsubscribe link within the email you receive You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe penguinrandomhouse com Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature For example we may contact you concerning any purchases you have made with us even if you opt out of receiving unsolicited commercial messages</evidenceContent>
 </Evidence>
@@ -12003,40 +12014,40 @@
   <has rdf:resource="#purpose13"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism17"/>
   <isAppliedToData rdf:resource="#nonsensitivedata22"/>
-  <hasEvidence rdf:resource="#evidence924"/>
+  <hasEvidence rdf:resource="#evidence925"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence921">
+<Evidence rdf:about="#evidence922">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">receiving future commercial emails and newsletters from PRH.</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence921"/>
+  <hasEvidence rdf:resource="#evidence922"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence922">
+<Evidence rdf:about="#evidence923">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe@penguinrandomhouse.com. Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature. For example, we may contact you concerning any purchases you have made with us, even if you opt out of receiving unsolicited commercial messages.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence922"/>
+  <hasEvidence rdf:resource="#evidence923"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence923"/>
+  <hasEvidence rdf:resource="#evidence924"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence923">
+<Evidence rdf:about="#evidence924">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emails</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence924">
+<Evidence rdf:about="#evidence925">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How To Opt-Out or Correct Your Information You may always opt-out of receiving future commercial emails and newsletters from PRH We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the unsubscribe link within the email you receive You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe penguinrandomhouse com Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature For example we may contact you concerning any purchases you have made with us even if you opt out of receiving unsolicited commercial messages</evidenceContent>
 </Evidence>
@@ -12045,30 +12056,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has rdf:resource="#purpose14"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism18"/>
-  <hasEvidence rdf:resource="#evidence927"/>
+  <hasEvidence rdf:resource="#evidence928"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence925">
+<Evidence rdf:about="#evidence926">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commercial emails and newsletters</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence925"/>
+  <hasEvidence rdf:resource="#evidence926"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence926">
+<Evidence rdf:about="#evidence927">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clicking on the "unsubscribe" link within the email you receive.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism18">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence926"/>
+  <hasEvidence rdf:resource="#evidence927"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence927">
+<Evidence rdf:about="#evidence928">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How To Opt-Out or Correct Your Information You may always opt-out of receiving future commercial emails and newsletters from PRH We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the unsubscribe link within the email you receive You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe penguinrandomhouse com Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature For example we may contact you concerning any purchases you have made with us even if you opt out of receiving unsolicited commercial messages</evidenceContent>
 </Evidence>
@@ -12077,30 +12088,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has rdf:resource="#purpose15"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism19"/>
-  <hasEvidence rdf:resource="#evidence930"/>
+  <hasEvidence rdf:resource="#evidence931"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence928">
+<Evidence rdf:about="#evidence929">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commercial emails and newsletters</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose15">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence928"/>
+  <hasEvidence rdf:resource="#evidence929"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence929">
+<Evidence rdf:about="#evidence930">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sending us a message at unsubscribe@penguinrandomhouse.com</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism19">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence929"/>
+  <hasEvidence rdf:resource="#evidence930"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence930">
+<Evidence rdf:about="#evidence931">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How To Opt-Out or Correct Your Information You may always opt-out of receiving future commercial emails and newsletters from PRH We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the unsubscribe link within the email you receive You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe penguinrandomhouse com Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature For example we may contact you concerning any purchases you have made with us even if you opt out of receiving unsolicited commercial messages</evidenceContent>
 </Evidence>
@@ -12110,40 +12121,40 @@
   <has rdf:resource="#purpose16"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism20"/>
   <isAppliedToData rdf:resource="#nonsensitivedata23"/>
-  <hasEvidence rdf:resource="#evidence934"/>
+  <hasEvidence rdf:resource="#evidence935"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence931">
+<Evidence rdf:about="#evidence932">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commercial emails and newsletters</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence931"/>
+  <hasEvidence rdf:resource="#evidence932"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence932">
+<Evidence rdf:about="#evidence933">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the "unsubscribe" link within the email you receive.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence932"/>
+  <hasEvidence rdf:resource="#evidence933"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence933"/>
+  <hasEvidence rdf:resource="#evidence934"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence933">
+<Evidence rdf:about="#evidence934">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communications</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence934">
+<Evidence rdf:about="#evidence935">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How To Opt-Out or Correct Your Information You may always opt-out of receiving future commercial emails and newsletters from PRH We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the unsubscribe link within the email you receive You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe penguinrandomhouse com Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature For example we may contact you concerning any purchases you have made with us even if you opt out of receiving unsolicited commercial messages</evidenceContent>
 </Evidence>
@@ -12153,72 +12164,72 @@
   <has rdf:resource="#purpose17"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism21"/>
   <isAppliedToData rdf:resource="#nonsensitivedata24"/>
-  <hasEvidence rdf:resource="#evidence938"/>
+  <hasEvidence rdf:resource="#evidence939"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence935">
+<Evidence rdf:about="#evidence936">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commercial emails and newsletters</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence935"/>
+  <hasEvidence rdf:resource="#evidence936"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence936">
+<Evidence rdf:about="#evidence937">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe@penguinrandomhouse.com.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence936"/>
+  <hasEvidence rdf:resource="#evidence937"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata24">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence937"/>
+  <hasEvidence rdf:resource="#evidence938"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence937">
+<Evidence rdf:about="#evidence938">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">communications</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence938">
+<Evidence rdf:about="#evidence939">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How To Opt-Out or Correct Your Information You may always opt-out of receiving future commercial emails and newsletters from PRH We provide you with the opportunity to opt-out of receiving such communications from us by clicking on the unsubscribe link within the email you receive You may also opt out of receiving further communications from us or correct your information by sending us a message at unsubscribe penguinrandomhouse com Please note that your request not to receive unsolicited commercial emails from us will not apply to messages that you request or that are not commercial in nature For example we may contact you concerning any purchases you have made with us even if you opt out of receiving unsolicited commercial messages</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence939"/>
+  <hasEvidence rdf:resource="#evidence940"/>
 </UserSpecialCategory>
-
-<Evidence rdf:about="#evidence939">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California Privacy Rights California Civil Code Section 1798 83 permits customers of PRH who are California residents to request certain information regarding its disclosure of their personal information to third parties for their direct marketing purposes To make such a request please send an email to privacy penguinrandomhouse com</evidenceContent>
-</Evidence>
 
 <Evidence rdf:about="#evidence940">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California Privacy Rights California Civil Code Section 1798 83 permits customers of PRH who are California residents to request certain information regarding its disclosure of their personal information to third parties for their direct marketing purposes To make such a request please send an email to privacy penguinrandomhouse com</evidenceContent>
 </Evidence>
 
+<Evidence rdf:about="#evidence941">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California Privacy Rights California Civil Code Section 1798 83 permits customers of PRH who are California residents to request certain information regarding its disclosure of their personal information to third parties for their direct marketing purposes To make such a request please send an email to privacy penguinrandomhouse com</evidenceContent>
+</Evidence>
+
 <UserAccessActivity rdf:about="#useraccessactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence940"/>
+  <hasEvidence rdf:resource="#evidence941"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence941">
+<Evidence rdf:about="#evidence942">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">California Civil Code Section 1798.83 permits customers of PRH who are California residents to request certain information regarding its disclosure of their personal information to third parties for their direct marketing purposes. To make such a request, please send an email to privacy@penguinrandomhouse.com.</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence941"/>
+  <hasEvidence rdf:resource="#evidence942"/>
 </DataControlMechanism>
 
 

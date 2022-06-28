@@ -10463,6 +10463,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence733"/>
   <hasMechanism rdf:resource="#inprivacypolicy1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence733">
@@ -10475,30 +10476,40 @@
   <hasEvidence rdf:resource="#evidence733"/>
 </InPrivacyPolicy>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity3">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence734"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence734">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your continued use of the respective site means you accept the updated Privacy Policy.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence735"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence735">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will occasionally update this Privacy Policy as necessary to protect our users and to comply with a changing environment We recommend that you check the posted Privacy Policy when you visit any of our sites to be sure you are aware of and understand our current policy Your continued use of the respective site means you accept the updated Privacy Policy</evidenceContent>
 </Evidence>
 
 <PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence735"/>
+  <hasEvidence rdf:resource="#evidence736"/>
   <hasMechanism rdf:resource="#inprivacypolicy2"/>
 </PolicyChangeActivity>
 
-<Evidence rdf:about="#evidence735">
+<Evidence rdf:about="#evidence736">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Last Update May 24 2014</evidenceContent>
 </Evidence>
 
 <InPrivacyPolicy rdf:about="#inprivacypolicy2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence735"/>
+  <hasEvidence rdf:resource="#evidence736"/>
 </InPrivacyPolicy>
 
 

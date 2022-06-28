@@ -1159,8 +1159,8 @@
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <considersAgent rdf:resource="#user1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#firstparty1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
   <considersData rdf:resource="#genericdata1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
   <considersActivity rdf:resource="#datacollectionactivity1"/>
@@ -9183,6 +9183,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence666"/>
   <hasMechanism rdf:resource="#inprivacypolicy3"/>
+  <hasPolicyChangeCause rdf:resource="#otherpolicychangecause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence666">
@@ -9195,26 +9196,20 @@
   <hasEvidence rdf:resource="#evidence666"/>
 </InPrivacyPolicy>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity8">
+<OtherPolicyChangeCause rdf:about="#otherpolicychangecause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence667"/>
-  <hasMechanism rdf:resource="#onwebsitepage4"/>
-</PolicyChangeActivity>
+</OtherPolicyChangeCause>
 
 <Evidence rdf:about="#evidence667">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can determine when this Privacy Policy was last revised by referring to the Last Updated or similar legend at the top of this page Any changes to this Privacy Policy will become effective upon posting of the revised Privacy Policy on the Internet accessible through this site By continuing to use this online service following such changes you will be deemed to have agreed to such changes If you do not agree with the terms of this Privacy Policy as it may be amended from time to time in whole or in part please do not continue using our online services</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">By continuing to use this online service following such changes, you will be deemed to have agreed to such changes. If you do not agree with the terms of this Privacy Policy, as it may be amended from time to time, in whole or in part, please do not continue using our online services.</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence667"/>
-</OnWebsitePage>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity9">
+<PolicyChangeActivity rdf:about="#policychangeactivity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence668"/>
-  <hasMechanism rdf:resource="#inprivacypolicy4"/>
+  <hasMechanism rdf:resource="#onwebsitepage4"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence668">
@@ -9222,17 +9217,33 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can determine when this Privacy Policy was last revised by referring to the Last Updated or similar legend at the top of this page Any changes to this Privacy Policy will become effective upon posting of the revised Privacy Policy on the Internet accessible through this site By continuing to use this online service following such changes you will be deemed to have agreed to such changes If you do not agree with the terms of this Privacy Policy as it may be amended from time to time in whole or in part please do not continue using our online services</evidenceContent>
 </Evidence>
 
-<InPrivacyPolicy rdf:about="#inprivacypolicy4">
+<OnWebsitePage rdf:about="#onwebsitepage4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence668"/>
+</OnWebsitePage>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence669"/>
+  <hasMechanism rdf:resource="#inprivacypolicy4"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence669">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You can determine when this Privacy Policy was last revised by referring to the Last Updated or similar legend at the top of this page Any changes to this Privacy Policy will become effective upon posting of the revised Privacy Policy on the Internet accessible through this site By continuing to use this online service following such changes you will be deemed to have agreed to such changes If you do not agree with the terms of this Privacy Policy as it may be amended from time to time in whole or in part please do not continue using our online services</evidenceContent>
+</Evidence>
+
+<InPrivacyPolicy rdf:about="#inprivacypolicy4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence669"/>
 </InPrivacyPolicy>
 
 <UserSpecialCategory rdf:about="#userspecialcategory13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence669"/>
+  <hasEvidence rdf:resource="#evidence670"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence669">
+<Evidence rdf:about="#evidence670">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For enquiries from outside of the US please contact us at privacy nbcuni com or Chief Privacy Officer Central Saint Giles St Giles High Street London WC2H 8NU UK</evidenceContent>
 </Evidence>

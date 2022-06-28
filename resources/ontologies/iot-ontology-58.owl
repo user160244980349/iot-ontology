@@ -1196,9 +1196,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersActivity rdf:resource="#userprivacycontrol1"/>
@@ -9074,6 +9074,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence624"/>
   <hasMechanism rdf:resource="#notificationmechanism1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence624">
@@ -9086,25 +9087,21 @@
   <hasEvidence rdf:resource="#evidence624"/>
 </NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity3">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence625"/>
-  <hasMechanism rdf:resource="#notificationmechanism2"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence625">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes We may update this Privacy Policy from time to time If under any such update we make any material change to the way in which we treat your User Information we will inform you of such change via email or by posting a notice on relevant areas of the Services Any updated version of this Privacy Policy will be effective as of the date set forth therein</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any updated version of this Privacy Policy will be effective as of the date set forth therein.</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence625"/>
-</NotificationMechanism>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity4">
+<PolicyChangeActivity rdf:about="#policychangeactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence626"/>
+  <hasMechanism rdf:resource="#notificationmechanism2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence626">
@@ -9112,12 +9109,37 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes We may update this Privacy Policy from time to time If under any such update we make any material change to the way in which we treat your User Information we will inform you of such change via email or by posting a notice on relevant areas of the Services Any updated version of this Privacy Policy will be effective as of the date set forth therein</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity5">
+<NotificationMechanism rdf:about="#notificationmechanism2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence626"/>
+</NotificationMechanism>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence627"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence627">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any updated version of this Privacy Policy will be effective as of the date set forth therein.</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence628"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence628">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes We may update this Privacy Policy from time to time If under any such update we make any material change to the way in which we treat your User Information we will inform you of such change via email or by posting a notice on relevant areas of the Services Any updated version of this Privacy Policy will be effective as of the date set forth therein</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence629"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence629">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes We may update this Privacy Policy from time to time If under any such update we make any material change to the way in which we treat your User Information we will inform you of such change via email or by posting a notice on relevant areas of the Services Any updated version of this Privacy Policy will be effective as of the date set forth therein</evidenceContent>
 </Evidence>

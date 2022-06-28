@@ -1362,9 +1362,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersData rdf:resource="#genericdata1"/>
@@ -12434,6 +12434,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence868"/>
   <hasMechanism rdf:resource="#onwebsitepage1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence868">
@@ -12446,25 +12447,21 @@
   <hasEvidence rdf:resource="#evidence868"/>
 </OnWebsitePage>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity7">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence869"/>
-  <hasMechanism rdf:resource="#notificationmechanism5"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence869">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Also, we may ask registered users and members to review and consent to the changes at the time of their next account log-in. By continuing to use the JibJab Site(s) affected by such changes after such notice and consent, you agree to be bound by the changes to this Privacy Policy.</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism5">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence869"/>
-</NotificationMechanism>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity8">
+<PolicyChangeActivity rdf:about="#policychangeactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence870"/>
+  <hasMechanism rdf:resource="#notificationmechanism5"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence870">
@@ -12472,26 +12469,24 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
 </Evidence>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity9">
+<NotificationMechanism rdf:about="#notificationmechanism5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence870"/>
+</NotificationMechanism>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence871"/>
-  <hasMechanism rdf:resource="#notificationmechanism6"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence871">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Also, we may ask registered users and members to review and consent to the changes at the time of their next account log-in. By continuing to use the JibJab Site(s) affected by such changes after such notice and consent, you agree to be bound by the changes to this Privacy Policy.</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence871"/>
-</NotificationMechanism>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity10">
+<PolicyChangeActivity rdf:about="#policychangeactivity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence872"/>
-  <hasMechanism rdf:resource="#onwebsitepage2"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence872">
@@ -12499,15 +12494,11 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence872"/>
-</OnWebsitePage>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity11">
+<PolicyChangeActivity rdf:about="#policychangeactivity9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence873"/>
-  <hasMechanism rdf:resource="#notificationmechanism7"/>
+  <hasMechanism rdf:resource="#notificationmechanism6"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause3"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence873">
@@ -12515,10 +12506,74 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
 </Evidence>
 
-<NotificationMechanism rdf:about="#notificationmechanism7">
+<NotificationMechanism rdf:about="#notificationmechanism6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence873"/>
 </NotificationMechanism>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence874"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence874">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">By continuing to use the JibJab Site(s) affected by such changes after such notice and consent, you agree to be bound by the changes to this Privacy Policy</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence875"/>
+  <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause4"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence875">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
+</Evidence>
+
+<OnWebsitePage rdf:about="#onwebsitepage2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence875"/>
+</OnWebsitePage>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence876"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence876">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent to the changes</evidenceContent>
+</Evidence>
+
+<PolicyChangeActivity rdf:about="#policychangeactivity11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence877"/>
+  <hasMechanism rdf:resource="#notificationmechanism7"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause5"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence877">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in Our Privacy Policy This Privacy Policy is subject to change by JibJab from time to time If we make material changes including material changes in the way we use or share user personal information such as using information for purposes materially different from those disclosed in this Privacy Policy we will post the changes on the JibJab Site s affected by such changes and notify registered users and members via email Also we may ask registered users and members to review and consent to the changes at the time of their next account log-in By continuing to use the JibJab Site s affected by such changes after such notice and consent you agree to be bound by the changes to this Privacy Policy</evidenceContent>
+</Evidence>
+
+<NotificationMechanism rdf:about="#notificationmechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence877"/>
+</NotificationMechanism>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence878"/>
+</PrivacyRelatedCause>
+
+<Evidence rdf:about="#evidence878">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent to the changes</evidenceContent>
+</Evidence>
 
 
 </rdf:RDF>

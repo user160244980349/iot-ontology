@@ -1118,9 +1118,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersData rdf:resource="#genericdata1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
@@ -9783,6 +9783,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence755"/>
   <hasMechanism rdf:resource="#notificationmechanism1"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence755">
@@ -9795,26 +9796,20 @@
   <hasEvidence rdf:resource="#evidence755"/>
 </NotificationMechanism>
 
-<PolicyChangeActivity rdf:about="#policychangeactivity3">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence756"/>
-  <hasMechanism rdf:resource="#onwebsitepage1"/>
-</PolicyChangeActivity>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence756">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your acceptance of the privacy policy and notification of changes to the policy By using this Website you signify your agreement to the terms of our privacy policy We may amend this privacy policy at any time If we make a material change to the way in which we collect use and/or share your personal information we will post a notice on our website and / or send an email to users who have provided an email address We will assume that you have given your permission for your information to be used under the terms of the new privacy policy if you do not respond to our email within thirty days or continue to use the Website thirty days after a notice is posted Please note that you should always update your personal information to provide us with a current email address</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will assume that you have given your permission for your information to be used under the terms of the new privacy policy, if you do not respond to our email within thirty days or continue to use the Website thirty days after a notice is posted.</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence756"/>
-</OnWebsitePage>
-
-<PolicyChangeActivity rdf:about="#policychangeactivity4">
+<PolicyChangeActivity rdf:about="#policychangeactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence757"/>
-  <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasMechanism rdf:resource="#onwebsitepage1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence757">
@@ -9822,59 +9817,60 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your acceptance of the privacy policy and notification of changes to the policy By using this Website you signify your agreement to the terms of our privacy policy We may amend this privacy policy at any time If we make a material change to the way in which we collect use and/or share your personal information we will post a notice on our website and / or send an email to users who have provided an email address We will assume that you have given your permission for your information to be used under the terms of the new privacy policy if you do not respond to our email within thirty days or continue to use the Website thirty days after a notice is posted Please note that you should always update your personal information to provide us with a current email address</evidenceContent>
 </Evidence>
 
-<OnWebsitePage rdf:about="#onwebsitepage2">
+<OnWebsitePage rdf:about="#onwebsitepage1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence757"/>
 </OnWebsitePage>
 
-<Evidence rdf:about="#evidence758">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correcting/updating personal information If your personally identifiable information changes such as your email address or zip code or if you no longer desire to access our Website we will endeavor to provide a way to correct update delete or remove the personal data you have provided to us This can be done by making changes to your profile by using an opt out message in an email or by emailing us at website vikings nfl com admin vikingscontests com admin vikingsnewsletter com</evidenceContent>
-</Evidence>
-
-<UserAccessActivity rdf:about="#useraccessactivity2">
+<PolicyChangeActivity rdf:about="#policychangeactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence758"/>
-  <isAppliedTo rdf:resource="#accountdata18"/>
-</UserAccessActivity>
+  <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause2"/>
+</PolicyChangeActivity>
+
+<Evidence rdf:about="#evidence758">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your acceptance of the privacy policy and notification of changes to the policy By using this Website you signify your agreement to the terms of our privacy policy We may amend this privacy policy at any time If we make a material change to the way in which we collect use and/or share your personal information we will post a notice on our website and / or send an email to users who have provided an email address We will assume that you have given your permission for your information to be used under the terms of the new privacy policy if you do not respond to our email within thirty days or continue to use the Website thirty days after a notice is posted Please note that you should always update your personal information to provide us with a current email address</evidenceContent>
+</Evidence>
+
+<OnWebsitePage rdf:about="#onwebsitepage2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence758"/>
+</OnWebsitePage>
+
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence759"/>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence759">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to correct, update, delete or remove the personal data you have provided to us. This can be done by making changes to your profile, by using an opt out message in an email, or by emailing us at website@vikings.nfl.com, admin@vikingscontests.com, admin@vikingsnewsletter.com.</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will assume that you have given your permission for your information to be used under the terms of the new privacy policy, if you do not respond to our email within thirty days or continue to use the Website thirty days after a notice is posted.</evidenceContent>
 </Evidence>
-
-<DataControlMechanism rdf:about="#datacontrolmechanism20">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence759"/>
-</DataControlMechanism>
-
-<AccountData rdf:about="#accountdata18">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence758"/>
-</AccountData>
 
 <Evidence rdf:about="#evidence760">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correcting/updating personal information If your personally identifiable information changes such as your email address or zip code or if you no longer desire to access our Website we will endeavor to provide a way to correct update delete or remove the personal data you have provided to us This can be done by making changes to your profile by using an opt out message in an email or by emailing us at website vikings nfl com admin vikingscontests com admin vikingsnewsletter com</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity3">
+<UserAccessActivity rdf:about="#useraccessactivity2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence760"/>
-  <isAppliedTo rdf:resource="#accountdata19"/>
+  <isAppliedTo rdf:resource="#accountdata18"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence761">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correct, update</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to correct, update, delete or remove the personal data you have provided to us. This can be done by making changes to your profile, by using an opt out message in an email, or by emailing us at website@vikings.nfl.com, admin@vikingscontests.com, admin@vikingsnewsletter.com.</evidenceContent>
 </Evidence>
 
-<DataControlMechanism rdf:about="#datacontrolmechanism21">
+<DataControlMechanism rdf:about="#datacontrolmechanism20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence761"/>
 </DataControlMechanism>
 
-<AccountData rdf:about="#accountdata19">
+<AccountData rdf:about="#accountdata18">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence760"/>
 </AccountData>
@@ -9884,23 +9880,23 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correcting/updating personal information If your personally identifiable information changes such as your email address or zip code or if you no longer desire to access our Website we will endeavor to provide a way to correct update delete or remove the personal data you have provided to us This can be done by making changes to your profile by using an opt out message in an email or by emailing us at website vikings nfl com admin vikingscontests com admin vikingsnewsletter com</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity4">
+<UserAccessActivity rdf:about="#useraccessactivity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence762"/>
-  <isAppliedTo rdf:resource="#accountdata20"/>
+  <isAppliedTo rdf:resource="#accountdata19"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence763">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delete or remove the personal data you have provided to us.</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correct, update</evidenceContent>
 </Evidence>
 
-<DataControlMechanism rdf:about="#datacontrolmechanism22">
+<DataControlMechanism rdf:about="#datacontrolmechanism21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence763"/>
 </DataControlMechanism>
 
-<AccountData rdf:about="#accountdata20">
+<AccountData rdf:about="#accountdata19">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence762"/>
 </AccountData>
@@ -9910,55 +9906,81 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correcting/updating personal information If your personally identifiable information changes such as your email address or zip code or if you no longer desire to access our Website we will endeavor to provide a way to correct update delete or remove the personal data you have provided to us This can be done by making changes to your profile by using an opt out message in an email or by emailing us at website vikings nfl com admin vikingscontests com admin vikingsnewsletter com</evidenceContent>
 </Evidence>
 
-<UserAccessActivity rdf:about="#useraccessactivity5">
+<UserAccessActivity rdf:about="#useraccessactivity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence764"/>
-  <isAppliedTo rdf:resource="#accountdata21"/>
+  <isAppliedTo rdf:resource="#accountdata20"/>
 </UserAccessActivity>
 
 <Evidence rdf:about="#evidence765">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delete or remove the personal data you have provided to us.</evidenceContent>
+</Evidence>
+
+<DataControlMechanism rdf:about="#datacontrolmechanism22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence765"/>
+</DataControlMechanism>
+
+<AccountData rdf:about="#accountdata20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence764"/>
+</AccountData>
+
+<Evidence rdf:about="#evidence766">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Correcting/updating personal information If your personally identifiable information changes such as your email address or zip code or if you no longer desire to access our Website we will endeavor to provide a way to correct update delete or remove the personal data you have provided to us This can be done by making changes to your profile by using an opt out message in an email or by emailing us at website vikings nfl com admin vikingscontests com admin vikingsnewsletter com</evidenceContent>
+</Evidence>
+
+<UserAccessActivity rdf:about="#useraccessactivity5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence766"/>
+  <isAppliedTo rdf:resource="#accountdata21"/>
+</UserAccessActivity>
+
+<Evidence rdf:about="#evidence767">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correct, update, delete or remove</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence765"/>
+  <hasEvidence rdf:resource="#evidence767"/>
 </DataControlMechanism>
 
 <AccountData rdf:about="#accountdata21">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence764"/>
+  <hasEvidence rdf:resource="#evidence766"/>
 </AccountData>
 
 <DataRetentionActivity rdf:about="#dataretentionactivity2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose152"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime2"/>
-  <hasEvidence rdf:resource="#evidence768"/>
+  <hasEvidence rdf:resource="#evidence770"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence766">
+<Evidence rdf:about="#evidence768">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provide you services.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose152">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence766"/>
+  <hasEvidence rdf:resource="#evidence768"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence767">
+<Evidence rdf:about="#evidence769">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will retain your information for as long as your account is active or as needed to provide you services</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence767"/>
+  <hasEvidence rdf:resource="#evidence769"/>
 </DataRetentionTime>
 
-<Evidence rdf:about="#evidence768">
+<Evidence rdf:about="#evidence770">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
@@ -9967,30 +9989,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose153"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime3"/>
-  <hasEvidence rdf:resource="#evidence771"/>
+  <hasEvidence rdf:resource="#evidence773"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence769">
+<Evidence rdf:about="#evidence771">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to comply with our legal obligations, resolve disputes, and enforce our agreements.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose153">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence769"/>
+  <hasEvidence rdf:resource="#evidence771"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence770">
+<Evidence rdf:about="#evidence772">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will retain and use your information as necessary</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence770"/>
+  <hasEvidence rdf:resource="#evidence772"/>
 </DataRetentionTime>
 
-<Evidence rdf:about="#evidence771">
+<Evidence rdf:about="#evidence773">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
@@ -9999,30 +10021,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose154"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime4"/>
-  <hasEvidence rdf:resource="#evidence774"/>
+  <hasEvidence rdf:resource="#evidence776"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence772">
+<Evidence rdf:about="#evidence774">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comply with our legal obligations, resolve disputes, and enforce our agreements.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose154">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence772"/>
+  <hasEvidence rdf:resource="#evidence774"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence773">
+<Evidence rdf:about="#evidence775">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will retain your information for as long as your account is active or as needed to provide you services.</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence773"/>
+  <hasEvidence rdf:resource="#evidence775"/>
 </DataRetentionTime>
 
-<Evidence rdf:about="#evidence774">
+<Evidence rdf:about="#evidence776">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
@@ -10031,30 +10053,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose155"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime5"/>
-  <hasEvidence rdf:resource="#evidence777"/>
+  <hasEvidence rdf:resource="#evidence779"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence775">
+<Evidence rdf:about="#evidence777">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for as long as your account is active or as needed to provide you services</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose155">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence775"/>
+  <hasEvidence rdf:resource="#evidence777"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence776">
+<Evidence rdf:about="#evidence778">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will retain your information for as long as your account is active or as needed to provide you services.</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence776"/>
+  <hasEvidence rdf:resource="#evidence778"/>
 </DataRetentionTime>
 
-<Evidence rdf:about="#evidence777">
+<Evidence rdf:about="#evidence779">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
@@ -10063,30 +10085,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose156"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime6"/>
-  <hasEvidence rdf:resource="#evidence780"/>
+  <hasEvidence rdf:resource="#evidence782"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence778">
+<Evidence rdf:about="#evidence780">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will retain and use your information as necessary to comply with our legal obligations</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose156">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence778"/>
+  <hasEvidence rdf:resource="#evidence780"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence779">
+<Evidence rdf:about="#evidence781">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence779"/>
+  <hasEvidence rdf:resource="#evidence781"/>
 </DataRetentionTime>
 
-<Evidence rdf:about="#evidence780">
+<Evidence rdf:about="#evidence782">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
@@ -10095,30 +10117,30 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose157"/>
   <hasDataRetentionTime rdf:resource="#dataretentiontime7"/>
-  <hasEvidence rdf:resource="#evidence783"/>
+  <hasEvidence rdf:resource="#evidence785"/>
 </DataRetentionActivity>
 
-<Evidence rdf:about="#evidence781">
+<Evidence rdf:about="#evidence783">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resolve disputes, and enforce our agreements</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose157">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence781"/>
+  <hasEvidence rdf:resource="#evidence783"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence782">
+<Evidence rdf:about="#evidence784">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not selected</evidenceContent>
 </Evidence>
 
 <DataRetentionTime rdf:about="#dataretentiontime7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence782"/>
+  <hasEvidence rdf:resource="#evidence784"/>
 </DataRetentionTime>
 
-<Evidence rdf:about="#evidence783">
+<Evidence rdf:about="#evidence785">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
@@ -10127,40 +10149,40 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has rdf:resource="#purpose19"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism24"/>
-  <hasEvidence rdf:resource="#evidence786"/>
+  <hasEvidence rdf:resource="#evidence788"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence784">
+<Evidence rdf:about="#evidence786">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to provide you services</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose19">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence784"/>
+  <hasEvidence rdf:resource="#evidence786"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence785">
+<Evidence rdf:about="#evidence787">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact us at [email address]</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism24">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence785"/>
+  <hasEvidence rdf:resource="#evidence787"/>
 </DataControlMechanism>
 
-<Evidence rdf:about="#evidence786">
+<Evidence rdf:about="#evidence788">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Retention We will retain your information for as long as your account is active or as needed to provide you services If you wish to cancel your account or request that we no longer use your information to provide you services contact us at [email address] We will retain and use your information as necessary to comply with our legal obligations resolve disputes and enforce our agreements</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence787"/>
+  <hasEvidence rdf:resource="#evidence789"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence787">
+<Evidence rdf:about="#evidence789">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California privacy rights A California privacy law that went into effect on January 1 2005 allows California residents to obtain specific information about a business s privacy practices if it shares information with other companies for those companies direct marketing purposes As explained in this privacy policy whenever you agree to let us collect personal information about you we will always provide you with an option to prevent this information from being shared for non-administrative purposes with third parties You can exercise this option at any time by following the steps outlined above</evidenceContent>
 </Evidence>
@@ -10170,70 +10192,70 @@
   <has rdf:resource="#purpose20"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism25"/>
   <isAppliedToData rdf:resource="#genericdata16"/>
-  <hasEvidence rdf:resource="#evidence791"/>
+  <hasEvidence rdf:resource="#evidence793"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence788">
+<Evidence rdf:about="#evidence790">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direct marketing purposes</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose20">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence788"/>
+  <hasEvidence rdf:resource="#evidence790"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence789">
+<Evidence rdf:about="#evidence791">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">we will always provide you with an option</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism25">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence789"/>
+  <hasEvidence rdf:resource="#evidence791"/>
 </DataControlMechanism>
 
 <GenericData rdf:about="#genericdata16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence790"/>
+  <hasEvidence rdf:resource="#evidence792"/>
 </GenericData>
 
-<Evidence rdf:about="#evidence790">
+<Evidence rdf:about="#evidence792">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personal information</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence791">
+<Evidence rdf:about="#evidence793">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your California privacy rights A California privacy law that went into effect on January 1 2005 allows California residents to obtain specific information about a business s privacy practices if it shares information with other companies for those companies direct marketing purposes As explained in this privacy policy whenever you agree to let us collect personal information about you we will always provide you with an option to prevent this information from being shared for non-administrative purposes with third parties You can exercise this option at any time by following the steps outlined above</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence792"/>
+  <hasEvidence rdf:resource="#evidence794"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence792">
+<Evidence rdf:about="#evidence794">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Because this website has a comprehensive privacy policy and provides you with details on how you may opt-in / opt-out of the use of your personal information by third parties for direct marketing purposes we are not required to provide you with this information If you are a California resident and have questions about our compliance with this law please send an email to website vikings nfl com or write to us at CA Privacy Rights Minnesota Vikings 9520 Viking DriveEden Prairie MN 55344</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence793"/>
+  <hasEvidence rdf:resource="#evidence795"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence793">
+<Evidence rdf:about="#evidence795">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Because this website has a comprehensive privacy policy and provides you with details on how you may opt-in / opt-out of the use of your personal information by third parties for direct marketing purposes we are not required to provide you with this information If you are a California resident and have questions about our compliance with this law please send an email to website vikings nfl com or write to us at CA Privacy Rights Minnesota Vikings 9520 Viking DriveEden Prairie MN 55344</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence794"/>
+  <hasEvidence rdf:resource="#evidence796"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence794">
+<Evidence rdf:about="#evidence796">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Because this website has a comprehensive privacy policy and provides you with details on how you may opt-in / opt-out of the use of your personal information by third parties for direct marketing purposes we are not required to provide you with this information If you are a California resident and have questions about our compliance with this law please send an email to website vikings nfl com or write to us at CA Privacy Rights Minnesota Vikings 9520 Viking DriveEden Prairie MN 55344</evidenceContent>
 </Evidence>

@@ -6903,6 +6903,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence493"/>
   <hasMechanism rdf:resource="#onwebsitepage2"/>
+  <hasPolicyChangeCause rdf:resource="#privacyrelatedcause1"/>
 </PolicyChangeActivity>
 
 <Evidence rdf:about="#evidence493">
@@ -6915,12 +6916,22 @@
   <hasEvidence rdf:resource="#evidence493"/>
 </OnWebsitePage>
 
-<SecurityMechanism rdf:about="#securitymechanism7">
+<PrivacyRelatedCause rdf:about="#privacyrelatedcause1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence494"/>
-</SecurityMechanism>
+</PrivacyRelatedCause>
 
 <Evidence rdf:about="#evidence494">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you are not comfortable with any of the terms or policies described in this Privacy Statement, we ask that you discontinue use of our site.</evidenceContent>
+</Evidence>
+
+<SecurityMechanism rdf:about="#securitymechanism7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence495"/>
+</SecurityMechanism>
+
+<Evidence rdf:about="#evidence495">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">About TRUSTe Allstate Insurance Allstate has been awarded TRUST s Privacy Seal signifying that this privacy policy and practices have been reviewed by TRUSTe for compliance with TRUSTe s program requirements including transparency accountability and choice regarding the collection and use of your personal information The TRUSTe program covers only information that is collected through this Web site http //www allstate com and http //www miallstate com TRUSTe s mission as an independent third party is to accelerate online trust among consumers and organizations globally through its leading privacy trustmark and innovative trust solutions</evidenceContent>
 </Evidence>
@@ -6932,10 +6943,10 @@
 
 <TechnicalMeasure rdf:about="#technicalmeasure10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence495"/>
+  <hasEvidence rdf:resource="#evidence496"/>
 </TechnicalMeasure>
 
-<Evidence rdf:about="#evidence495">
+<Evidence rdf:about="#evidence496">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If users have questions or concerns regarding this statement they should first contact Allstate at customerprivacy allstate com If they do not receive acknowledgment of their inquiry or their inquiry is not satisfactorily addressed they should then contact TRUSTe through the TRUSTeWatchdog Dispute Resolution Process TRUSTe will serve as a liaison with the Web site to resolve users concerns All the rights in the TRUSTe mark s belong to TRUSTe</evidenceContent>
 </Evidence>
@@ -6947,20 +6958,20 @@
 
 <UserSpecialCategory rdf:about="#userspecialcategory2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence496"/>
+  <hasEvidence rdf:resource="#evidence497"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence496">
+<Evidence rdf:about="#evidence497">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State Specific Information For California residents Pursuant to California law we need to disclose to you that we would obtain your consent before sharing medical information for marketing purposes</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence497"/>
+  <hasEvidence rdf:resource="#evidence498"/>
 </UserSpecialCategory>
 
-<Evidence rdf:about="#evidence497">
+<Evidence rdf:about="#evidence498">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State Specific Information For California residents Pursuant to California law we need to disclose to you that we would obtain your consent before sharing medical information for marketing purposes</evidenceContent>
 </Evidence>
@@ -6970,67 +6981,57 @@
   <hasDataActivityPurpose rdf:resource="#dataactivitypurpose111"/>
   <hasDataCollectionMechanism rdf:resource="#datacollectionmechanism135"/>
   <isAppliedToData rdf:resource="#healthdata3"/>
-  <hasEvidence rdf:resource="#evidence502"/>
+  <hasEvidence rdf:resource="#evidence503"/>
   <collectsDataFromAgent rdf:resource="#thirdparties1"/>
 </DataCollectionActivity>
 
-<Evidence rdf:about="#evidence498">
+<Evidence rdf:about="#evidence499">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for marketing purposes.</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose111">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence498"/>
-</DataActivityPurpose>
-
-<Evidence rdf:about="#evidence499">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sharing</evidenceContent>
-</Evidence>
-
-<DataCollectionMechanism rdf:about="#datacollectionmechanism135">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence499"/>
-  <hasMode rdf:resource="#datacollectionmode42"/>
-</DataCollectionMechanism>
+</DataActivityPurpose>
 
 <Evidence rdf:about="#evidence500">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sharing</evidenceContent>
 </Evidence>
 
-<DataCollectionMode rdf:about="#datacollectionmode42">
+<DataCollectionMechanism rdf:about="#datacollectionmechanism135">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence500"/>
+  <hasMode rdf:resource="#datacollectionmode42"/>
+</DataCollectionMechanism>
+
+<Evidence rdf:about="#evidence501">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sharing</evidenceContent>
+</Evidence>
+
+<DataCollectionMode rdf:about="#datacollectionmode42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence501"/>
 </DataCollectionMode>
 
 <HealthData rdf:about="#healthdata3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence501"/>
+  <hasEvidence rdf:resource="#evidence502"/>
 </HealthData>
 
-<Evidence rdf:about="#evidence501">
+<Evidence rdf:about="#evidence502">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medical information</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence502">
+<Evidence rdf:about="#evidence503">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">State Specific Information For California residents Pursuant to California law we need to disclose to you that we would obtain your consent before sharing medical information for marketing purposes</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence503"/>
-</UserSpecialCategory>
-
-<Evidence rdf:about="#evidence503">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Montana residents Pursuant to Montana law you may also request a record of any disclosure of your medical information during the preceding three years Please send requests to Allstate Insurance Company Customer Privacy Inquiries P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
-</Evidence>
-
-<UserSpecialCategory rdf:about="#userspecialcategory5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence504"/>
 </UserSpecialCategory>
@@ -7040,37 +7041,37 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Montana residents Pursuant to Montana law you may also request a record of any disclosure of your medical information during the preceding three years Please send requests to Allstate Insurance Company Customer Privacy Inquiries P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
 </Evidence>
 
+<UserSpecialCategory rdf:about="#userspecialcategory5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence505"/>
+</UserSpecialCategory>
+
 <Evidence rdf:about="#evidence505">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Montana residents Pursuant to Montana law you may also request a record of any disclosure of your medical information during the preceding three years Please send requests to Allstate Insurance Company Customer Privacy Inquiries P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence506">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Montana residents Pursuant to Montana law you may also request a record of any disclosure of your medical information during the preceding three years Please send requests to Allstate Insurance Company Customer Privacy Inquiries P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
 </Evidence>
 
 <UserAccessActivity rdf:about="#useraccessactivity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence505"/>
+  <hasEvidence rdf:resource="#evidence506"/>
 </UserAccessActivity>
 
-<Evidence rdf:about="#evidence506">
+<Evidence rdf:about="#evidence507">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">you may also request a record of any disclosure of your medical information</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism22">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence506"/>
+  <hasEvidence rdf:resource="#evidence507"/>
 </DataControlMechanism>
 
 <UserSpecialCategory rdf:about="#userspecialcategory6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence507"/>
-</UserSpecialCategory>
-
-<Evidence rdf:about="#evidence507">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Nevada Residents Allstate is committed to serving you when and where you prefer as we help you protect what you have today and prepare you for the future To that end and as Nevada law requires if you do not want to receive sales calls from Allstate you have the option to be placed on our internal do not call list Please disregard this notice if you have already been added to Allstate s internal do not call list You may make this request in the following convenient ways Contact your local Allstate agency Call 1-800-ALLSTATE and speak with a customer representative Visit allstate com click on Contact Us and send us an e-mail Write to us at Allstate Insurance Company Attn Customer Service P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
-</Evidence>
-
-<UserSpecialCategory rdf:about="#userspecialcategory7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence508"/>
 </UserSpecialCategory>
@@ -7080,60 +7081,60 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Nevada Residents Allstate is committed to serving you when and where you prefer as we help you protect what you have today and prepare you for the future To that end and as Nevada law requires if you do not want to receive sales calls from Allstate you have the option to be placed on our internal do not call list Please disregard this notice if you have already been added to Allstate s internal do not call list You may make this request in the following convenient ways Contact your local Allstate agency Call 1-800-ALLSTATE and speak with a customer representative Visit allstate com click on Contact Us and send us an e-mail Write to us at Allstate Insurance Company Attn Customer Service P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
 </Evidence>
 
+<UserSpecialCategory rdf:about="#userspecialcategory7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence509"/>
+</UserSpecialCategory>
+
+<Evidence rdf:about="#evidence509">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Nevada Residents Allstate is committed to serving you when and where you prefer as we help you protect what you have today and prepare you for the future To that end and as Nevada law requires if you do not want to receive sales calls from Allstate you have the option to be placed on our internal do not call list Please disregard this notice if you have already been added to Allstate s internal do not call list You may make this request in the following convenient ways Contact your local Allstate agency Call 1-800-ALLSTATE and speak with a customer representative Visit allstate com click on Contact Us and send us an e-mail Write to us at Allstate Insurance Company Attn Customer Service P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
+</Evidence>
+
 <UserPrivacyControl rdf:about="#userprivacycontrol17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has rdf:resource="#purpose10"/>
   <hasPrivacyControlMechanism rdf:resource="#datacontrolmechanism23"/>
   <isAppliedToData rdf:resource="#nonsensitivedata8"/>
-  <hasEvidence rdf:resource="#evidence512"/>
+  <hasEvidence rdf:resource="#evidence513"/>
 </UserPrivacyControl>
 
-<Evidence rdf:about="#evidence509">
+<Evidence rdf:about="#evidence510">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sales calls</evidenceContent>
 </Evidence>
 
 <Purpose rdf:about="#purpose10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence509"/>
+  <hasEvidence rdf:resource="#evidence510"/>
 </Purpose>
 
-<Evidence rdf:about="#evidence510">
+<Evidence rdf:about="#evidence511">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">you have the option to be placed on our internal "do not call" list. (Please disregard this notice if you have already been added to Allstate's internal "do not call" list.) You may make this request in the following convenient ways: Contact your local Allstate agency Call 1-800-ALLSTATE and speak with a customer representative Visit allstate.com, click on Contact Us and send us an e-mail Write to us at Allstate Insurance Company, Attn: Customer Service, P.O.Box 40047, Roanoke, VA 24022-0047</evidenceContent>
 </Evidence>
 
 <DataControlMechanism rdf:about="#datacontrolmechanism23">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence510"/>
+  <hasEvidence rdf:resource="#evidence511"/>
 </DataControlMechanism>
 
 <NonSensitiveData rdf:about="#nonsensitivedata8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence511"/>
+  <hasEvidence rdf:resource="#evidence512"/>
 </NonSensitiveData>
 
-<Evidence rdf:about="#evidence511">
+<Evidence rdf:about="#evidence512">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if you do not want to receive sales calls from Allstate,</evidenceContent>
 </Evidence>
 
-<Evidence rdf:about="#evidence512">
+<Evidence rdf:about="#evidence513">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Nevada Residents Allstate is committed to serving you when and where you prefer as we help you protect what you have today and prepare you for the future To that end and as Nevada law requires if you do not want to receive sales calls from Allstate you have the option to be placed on our internal do not call list Please disregard this notice if you have already been added to Allstate s internal do not call list You may make this request in the following convenient ways Contact your local Allstate agency Call 1-800-ALLSTATE and speak with a customer representative Visit allstate com click on Contact Us and send us an e-mail Write to us at Allstate Insurance Company Attn Customer Service P O Box 40047 Roanoke VA 24022-0047</evidenceContent>
 </Evidence>
 
 <UserSpecialCategory rdf:about="#userspecialcategory8">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence513"/>
-</UserSpecialCategory>
-
-<Evidence rdf:about="#evidence513">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In your discussion or correspondence with us please be sure to provide us with your name address and all telephone numbers you wish to include on our list If you have questions about this notice you may contact us at the address listed above or you may also contact the Nevada Attorney General s office at Office of the Nevada Attorney General Bureau of Consumer Protection 555 E Washington Avenue Suite 3900 Las Vegas NV 89101 Phone 702 486-3132 Email BCPINFO ag state nv us</evidenceContent>
-</Evidence>
-
-<UserSpecialCategory rdf:about="#userspecialcategory9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence514"/>
 </UserSpecialCategory>
@@ -7143,27 +7144,27 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In your discussion or correspondence with us please be sure to provide us with your name address and all telephone numbers you wish to include on our list If you have questions about this notice you may contact us at the address listed above or you may also contact the Nevada Attorney General s office at Office of the Nevada Attorney General Bureau of Consumer Protection 555 E Washington Avenue Suite 3900 Las Vegas NV 89101 Phone 702 486-3132 Email BCPINFO ag state nv us</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory10">
+<UserSpecialCategory rdf:about="#userspecialcategory9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence515"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence515">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please note that Allstate s do not call list is limited only to telephone solicitation calls We may still contact you about your Allstate policy billing issues claims and other service matters</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In your discussion or correspondence with us please be sure to provide us with your name address and all telephone numbers you wish to include on our list If you have questions about this notice you may contact us at the address listed above or you may also contact the Nevada Attorney General s office at Office of the Nevada Attorney General Bureau of Consumer Protection 555 E Washington Avenue Suite 3900 Las Vegas NV 89101 Phone 702 486-3132 Email BCPINFO ag state nv us</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory11">
+<UserSpecialCategory rdf:about="#userspecialcategory10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence516"/>
 </UserSpecialCategory>
 
 <Evidence rdf:about="#evidence516">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Vermont residents We won t share your personal information with Allstate companies for marketing purposes except as allowed by Vermont law</evidenceContent>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please note that Allstate s do not call list is limited only to telephone solicitation calls We may still contact you about your Allstate policy billing issues claims and other service matters</evidenceContent>
 </Evidence>
 
-<UserSpecialCategory rdf:about="#userspecialcategory12">
+<UserSpecialCategory rdf:about="#userspecialcategory11">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <hasEvidence rdf:resource="#evidence517"/>
 </UserSpecialCategory>
@@ -7173,24 +7174,34 @@
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Vermont residents We won t share your personal information with Allstate companies for marketing purposes except as allowed by Vermont law</evidenceContent>
 </Evidence>
 
+<UserSpecialCategory rdf:about="#userspecialcategory12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasEvidence rdf:resource="#evidence518"/>
+</UserSpecialCategory>
+
 <Evidence rdf:about="#evidence518">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For Vermont residents We won t share your personal information with Allstate companies for marketing purposes except as allowed by Vermont law</evidenceContent>
+</Evidence>
+
+<Evidence rdf:about="#evidence519">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">for marketing purposes</evidenceContent>
 </Evidence>
 
 <DataActivityPurpose rdf:about="#dataactivitypurpose112">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence518"/>
+  <hasEvidence rdf:resource="#evidence519"/>
 </DataActivityPurpose>
 
-<Evidence rdf:about="#evidence519">
+<Evidence rdf:about="#evidence520">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <evidenceContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">share</evidenceContent>
 </Evidence>
 
 <DataCollectionMechanism rdf:about="#datacollectionmechanism136">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEvidence rdf:resource="#evidence519"/>
+  <hasEvidence rdf:resource="#evidence520"/>
 </DataCollectionMechanism>
 
 
