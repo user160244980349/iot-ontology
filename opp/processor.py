@@ -133,7 +133,7 @@ def first_party_scenario(onto, r, pi, fp, u):
             data.hasEvidence.append(data_e)
 
             pi.considersData.append(data)
-            u.ownsData.append(data)
+            u.providesData.append(data)
 
     if data_use or data_collection:
         evidence = onto.Evidence()
@@ -297,7 +297,7 @@ def third_party_scenario(onto, r, pi, fp, tp, u):
             data.hasEvidence.append(data_e)
 
             pi.considersData.append(data)
-            u.ownsData.append(data)
+            u.providesData.append(data)
 
     if data_sharing or data_collection:
         evidence = onto.Evidence()
@@ -425,7 +425,7 @@ def user_choice_and_control(onto, r, pi, u):
             data.hasEvidence.append(data_e)
 
             pi.considersData.append(data)
-            u.ownsData.append(data)
+            u.providesData.append(data)
 
     evidence = onto.Evidence()
     evidence.evidenceContent = r["segment_text"]
@@ -534,7 +534,7 @@ def data_retention(onto, r, pi, fp, u):
             data.hasEvidence.append(data_e)
 
             pi.considersData.append(data)
-            u.ownsData.append(data)
+            u.providesData.append(data)
 
     evidence = onto.Evidence()
     evidence.evidenceContent = r["segment_text"]

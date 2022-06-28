@@ -420,16 +420,16 @@ def construct_ontology(name=None):
             range = [Agent]
             inverse_property = agentIsNotifiedBy
 
-        # Owns
-        class owns(ObjectProperty): pass
-        class isOwnedBy(ObjectProperty):
-            inverse_property = owns
+        # Provides
+        class provides(ObjectProperty): pass
+        class isProvidedBy(ObjectProperty):
+            inverse_property = provides
 
-        class dataIsOwnedBy(isOwnedBy): pass
-        class ownsData(owns):
+        class dataIsProvidedBy(isProvidedBy): pass
+        class providesData(provides):
             domain = [Agent]
             range = [Data]
-            inverse_property = dataIsOwnedBy
+            inverse_property = dataIsProvidedBy
 
         # Collects
         class collects(ObjectProperty): pass

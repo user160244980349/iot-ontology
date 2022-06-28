@@ -1,13 +1,14 @@
+import csv
 from pprint import pprint
 
 from owlready2 import *
 
-from config import ontologies
+from config import ontologies, resources
 
 
 def main():
     """
-    How many mentions of privacy policy change notifications mechanisms do particular privacy policy state?
+    * What notification mechanisms are used to notify?
     """
     onto_path.append(ontologies)
     onto = get_ontology(
@@ -18,20 +19,35 @@ def main():
             
             PREFIX onto: <http://test.org/iot-ontology-summary.owl#>
             
-            SELECT (COUNT(?mechanism) AS ?mentions)
-            {
-                ?policy         a                      onto:PrivacyPolicy         .
-                ?policy         onto:policyId          883                        .
-                ?policy         onto:considersActivity ?activity                  .
-                ?activity       a                      onto:PolicyChangeActivity  .
-                ?mechanismClass rdfs:subClassOf        onto:NotificationMechanism .
-                ?mechanism      a                      ?mechanismClass            .
-                ?activity       onto:hasMechanism      ?mechanism                 .
-            }
+            SELECT DISTINCT ?class ?mechanism ?id ?website 
+            # SELECT ?class (COUNT(?class) as ?c)
+            WHERE {
+                {
+                    ?activity  a                      onto:PolicyChangeActivity .
+                    ?activity  onto:hasMechanism      ?mechanism                .
+                    ?class     rdfs:subClassOf        onto:NotificationMechanism.
+                    ?mechanism a                      ?class                    .
+                    ?policy    onto:considersActivity ?activity                 .
+                    ?policy    onto:policyId          ?id                       .
+                    ?policy    onto:policyWebsite     ?website                  .
+                } UNION {
+                    ?activity  a                      onto:PolicyChangeActivity .
+                    ?activity  onto:hasMechanism      ?mechanism                .
+                    ?class     rdfs:subClassOf        onto:Mechanism            .
+                    ?mechanism a                      ?class                    .
+                    ?policy    onto:considersActivity ?activity                 .
+                    ?policy    onto:policyId          ?id                       .
+                    ?policy    onto:policyWebsite     ?website                  .
+                }
+            } # GROUP BY ?class
             
         """))
 
         pprint(res)
+
+        with open(f"{resources}/query2.csv", "w") as file:
+            writer = csv.writer(file)
+            writer.writerows(res)
 
 
 if __name__ == '__main__':

@@ -374,24 +374,24 @@
   <owl:inverseOf rdf:resource="#agentIsNotifiedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#owns">
-  <owl:inverseOf rdf:resource="#isOwnedBy"/>
+<owl:ObjectProperty rdf:about="#provides">
+  <owl:inverseOf rdf:resource="#isProvidedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#isOwnedBy">
-  <owl:inverseOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#isProvidedBy">
+  <owl:inverseOf rdf:resource="#provides"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#dataIsOwnedBy">
-  <rdfs:subPropertyOf rdf:resource="#isOwnedBy"/>
-  <owl:inverseOf rdf:resource="#ownsData"/>
+<owl:ObjectProperty rdf:about="#dataIsProvidedBy">
+  <rdfs:subPropertyOf rdf:resource="#isProvidedBy"/>
+  <owl:inverseOf rdf:resource="#providesData"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#ownsData">
-  <rdfs:subPropertyOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#providesData">
+  <rdfs:subPropertyOf rdf:resource="#provides"/>
   <rdfs:domain rdf:resource="#Agent"/>
   <rdfs:range rdf:resource="#Data"/>
-  <owl:inverseOf rdf:resource="#dataIsOwnedBy"/>
+  <owl:inverseOf rdf:resource="#dataIsProvidedBy"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#collects">
@@ -851,8 +851,8 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <initiatesActivity rdf:resource="#useroptcontrol1"/>
   <initiatesActivity rdf:resource="#useroptcontrol2"/>
-  <ownsData rdf:resource="#nonsensitivedata1"/>
-  <ownsData rdf:resource="#nonsensitivedata2"/>
+  <providesData rdf:resource="#nonsensitivedata1"/>
+  <providesData rdf:resource="#nonsensitivedata2"/>
   <initiatesActivity rdf:resource="#useraccessactivity1"/>
   <initiatesActivity rdf:resource="#useraccessactivity2"/>
   <initiatesActivity rdf:resource="#useraccessactivity3"/>
@@ -869,13 +869,13 @@
   <initiatesActivity rdf:resource="#useraccessactivity11"/>
   <initiatesActivity rdf:resource="#userprivacycontrol4"/>
   <initiatesActivity rdf:resource="#userprivacycontrol5"/>
-  <ownsData rdf:resource="#genericdata1"/>
+  <providesData rdf:resource="#genericdata1"/>
   <initiatesActivity rdf:resource="#userprivacycontrol6"/>
   <initiatesActivity rdf:resource="#useraccessactivity12"/>
-  <ownsData rdf:resource="#genericdata2"/>
+  <providesData rdf:resource="#genericdata2"/>
   <initiatesActivity rdf:resource="#userprivacycontrol7"/>
-  <ownsData rdf:resource="#genericdata3"/>
-  <ownsData rdf:resource="#genericdata4"/>
+  <providesData rdf:resource="#genericdata3"/>
+  <providesData rdf:resource="#genericdata4"/>
   <initiatesActivity rdf:resource="#userprivacycontrol8"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory1"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory2"/>
@@ -889,9 +889,9 @@
   <initiatesActivity rdf:resource="#useraccessactivity15"/>
   <initiatesActivity rdf:resource="#useraccessactivity16"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory8"/>
-  <ownsData rdf:resource="#genericdata5"/>
-  <ownsData rdf:resource="#genericdata6"/>
-  <ownsData rdf:resource="#genericdata7"/>
+  <providesData rdf:resource="#genericdata5"/>
+  <providesData rdf:resource="#genericdata6"/>
+  <providesData rdf:resource="#genericdata7"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory9"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory10"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory11"/>
@@ -941,9 +941,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#user1"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
+  <considersAgent rdf:resource="#user1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#useroptcontrol1"/>

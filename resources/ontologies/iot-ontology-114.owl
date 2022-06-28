@@ -374,24 +374,24 @@
   <owl:inverseOf rdf:resource="#agentIsNotifiedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#owns">
-  <owl:inverseOf rdf:resource="#isOwnedBy"/>
+<owl:ObjectProperty rdf:about="#provides">
+  <owl:inverseOf rdf:resource="#isProvidedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#isOwnedBy">
-  <owl:inverseOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#isProvidedBy">
+  <owl:inverseOf rdf:resource="#provides"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#dataIsOwnedBy">
-  <rdfs:subPropertyOf rdf:resource="#isOwnedBy"/>
-  <owl:inverseOf rdf:resource="#ownsData"/>
+<owl:ObjectProperty rdf:about="#dataIsProvidedBy">
+  <rdfs:subPropertyOf rdf:resource="#isProvidedBy"/>
+  <owl:inverseOf rdf:resource="#providesData"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#ownsData">
-  <rdfs:subPropertyOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#providesData">
+  <rdfs:subPropertyOf rdf:resource="#provides"/>
   <rdfs:domain rdf:resource="#Agent"/>
   <rdfs:range rdf:resource="#Data"/>
-  <owl:inverseOf rdf:resource="#dataIsOwnedBy"/>
+  <owl:inverseOf rdf:resource="#dataIsProvidedBy"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#collects">
@@ -849,8 +849,8 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <ownsData rdf:resource="#nonsensitivedata1"/>
-  <ownsData rdf:resource="#trackingdata1"/>
+  <providesData rdf:resource="#nonsensitivedata1"/>
+  <providesData rdf:resource="#trackingdata1"/>
   <initiatesActivity rdf:resource="#useraccessactivity1"/>
   <initiatesActivity rdf:resource="#useraccessactivity2"/>
   <initiatesActivity rdf:resource="#useraccessactivity3"/>
@@ -870,9 +870,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersData rdf:resource="#nonsensitivedata1"/>
   <considersActivity rdf:resource="#datauseactivity1"/>
   <considersData rdf:resource="#trackingdata1"/>

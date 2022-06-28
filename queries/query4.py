@@ -1,13 +1,14 @@
+import csv
 from pprint import pprint
 
 from owlready2 import *
 
-from config import ontologies
+from config import ontologies, resources
 
 
 def main():
     """
-    What are the possible causes for policy change in particular privacy policy?
+    * What are the evidences which contain the personal notifications about privacy policy change?
     """
     onto_path.append(ontologies)
     onto = get_ontology(
@@ -18,19 +19,25 @@ def main():
             
             PREFIX onto: <http://test.org/iot-ontology-summary.owl#>
             
-            SELECT ?class
-            {
-                ?policy   a                         onto:PrivacyPolicy        .
-                ?policy   onto:policyId             635                       .
-                ?policy   onto:considersActivity    ?activity                 .
-                ?activity a                         onto:PolicyChangeActivity .
-                ?activity onto:hasPolicyChangeCause ?cause                    .
-                ?cause    a                         ?class                    .
+            SELECT DISTINCT ?id ?website ?content
+            WHERE {
+                ?class     rdfs:subClassOf        onto:NotificationMechanism .
+                ?activity  onto:hasMechanism      ?mechanism                 .
+                ?activity  a                      onto:PolicyChangeActivity  .
+                ?policy    onto:considersActivity ?activity                  .
+                ?policy    onto:policyId          ?id                        .
+                ?policy    onto:policyWebsite     ?website                   .
+                ?mechanism onto:hasEvidence       ?evidence                  .
+                ?evidence  onto:evidenceContent   ?content                   .
             }
             
         """))
 
         pprint(res)
+
+        with open(f"{resources}/query4.csv", "w") as file:
+            writer = csv.writer(file)
+            writer.writerows(res)
 
 
 if __name__ == '__main__':

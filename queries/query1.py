@@ -1,13 +1,14 @@
+import csv
 from pprint import pprint
 
 from owlready2 import *
 
-from config import ontologies
+from config import ontologies, resources
 
 
 def main():
     """
-    Which privacy policies state mechanisms of policy change notifications?
+    * How many privacy policies include information about notification mechanisms used to inform end users about policy change?
     """
     onto_path.append(ontologies)
     onto = get_ontology(
@@ -18,22 +19,21 @@ def main():
             
             PREFIX onto: <http://test.org/iot-ontology-summary.owl#>
             
-            SELECT ?mechanism ?activity ?id ?website
-            {
-                ?class     rdfs:subClassOf        onto:NotificationMechanism .
-                ?mechanism a                      ?class                     .
-                ?activity  onto:hasMechanism      ?mechanism                 .
-                ?policy    onto:considersActivity ?activity                  .
-                ?activity  a                      onto:PolicyChangeActivity  .
-                ?policy    onto:policyId          ?id                        .
-                ?policy    onto:policyWebsite     ?website                   .
-                ?mechanism onto:hasEvidence       ?evidence                  .
-                ?evidence  onto:evidenceContent   ?content                   .
+            SELECT( COUNT( DISTINCT( ?id ) ) AS ?c )
+            WHERE {
+                ?activity  a                      onto:PolicyChangeActivity .
+                ?activity  onto:hasMechanism      ?mechanism                .
+                ?policy    onto:considersActivity ?activity                 .
+                ?policy    onto:policyId          ?id                       .
             }
             
         """))
 
         pprint(res)
+
+        with open(f"{resources}/query1.csv", "w") as file:
+            writer = csv.writer(file)
+            writer.writerows(res)
 
 
 if __name__ == '__main__':

@@ -374,24 +374,24 @@
   <owl:inverseOf rdf:resource="#agentIsNotifiedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#owns">
-  <owl:inverseOf rdf:resource="#isOwnedBy"/>
+<owl:ObjectProperty rdf:about="#provides">
+  <owl:inverseOf rdf:resource="#isProvidedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#isOwnedBy">
-  <owl:inverseOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#isProvidedBy">
+  <owl:inverseOf rdf:resource="#provides"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#dataIsOwnedBy">
-  <rdfs:subPropertyOf rdf:resource="#isOwnedBy"/>
-  <owl:inverseOf rdf:resource="#ownsData"/>
+<owl:ObjectProperty rdf:about="#dataIsProvidedBy">
+  <rdfs:subPropertyOf rdf:resource="#isProvidedBy"/>
+  <owl:inverseOf rdf:resource="#providesData"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#ownsData">
-  <rdfs:subPropertyOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#providesData">
+  <rdfs:subPropertyOf rdf:resource="#provides"/>
   <rdfs:domain rdf:resource="#Agent"/>
   <rdfs:range rdf:resource="#Data"/>
-  <owl:inverseOf rdf:resource="#dataIsOwnedBy"/>
+  <owl:inverseOf rdf:resource="#dataIsProvidedBy"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#collects">
@@ -850,13 +850,13 @@
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <initiatesActivity rdf:resource="#useraccessactivity1"/>
-  <ownsData rdf:resource="#genericdata1"/>
-  <ownsData rdf:resource="#accountdata2"/>
+  <providesData rdf:resource="#genericdata1"/>
+  <providesData rdf:resource="#accountdata2"/>
   <initiatesActivity rdf:resource="#userprivacycontrol1"/>
-  <ownsData rdf:resource="#accountdata3"/>
+  <providesData rdf:resource="#accountdata3"/>
   <initiatesActivity rdf:resource="#userprivacycontrol2"/>
-  <ownsData rdf:resource="#trackingdata1"/>
-  <ownsData rdf:resource="#trackingdata2"/>
+  <providesData rdf:resource="#trackingdata1"/>
+  <providesData rdf:resource="#trackingdata2"/>
 </User>
 
 <FirstParty rdf:about="#firstparty1">
@@ -879,9 +879,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersActivity rdf:resource="#useraccessactivity1"/>
   <considersData rdf:resource="#accountdata1"/>

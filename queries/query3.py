@@ -1,13 +1,14 @@
+import csv
 from pprint import pprint
 
 from owlready2 import *
 
-from config import ontologies
+from config import ontologies, resources
 
 
 def main():
     """
-    What are the evidences which contain the personal notifications about privacy policy change?
+    * How many privacy policies use general notice as notification mechanism in case of their change?
     """
     onto_path.append(ontologies)
     onto = get_ontology(
@@ -18,21 +19,21 @@ def main():
             
             PREFIX onto: <http://test.org/iot-ontology-summary.owl#>
             
-            SELECT ?id ?website ?content
-            {
-                ?class     rdfs:subClassOf        onto:NotificationMechanism .
+            SELECT( COUNT( DISTINCT( ?id ) ) as ?amount )
+            WHERE {
+                ?mechanism a                      onto:OnWebsitePage         .
                 ?activity  onto:hasMechanism      ?mechanism                 .
-                ?activity  a                      onto:PolicyChangeActivity  .
                 ?policy    onto:considersActivity ?activity                  .
                 ?policy    onto:policyId          ?id                        .
-                ?policy    onto:policyWebsite     ?website                   .
-                ?mechanism onto:hasEvidence       ?evidence                  .
-                ?evidence  onto:evidenceContent   ?content                   .
             }
             
         """))
 
         pprint(res)
+
+        with open(f"{resources}/query3.csv", "w") as file:
+            writer = csv.writer(file)
+            writer.writerows(res)
 
 
 if __name__ == '__main__':

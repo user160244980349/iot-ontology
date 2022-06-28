@@ -374,24 +374,24 @@
   <owl:inverseOf rdf:resource="#agentIsNotifiedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#owns">
-  <owl:inverseOf rdf:resource="#isOwnedBy"/>
+<owl:ObjectProperty rdf:about="#provides">
+  <owl:inverseOf rdf:resource="#isProvidedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#isOwnedBy">
-  <owl:inverseOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#isProvidedBy">
+  <owl:inverseOf rdf:resource="#provides"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#dataIsOwnedBy">
-  <rdfs:subPropertyOf rdf:resource="#isOwnedBy"/>
-  <owl:inverseOf rdf:resource="#ownsData"/>
+<owl:ObjectProperty rdf:about="#dataIsProvidedBy">
+  <rdfs:subPropertyOf rdf:resource="#isProvidedBy"/>
+  <owl:inverseOf rdf:resource="#providesData"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#ownsData">
-  <rdfs:subPropertyOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#providesData">
+  <rdfs:subPropertyOf rdf:resource="#provides"/>
   <rdfs:domain rdf:resource="#Agent"/>
   <rdfs:range rdf:resource="#Data"/>
-  <owl:inverseOf rdf:resource="#dataIsOwnedBy"/>
+  <owl:inverseOf rdf:resource="#dataIsProvidedBy"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#collects">
@@ -849,35 +849,35 @@
 
 <User rdf:about="#user1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <ownsData rdf:resource="#genericdata1"/>
-  <ownsData rdf:resource="#genericdata2"/>
-  <ownsData rdf:resource="#genericdata3"/>
+  <providesData rdf:resource="#genericdata1"/>
+  <providesData rdf:resource="#genericdata2"/>
+  <providesData rdf:resource="#genericdata3"/>
   <initiatesActivity rdf:resource="#userprivacycontrol1"/>
-  <ownsData rdf:resource="#genericdata4"/>
+  <providesData rdf:resource="#genericdata4"/>
   <initiatesActivity rdf:resource="#userprivacycontrol2"/>
-  <ownsData rdf:resource="#genericdata5"/>
+  <providesData rdf:resource="#genericdata5"/>
   <initiatesActivity rdf:resource="#userprivacycontrol3"/>
   <initiatesActivity rdf:resource="#userprivacycontrol4"/>
   <initiatesActivity rdf:resource="#userprivacycontrol5"/>
-  <ownsData rdf:resource="#genericdata6"/>
+  <providesData rdf:resource="#genericdata6"/>
   <initiatesActivity rdf:resource="#userprivacycontrol6"/>
-  <ownsData rdf:resource="#genericdata7"/>
-  <ownsData rdf:resource="#devicedata1"/>
-  <ownsData rdf:resource="#accountdata1"/>
-  <ownsData rdf:resource="#trackingdata1"/>
-  <ownsData rdf:resource="#trackingdata2"/>
+  <providesData rdf:resource="#genericdata7"/>
+  <providesData rdf:resource="#devicedata1"/>
+  <providesData rdf:resource="#accountdata1"/>
+  <providesData rdf:resource="#trackingdata1"/>
+  <providesData rdf:resource="#trackingdata2"/>
   <initiatesActivity rdf:resource="#userprivacycontrol7"/>
-  <ownsData rdf:resource="#genericdata8"/>
-  <ownsData rdf:resource="#trackingdata3"/>
+  <providesData rdf:resource="#genericdata8"/>
+  <providesData rdf:resource="#trackingdata3"/>
   <initiatesActivity rdf:resource="#userprivacycontrol8"/>
-  <ownsData rdf:resource="#trackingdata4"/>
+  <providesData rdf:resource="#trackingdata4"/>
   <initiatesActivity rdf:resource="#userprivacycontrol9"/>
-  <ownsData rdf:resource="#genericdata9"/>
+  <providesData rdf:resource="#genericdata9"/>
   <initiatesActivity rdf:resource="#userprivacycontrol10"/>
-  <ownsData rdf:resource="#genericdata10"/>
+  <providesData rdf:resource="#genericdata10"/>
   <initiatesActivity rdf:resource="#userprivacycontrol11"/>
   <initiatesActivity rdf:resource="#userprivacycontrol12"/>
-  <ownsData rdf:resource="#genericdata11"/>
+  <providesData rdf:resource="#genericdata11"/>
   <initiatesActivity rdf:resource="#userprivacycontrol13"/>
   <initiatesActivity rdf:resource="#userprivacycontrol14"/>
   <initiatesActivity rdf:resource="#userprivacycontrol15"/>
@@ -921,17 +921,17 @@
   <initiatesActivity rdf:resource="#userprivacycontrol51"/>
   <initiatesActivity rdf:resource="#userprivacycontrol52"/>
   <initiatesActivity rdf:resource="#userprivacycontrol53"/>
-  <ownsData rdf:resource="#trackingdata5"/>
+  <providesData rdf:resource="#trackingdata5"/>
   <initiatesActivity rdf:resource="#userprivacycontrol54"/>
-  <ownsData rdf:resource="#trackingdata6"/>
+  <providesData rdf:resource="#trackingdata6"/>
   <initiatesActivity rdf:resource="#userprivacycontrol55"/>
   <initiatesActivity rdf:resource="#userprivacycontrol56"/>
   <initiatesActivity rdf:resource="#userprivacycontrol57"/>
-  <ownsData rdf:resource="#trackingdata7"/>
+  <providesData rdf:resource="#trackingdata7"/>
   <initiatesActivity rdf:resource="#userprivacycontrol58"/>
-  <ownsData rdf:resource="#trackingdata8"/>
+  <providesData rdf:resource="#trackingdata8"/>
   <initiatesActivity rdf:resource="#userprivacycontrol59"/>
-  <ownsData rdf:resource="#trackingdata9"/>
+  <providesData rdf:resource="#trackingdata9"/>
   <initiatesActivity rdf:resource="#userprivacycontrol60"/>
   <initiatesActivity rdf:resource="#useraccessactivity3"/>
   <initiatesActivity rdf:resource="#useraccessactivity4"/>
@@ -957,7 +957,7 @@
   <hasSpecialCategory rdf:resource="#userspecialcategory3"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory4"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory5"/>
-  <ownsData rdf:resource="#genericdata12"/>
+  <providesData rdf:resource="#genericdata12"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory6"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory7"/>
   <initiatesActivity rdf:resource="#useraccessactivity22"/>
@@ -965,22 +965,22 @@
   <initiatesActivity rdf:resource="#useraccessactivity23"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory9"/>
   <initiatesActivity rdf:resource="#useraccessactivity24"/>
-  <ownsData rdf:resource="#accountdata8"/>
-  <ownsData rdf:resource="#genericdata13"/>
-  <ownsData rdf:resource="#genericdata14"/>
+  <providesData rdf:resource="#accountdata8"/>
+  <providesData rdf:resource="#genericdata13"/>
+  <providesData rdf:resource="#genericdata14"/>
   <initiatesActivity rdf:resource="#useraccessactivity25"/>
   <initiatesActivity rdf:resource="#useraccessactivity26"/>
   <initiatesActivity rdf:resource="#useraccessactivity27"/>
-  <ownsData rdf:resource="#genericdata15"/>
+  <providesData rdf:resource="#genericdata15"/>
   <initiatesActivity rdf:resource="#userprivacycontrol61"/>
-  <ownsData rdf:resource="#genericdata16"/>
+  <providesData rdf:resource="#genericdata16"/>
   <initiatesActivity rdf:resource="#userprivacycontrol62"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory10"/>
   <initiatesActivity rdf:resource="#useroptcontrol1"/>
   <initiatesActivity rdf:resource="#useroptcontrol2"/>
-  <ownsData rdf:resource="#trackingdata10"/>
+  <providesData rdf:resource="#trackingdata10"/>
   <initiatesActivity rdf:resource="#userprivacycontrol63"/>
-  <ownsData rdf:resource="#trackingdata11"/>
+  <providesData rdf:resource="#trackingdata11"/>
   <initiatesActivity rdf:resource="#userprivacycontrol64"/>
   <initiatesActivity rdf:resource="#userprivacycontrol65"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory11"/>
@@ -1052,8 +1052,8 @@
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <considersAgent rdf:resource="#user1"/>
-  <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#firstparty1"/>
+  <considersAgent rdf:resource="#thirdparties1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersData rdf:resource="#genericdata1"/>
   <considersActivity rdf:resource="#datacollectionactivity1"/>

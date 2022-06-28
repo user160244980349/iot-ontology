@@ -374,24 +374,24 @@
   <owl:inverseOf rdf:resource="#agentIsNotifiedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#owns">
-  <owl:inverseOf rdf:resource="#isOwnedBy"/>
+<owl:ObjectProperty rdf:about="#provides">
+  <owl:inverseOf rdf:resource="#isProvidedBy"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#isOwnedBy">
-  <owl:inverseOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#isProvidedBy">
+  <owl:inverseOf rdf:resource="#provides"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#dataIsOwnedBy">
-  <rdfs:subPropertyOf rdf:resource="#isOwnedBy"/>
-  <owl:inverseOf rdf:resource="#ownsData"/>
+<owl:ObjectProperty rdf:about="#dataIsProvidedBy">
+  <rdfs:subPropertyOf rdf:resource="#isProvidedBy"/>
+  <owl:inverseOf rdf:resource="#providesData"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#ownsData">
-  <rdfs:subPropertyOf rdf:resource="#owns"/>
+<owl:ObjectProperty rdf:about="#providesData">
+  <rdfs:subPropertyOf rdf:resource="#provides"/>
   <rdfs:domain rdf:resource="#Agent"/>
   <rdfs:range rdf:resource="#Data"/>
-  <owl:inverseOf rdf:resource="#dataIsOwnedBy"/>
+  <owl:inverseOf rdf:resource="#dataIsProvidedBy"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#collects">
@@ -852,60 +852,60 @@
   <hasSpecialCategory rdf:resource="#userspecialcategory1"/>
   <initiatesActivity rdf:resource="#userprivacycontrol1"/>
   <initiatesActivity rdf:resource="#userprivacycontrol2"/>
-  <ownsData rdf:resource="#nonsensitivedata1"/>
-  <ownsData rdf:resource="#financialdata1"/>
-  <ownsData rdf:resource="#financialdata2"/>
-  <ownsData rdf:resource="#nonsensitivedata2"/>
-  <ownsData rdf:resource="#sensitivedata1"/>
-  <ownsData rdf:resource="#nonsensitivedata3"/>
-  <ownsData rdf:resource="#genericdata1"/>
-  <ownsData rdf:resource="#genericdata2"/>
-  <ownsData rdf:resource="#sensitivedata2"/>
-  <ownsData rdf:resource="#accountdata1"/>
-  <ownsData rdf:resource="#devicedata1"/>
-  <ownsData rdf:resource="#trackingdata1"/>
-  <ownsData rdf:resource="#devicedata2"/>
-  <ownsData rdf:resource="#genericdata3"/>
-  <ownsData rdf:resource="#genericdata4"/>
+  <providesData rdf:resource="#nonsensitivedata1"/>
+  <providesData rdf:resource="#financialdata1"/>
+  <providesData rdf:resource="#financialdata2"/>
+  <providesData rdf:resource="#nonsensitivedata2"/>
+  <providesData rdf:resource="#sensitivedata1"/>
+  <providesData rdf:resource="#nonsensitivedata3"/>
+  <providesData rdf:resource="#genericdata1"/>
+  <providesData rdf:resource="#genericdata2"/>
+  <providesData rdf:resource="#sensitivedata2"/>
+  <providesData rdf:resource="#accountdata1"/>
+  <providesData rdf:resource="#devicedata1"/>
+  <providesData rdf:resource="#trackingdata1"/>
+  <providesData rdf:resource="#devicedata2"/>
+  <providesData rdf:resource="#genericdata3"/>
+  <providesData rdf:resource="#genericdata4"/>
   <initiatesActivity rdf:resource="#userprivacycontrol3"/>
-  <ownsData rdf:resource="#nonsensitivedata4"/>
-  <ownsData rdf:resource="#genericdata5"/>
-  <ownsData rdf:resource="#genericdata6"/>
-  <ownsData rdf:resource="#genericdata7"/>
-  <ownsData rdf:resource="#genericdata8"/>
-  <ownsData rdf:resource="#genericdata9"/>
-  <ownsData rdf:resource="#genericdata10"/>
+  <providesData rdf:resource="#nonsensitivedata4"/>
+  <providesData rdf:resource="#genericdata5"/>
+  <providesData rdf:resource="#genericdata6"/>
+  <providesData rdf:resource="#genericdata7"/>
+  <providesData rdf:resource="#genericdata8"/>
+  <providesData rdf:resource="#genericdata9"/>
+  <providesData rdf:resource="#genericdata10"/>
   <initiatesActivity rdf:resource="#useraccessactivity1"/>
   <initiatesActivity rdf:resource="#useraccessactivity2"/>
-  <ownsData rdf:resource="#genericdata11"/>
-  <ownsData rdf:resource="#genericdata12"/>
-  <ownsData rdf:resource="#genericdata13"/>
-  <ownsData rdf:resource="#genericdata14"/>
-  <ownsData rdf:resource="#genericdata15"/>
-  <ownsData rdf:resource="#devicedata3"/>
-  <ownsData rdf:resource="#trackingdata2"/>
-  <ownsData rdf:resource="#devicedata4"/>
-  <ownsData rdf:resource="#trackingdata3"/>
-  <ownsData rdf:resource="#trackingdata4"/>
-  <ownsData rdf:resource="#trackingdata5"/>
-  <ownsData rdf:resource="#genericdata16"/>
+  <providesData rdf:resource="#genericdata11"/>
+  <providesData rdf:resource="#genericdata12"/>
+  <providesData rdf:resource="#genericdata13"/>
+  <providesData rdf:resource="#genericdata14"/>
+  <providesData rdf:resource="#genericdata15"/>
+  <providesData rdf:resource="#devicedata3"/>
+  <providesData rdf:resource="#trackingdata2"/>
+  <providesData rdf:resource="#devicedata4"/>
+  <providesData rdf:resource="#trackingdata3"/>
+  <providesData rdf:resource="#trackingdata4"/>
+  <providesData rdf:resource="#trackingdata5"/>
+  <providesData rdf:resource="#genericdata16"/>
   <initiatesActivity rdf:resource="#userprivacycontrol4"/>
-  <ownsData rdf:resource="#trackingdata6"/>
+  <providesData rdf:resource="#trackingdata6"/>
   <initiatesActivity rdf:resource="#userprivacycontrol5"/>
   <initiatesActivity rdf:resource="#userprivacycontrol6"/>
   <initiatesActivity rdf:resource="#useroptcontrol1"/>
-  <ownsData rdf:resource="#devicedata5"/>
+  <providesData rdf:resource="#devicedata5"/>
   <initiatesActivity rdf:resource="#userprivacycontrol7"/>
-  <ownsData rdf:resource="#accountdata3"/>
+  <providesData rdf:resource="#accountdata3"/>
   <initiatesActivity rdf:resource="#userprivacycontrol8"/>
   <initiatesActivity rdf:resource="#userprivacycontrol9"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory2"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory3"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory4"/>
   <hasSpecialCategory rdf:resource="#userspecialcategory5"/>
-  <ownsData rdf:resource="#genericdata17"/>
+  <providesData rdf:resource="#genericdata17"/>
   <initiatesActivity rdf:resource="#userprivacycontrol10"/>
-  <ownsData rdf:resource="#genericdata18"/>
+  <providesData rdf:resource="#genericdata18"/>
   <initiatesActivity rdf:resource="#userprivacycontrol11"/>
   <initiatesActivity rdf:resource="#useraccessactivity3"/>
   <initiatesActivity rdf:resource="#useraccessactivity4"/>
@@ -914,7 +914,7 @@
   <initiatesActivity rdf:resource="#useraccessactivity6"/>
   <initiatesActivity rdf:resource="#useraccessactivity7"/>
   <initiatesActivity rdf:resource="#useraccessactivity8"/>
-  <ownsData rdf:resource="#data1"/>
+  <providesData rdf:resource="#data1"/>
   <initiatesActivity rdf:resource="#userprivacycontrol13"/>
   <initiatesActivity rdf:resource="#userprivacycontrol14"/>
 </User>
