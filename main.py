@@ -3,9 +3,9 @@ from pprint import pprint
 from ontology import construct_ontology, finish
 from opp.processor import process_opp
 from opp.reader import read_opp
-from satndalone_privacies.amazon_web_services import process_aws
-from satndalone_privacies.google_cloud import process_google_cloud
-from satndalone_privacies.threeplususa import process_3plususa
+from satndalone_policies.amazon_web_services import process_aws
+from satndalone_policies.google_cloud import process_google_cloud
+from satndalone_policies.threeplususa import process_3plususa
 
 
 def main():
