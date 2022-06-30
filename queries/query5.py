@@ -3,7 +3,7 @@ from pprint import pprint
 
 from owlready2 import *
 
-from config import ontologies, resources
+from config import ontologies, queries
 
 
 def main():
@@ -34,7 +34,7 @@ def main():
 
         pprint(res)
 
-        with open(f"{resources}/query5.csv", "w") as file:
+        with open(f"{queries}/query5.csv", "w") as file:
             writer = csv.writer(file)
             writer.writerows(res)
 

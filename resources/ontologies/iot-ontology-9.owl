@@ -87,21 +87,9 @@
 
 <owl:ObjectProperty rdf:about="#hasBreachCause">
   <rdfs:subPropertyOf rdf:resource="#has"/>
-  <rdfs:domain rdf:resource="#BreachActivity"/>
+  <rdfs:domain rdf:resource="#BreachNotificationActivity"/>
   <rdfs:range rdf:resource="#BreachCause"/>
   <owl:inverseOf rdf:resource="#breachCauseIsRelatedTo"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#consequenceIsRelatedTo">
-  <rdfs:subPropertyOf rdf:resource="#isRelatedTo"/>
-  <owl:inverseOf rdf:resource="#hasBreachConsequence"/>
-</owl:ObjectProperty>
-
-<owl:ObjectProperty rdf:about="#hasBreachConsequence">
-  <rdfs:subPropertyOf rdf:resource="#has"/>
-  <rdfs:domain rdf:resource="#BreachActivity"/>
-  <rdfs:range rdf:resource="#BreachConsequence"/>
-  <owl:inverseOf rdf:resource="#consequenceIsRelatedTo"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#userChoiceConsequenceIsRelatedTo">
@@ -116,16 +104,16 @@
   <owl:inverseOf rdf:resource="#userChoiceConsequenceIsRelatedTo"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#breachInvestigationTimeIsRelatedTo">
+<owl:ObjectProperty rdf:about="#breachNotificationTimeIsRelatedTo">
   <rdfs:subPropertyOf rdf:resource="#isRelatedTo"/>
-  <owl:inverseOf rdf:resource="#hasBreachInvestigationTime"/>
+  <owl:inverseOf rdf:resource="#hasBreachNotificationTime"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#hasBreachInvestigationTime">
+<owl:ObjectProperty rdf:about="#hasBreachNotificationTime">
   <rdfs:subPropertyOf rdf:resource="#has"/>
-  <rdfs:domain rdf:resource="#BreachInvestigation"/>
-  <rdfs:range rdf:resource="#BreachInvestigationTime"/>
-  <owl:inverseOf rdf:resource="#breachInvestigationTimeIsRelatedTo"/>
+  <rdfs:domain rdf:resource="#BreachNotificationActivity"/>
+  <rdfs:range rdf:resource="#BreachNotificationTime"/>
+  <owl:inverseOf rdf:resource="#breachNotificationTimeIsRelatedTo"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#hasBreachReportTime">
@@ -466,7 +454,7 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:Class rdf:about="#BreachActivity">
+<owl:Class rdf:about="#BreachNotificationActivity">
   <rdfs:subClassOf rdf:resource="#Activity"/>
 </owl:Class>
 
@@ -658,22 +646,6 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:Class rdf:about="#BreachConsequence">
-  <rdfs:subClassOf rdf:resource="#Consequence"/>
-</owl:Class>
-
-<owl:Class rdf:about="#RemoveCompromisedInformation">
-  <rdfs:subClassOf rdf:resource="#BreachConsequence"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Compensation">
-  <rdfs:subClassOf rdf:resource="#BreachConsequence"/>
-</owl:Class>
-
-<owl:Class rdf:about="#BreachInvestigation">
-  <rdfs:subClassOf rdf:resource="#BreachConsequence"/>
-</owl:Class>
-
 <owl:Class rdf:about="#PolicyChangeConsequence">
   <rdfs:subClassOf rdf:resource="#Consequence"/>
 </owl:Class>
@@ -810,11 +782,11 @@
   <rdfs:subClassOf rdf:resource="#TimePeriod"/>
 </owl:Class>
 
-<owl:Class rdf:about="#BreachInvestigationTime">
+<owl:Class rdf:about="#PolicyAcceptanceTime">
   <rdfs:subClassOf rdf:resource="#TimePeriod"/>
 </owl:Class>
 
-<owl:Class rdf:about="#PolicyAcceptanceTime">
+<owl:Class rdf:about="#BreachNotificationTime">
   <rdfs:subClassOf rdf:resource="#TimePeriod"/>
 </owl:Class>
 
@@ -1072,9 +1044,9 @@
 
 <PrivacyPolicy rdf:about="#privacypolicy1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <considersAgent rdf:resource="#firstparty1"/>
   <considersAgent rdf:resource="#thirdparties1"/>
   <considersAgent rdf:resource="#user1"/>
+  <considersAgent rdf:resource="#firstparty1"/>
   <considersActivity rdf:resource="#policychangeactivity1"/>
   <considersActivity rdf:resource="#activity1"/>
   <considersActivity rdf:resource="#activity2"/>

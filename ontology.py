@@ -26,7 +26,7 @@ def construct_ontology(name=None):
         # Activities
         class Activity(Thing): pass
 
-        class BreachActivity(Activity): pass
+        class BreachNotificationActivity(Activity): pass
 
         class ControlActivity(Activity): pass
 
@@ -126,13 +126,13 @@ def construct_ontology(name=None):
         # Consequences
         class Consequence(Thing): pass
 
-        class BreachConsequence(Consequence): pass
-
-        class RemoveCompromisedInformation(BreachConsequence): pass
-
-        class Compensation(BreachConsequence): pass
-
-        class BreachInvestigation(BreachConsequence): pass
+        # class BreachConsequence(Consequence): pass
+        #
+        # class RemoveCompromisedInformation(BreachConsequence): pass
+        #
+        # class Compensation(BreachConsequence): pass
+        #
+        # class BreachInvestigation(BreachConsequence): pass
 
         class PolicyChangeConsequence(Consequence): pass
 
@@ -206,9 +206,11 @@ def construct_ontology(name=None):
 
         class BreachReportTime(TimePeriod): pass
 
-        class BreachInvestigationTime(TimePeriod): pass
+        # class BreachInvestigationTime(TimePeriod): pass
 
         class PolicyAcceptanceTime(TimePeriod): pass
+
+        class BreachNotificationTime(TimePeriod): pass
 
         # Purposes
         class Purpose(Thing): pass
@@ -274,15 +276,15 @@ def construct_ontology(name=None):
 
         class breachCauseIsRelatedTo(isRelatedTo): pass
         class hasBreachCause(has):
-            domain = [BreachActivity]
+            domain = [BreachNotificationActivity]
             range = [BreachCause]
             inverse_property = breachCauseIsRelatedTo
 
-        class consequenceIsRelatedTo(isRelatedTo): pass
-        class hasBreachConsequence(has):
-            domain = [BreachActivity]
-            range = [BreachConsequence]
-            inverse_property = consequenceIsRelatedTo
+        # class consequenceIsRelatedTo(isRelatedTo): pass
+        # class hasBreachConsequence(has):
+        #     domain = [BreachActivity]
+        #     range = [BreachConsequence]
+        #     inverse_property = consequenceIsRelatedTo
 
         class userChoiceConsequenceIsRelatedTo(isRelatedTo): pass
         class hasUserChoiceConsequence(has):
@@ -290,11 +292,17 @@ def construct_ontology(name=None):
             range = [UserChoiceConsequence]
             inverse_property = userChoiceConsequenceIsRelatedTo
 
-        class breachInvestigationTimeIsRelatedTo(isRelatedTo): pass
-        class hasBreachInvestigationTime(has):
-            domain = [BreachInvestigation]
-            range = [BreachInvestigationTime]
-            inverse_property = breachInvestigationTimeIsRelatedTo
+        # class breachInvestigationTimeIsRelatedTo(isRelatedTo): pass
+        # class hasBreachInvestigationTime(has):
+        #     domain = [BreachInvestigation]
+        #     range = [BreachInvestigationTime]
+        #     inverse_property = breachInvestigationTimeIsRelatedTo
+
+        class breachNotificationTimeIsRelatedTo(isRelatedTo): pass
+        class hasBreachNotificationTime(has):
+            domain = [BreachNotificationActivity]
+            range = [BreachNotificationTime]
+            inverse_property = breachNotificationTimeIsRelatedTo
 
         class hasBreachReportTime(isRelatedTo): pass
         class breachReportTimeIsRelatedTo(has):

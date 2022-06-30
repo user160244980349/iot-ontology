@@ -3,6 +3,9 @@ from pprint import pprint
 from ontology import construct_ontology, finish
 from opp.processor import process_opp
 from opp.reader import read_opp
+from satndalone_privacies.amazon_web_services import process_aws
+from satndalone_privacies.google_cloud import process_google_cloud
+from satndalone_privacies.threeplususa import process_3plususa
 
 
 def main():
@@ -37,19 +40,31 @@ def main():
                 ?object onto:evidenceContent ?content }
     """
 
-    # Ontology containing whole dataset
-    onto = construct_ontology("summary")
-    policies = read_opp()
+    # # Ontology containing whole dataset
+    # onto = construct_ontology("summary")
+    # policies = read_opp()
+    #
+    # for p in policies:
+    #     process_opp(onto, p)
+    # finish(onto)
+    #
+    # # Ontologies containing policies by 1
+    # for p in policies:
+    #     o = construct_ontology()
+    #     process_opp(o, p)
+    #     finish(o, reason=False)
 
-    for p in policies:
-        process_opp(onto, p)
-    finish(onto)
+    o = construct_ontology("3plususa")
+    process_3plususa(o)
+    finish(o)
 
-    # Ontologies containing policies by 1
-    for p in policies:
-        o = construct_ontology()
-        process_opp(o, p)
-        finish(o, reason=False)
+    o = construct_ontology("aws")
+    process_aws(o)
+    finish(o)
+
+    o = construct_ontology("google-cloud")
+    process_google_cloud(o)
+    finish(o)
 
 
 if __name__ == '__main__':
